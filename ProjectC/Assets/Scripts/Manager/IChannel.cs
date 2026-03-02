@@ -5,6 +5,8 @@ public enum ChannelInfo
 {
     InputDeck,
     OutputDeck,
+    InputDeckList,
+    OutputDeckList,
     End,
 }
 

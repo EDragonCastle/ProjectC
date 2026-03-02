@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DeckList : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class DeckListPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
