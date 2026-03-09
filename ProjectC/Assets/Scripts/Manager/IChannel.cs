@@ -7,6 +7,7 @@ public enum ChannelInfo
     OutputDeck,
     InputDeckList,
     OutputDeckList,
+    SelectingDeck,
     End,
 }
 

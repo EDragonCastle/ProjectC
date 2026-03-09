@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using Cysharp.Threading.Tasks;
 
 using TMPro;
 
@@ -23,11 +24,24 @@ public class DeckComplete : MonoBehaviour
     public float duration = 0.2f;
     public float offset = 0.4f;
 
-    public void Complete()
+    public async void Complete()
+    {
+        var dataManager = Locator<DataManager>.Get();
+        var resourceManager = Locator<ResourceManager>.Get();
+        var cardList = dataManager.GetHeroData();
+        var cardIndex = dataManager.GetHeroIndex();
+
+        var heroSprite = await resourceManager.Get<Sprite>(cardList[cardIndex].heroSprite);
+
+        SettingNewDeck(heroSprite);
+    }
+
+    private void SettingNewDeck(Sprite heroSprite)
     {
         // 음 Prefab을 만드는 데 width랑 height를 조절해야 할 것 같은데
         var deckObject = Instantiate(prefab, collection);
         var rectTransform = deckObject.GetComponent<RectTransform>();
+
         rectTransform.position = title.position;
         rectTransform.localScale = new Vector3(1.24f, 1.4f, 1f);
 
@@ -38,16 +52,18 @@ public class DeckComplete : MonoBehaviour
         sequence.Join(rectTransform.DOMove(new Vector3(title.position.x, title.position.y-offset, title.position.z), duration).SetEase(Ease.InBack));
 
         var deckComponent = deckObject.GetComponent<Deck>();
+        deckComponent.deckImage.sprite = heroSprite;
         deckComponent.deckName.text = originDeckName.text;
 
         // 여기인데 
-        sequence.OnComplete(() => { 
+        sequence.OnComplete(() => {
             newDeck.SetActive(false);
             deckList.SetActive(true);
             // 추가를 해도 괜찮다. deck button이 사라져서 괜찮다.
             deckObject.transform.SetParent(deckListViewPort);
             var eventManager = Locator<EventManager>.Get();
             eventManager.Notify(ChannelInfo.InputDeckList);
+            eventManager.Notify(ChannelInfo.SelectingDeck, false);
         });
         // Input
     }

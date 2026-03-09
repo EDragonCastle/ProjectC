@@ -1,29 +1,49 @@
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
+using Cysharp.Threading.Tasks;
 
 public class NewDeckOpenning : MonoBehaviour
 {
     public GameObject deck;
     public GameObject textObject;
+    public Image deckImage;
     private float duration = 0.2f;
 
     private Vector3 initPosition;
     private float offset = 20.0f;
 
     // Deck Title에 달까?
-    private void OnEnable()
+    private async void OnEnable()
     {
         deck.SetActive(false);
         textObject.SetActive(true);
         var rectTransform = this.GetComponent<RectTransform>();
         initPosition = new Vector3(rectTransform.localPosition.x, rectTransform.localPosition.y, rectTransform.localPosition.z);
-        Openning();
+
+        await UniTask.WaitUntil(() => GameManager.isReadyGameManager);
+        await Openning();
     }
 
-    private void Openning()
+    private async UniTask Openning()
     {
-        // 이 object를 한 바퀴 돌릴 때 뭔가 해야 한다.
+        var dataManager = Locator<DataManager>.Get();
+        var resourceManager = Locator<ResourceManager>.Get();
 
+        uint heroIndex = dataManager.GetHeroIndex();
+        if(heroIndex != 0)
+        {
+            var heroData = dataManager.GetHeroData();
+            var heroSprite = await resourceManager.Get<Sprite>(heroData[heroIndex].heroSprite);
+            if(heroSprite != null)
+                deckImage.sprite = heroSprite;
+        }
+        
+        DeckInitalize();
+    }
+
+    private void DeckInitalize()
+    {
         var rectTransform = this.GetComponent<RectTransform>();
         rectTransform.localPosition = new Vector3(initPosition.x, initPosition.y - offset, initPosition.z);
         rectTransform.localRotation = Quaternion.identity;
@@ -38,7 +58,7 @@ public class NewDeckOpenning : MonoBehaviour
             deck.SetActive(true);
         });
 
-
         sequence.OnComplete(() => { rectTransform.localPosition = initPosition; });
     }
+
 }

@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public GameObject origin;
     public RectTransform canvasParent;
 
+    public TextMeshProUGUI deckCountText;
+    public int deckCount = 0;
     private Transform viewPortParent;
 
     public GameObject card;
@@ -16,13 +19,18 @@ public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDra
 
     private Vector3 initPosition;
 
-    // 정확히 말하면 click 쪽이니까
     public void DeckListButton()
     {
-        Destroy(origin);
         var eventManager = Locator<EventManager>.Get();
-        eventManager.Notify(ChannelInfo.OutputDeck);
+        eventManager.Notify(ChannelInfo.OutputDeck, origin);
+        // Destroy(origin);
     }
+
+    public void CurrentDeckCount()
+    {
+        deckCountText.text = $"X {deckCount}";
+    }
+
 
     public void DeckListInOut(bool inout)
     {
@@ -42,8 +50,7 @@ public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDra
            
             var canvasGroup = origin.GetComponent<CanvasGroup>();
 
-            if (canvasGroup == null)
-            {
+            if (canvasGroup == null) {
                 canvasGroup = origin.AddComponent<CanvasGroup>();
             }
 
@@ -73,9 +80,8 @@ public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDra
 
         if (dragComponent.card.activeSelf)
         {
-            Destroy(origin);
             var eventManager = Locator<EventManager>.Get();
-            eventManager.Notify(ChannelInfo.OutputDeck);
+            eventManager.Notify(ChannelInfo.OutputDeck, origin);
         }
         else
         {

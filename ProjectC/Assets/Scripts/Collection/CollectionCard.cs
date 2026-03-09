@@ -5,6 +5,7 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 {
     // card data 
     public GameObject origin;
+    public GameObject pageObject;
     public RectTransform collectionCanvas;
     public GameObject explanationCard;
 
@@ -15,7 +16,7 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private Vector2 pointerOffset;
 
     private GameObject draggingObject;
-
+   
     public void DeckListInOut(bool inout)
     {
         // 하스스톤을 덱 리스트에 넣을 때 확인해보니 바로 바뀌는 건 맞다. 
@@ -23,17 +24,28 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         var cardComponent = draggingObject.GetComponentInChildren<CollectionCard>(true);
         cardComponent.card.SetActive(inout);
         cardComponent.deck.SetActive(!inout);
-
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
-            Debug.Log("Card를 좌클릭했다.");
+        {
+            var pageInformation = pageObject.GetComponent<PageInformation>();
+            if (pageInformation != null)
+            {
+                if (!pageInformation.isSelectingDeckList)
+                {
+                    // Error Message를 띄워야 할 것 같은데?
+                    Debug.Log("덱 리스트에 카드를 넣을 수 없습니다.");
+                    return;
+                }
+            }
+        }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
             Debug.Log("Card를 우클릭했다.");
             explanationCard.SetActive(true);
+
             var exComponent = explanationCard.GetComponentInChildren<ExplanationCard>(true);
             RectTransform buttonRect = this.GetComponent<RectTransform>();
             exComponent.SetUp(buttonRect.position);
@@ -44,7 +56,13 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log("Card를 좌클릭이 끝났다.");
+            var pageInformation = pageObject.GetComponent<PageInformation>();
+            if (pageInformation != null)
+            {
+                if (!pageInformation.isSelectingDeckList)
+                    return;
+            }
+
             if(draggingObject == null)
             {
                 draggingObject = Instantiate(origin, collectionCanvas);
@@ -58,7 +76,9 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
                 var eventManager = Locator<EventManager>.Get();
                 DeckListInOut(false);
+
                 eventManager.Notify(ChannelInfo.InputDeck, draggingObject);
+                
                 draggingObject = null;
             }
             currentTransform = null;
@@ -73,6 +93,13 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
+            var pageInformation = pageObject.GetComponent<PageInformation>();
+            if (pageInformation != null)
+            {
+                if (!pageInformation.isSelectingDeckList)
+                    return;
+            }
+
             Debug.Log("Card를 좌클릭에서 드래그를 시작했다.");
             GameObject cardInstance = Instantiate(origin, collectionCanvas);
             
@@ -117,14 +144,12 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
                 var canvasGroup = draggingObject.GetComponent<CanvasGroup>();
 
                 if (canvasGroup == null)
-                {
                     canvasGroup = draggingObject.AddComponent<CanvasGroup>();
-                }
 
                 canvasGroup.blocksRaycasts = true;
 
-
                 var eventManager = Locator<EventManager>.Get();
+                DeckListInOut(false);
                 eventManager.Notify(ChannelInfo.InputDeck, draggingObject);
             }
             else

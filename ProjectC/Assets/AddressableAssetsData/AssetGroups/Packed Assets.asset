@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7f5af8fd2f069804da79e9cefbf0bbb8
+  m_SerializeEntries:
+  - m_GUID: 9558ee0531edd7943965c354abff8dca
+    m_Address: Test (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f80ca0bea63a2240aa227ba5636f8fe
+    m_Address: Test (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e32616611dc105349bb9dac677b9e231
+    m_Address: Test (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a339e1d248d3a1c4999c368e8579bb7a
+    m_Address: Test (10)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6fe24d7adff603f4d9d47a58b07ad995
+    m_Address: Test (12)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9853fe6e8a6e18f47b8d5339199d32fa
+    m_Address: Test (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f505da78838052348a0388f263cb8cdc
+    m_Address: Test (11)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b1bba7ea7c5b0d46b02670f8f768288
+    m_Address: Test (16)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e728a31249b013419ce54e1dac9170a
+    m_Address: Test (14)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 936559e51d758f0489496f33260d6800
+    m_Address: Test (15)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e824953c6ec8dc14ebbf02de532a42b8
+    m_Address: Test (13)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 395684f723cf10e45966ccf989cc358b
+    m_Address: Test (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4180d7a171c77cb41a062ecf4c59276d
+    m_Address: Test (17)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb65315bfea442542a5a6c3b7fcf9ffb
+    m_Address: Test (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 47a0cdda625f538418c163d20db392b2
+    m_Address: Test (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e2c86efd6cd9652458eaa4a33fa76136
+    m_Address: Test (18)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 71a4153141dd36c4781ebdd2806f3279
+    m_Address: Test (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aaf24dae7621fa347ab58b211292e276
+    m_Address: Test (9)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 80584bb9f6819bf43b6ca5f3d4922a88
+    m_Address: Gem_Common
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2dfc54c2de5f66c469c2735ae9d517f1
+    m_Address: Gem_Epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab5ebd36eb22fcf4cb9215f398b2a283
+    m_Address: Gem_Legendary
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8f66398ee4562141a70a4476f025185
+    m_Address: Gem_Rare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e95ddae43cfa9374cad5d53fb68f9ce7
+    m_Address: CardData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 81bb3edc5e2a7ca44ac7f62292536a69
+    m_Address: HeroData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 668368dc212d9294fa00ecd8b2d3b95e
+    m_Address: garrosh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 06e03bfaa1178b1468193cb5f9f2e2c9
+    m_Address: Uther
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f896906be6938f84b8b46faa84f264e2
+    m_Address: Valeera
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c4ec83853d78c824a87cc4b43155ea93
+    m_Address: Anduin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 12dbeba89109e4e448ece2d596cfa169
+    m_Address: Jaina
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6bc24d25015691f469ac615c57aafc8e
+    m_Address: Rexxar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0f3d94c8582604e4b9a630f8e1d3a0b2
+    m_Address: Thrall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31e39eefa736a234b8fdccc5860df69e
+    m_Address: Malfurion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dad4189052d56c048b48a2b86c38a9da
+    m_Address: Guldan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 446edb0da45bbbe4490942aa410bb0e4
+    m_Address: Warrior_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 68861b61fe2bc9344ba7b1a4f89ee330
+    m_Address: Priest_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f5bd325f542df64d9b1c5879191d0d2
+    m_Address: Hunter_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8912dc0d0ca184444a23d36eb8a599f4
+    m_Address: Druid_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2d74d190f70ea8d44aa27b0ac051a2ed
+    m_Address: Mage_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bdaf497dce67f5f4996eb2b70bd819ed
+    m_Address: Paladin_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f11e6cb347850d149b42d0b901981d7d
+    m_Address: Rogue_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f7841dc4c0e39004a9d5d83400fb9af1
+    m_Address: Shaman_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8ae5ac74da900fb44a05e853389a9fae
+    m_Address: Warlock_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5b06877f27735c940a3418b356df08a7
+    m_Address: Druid Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca83e00716d9b694a9ab39ba22058dcb
+    m_Address: Warlock Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b877d699f66d0544f83df6eb0b0a33be
+    m_Address: Warrior Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88cab81de8bab88458ee0b5d555ddead
+    m_Address: Prist Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a61eedfb26666604b9572bbcc6e8986d
+    m_Address: Hunter Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 132b306355916c14fa8c0e3a16f13a4d
+    m_Address: Mage Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 646066782180ca44ba1f7ba414d8bbe2
+    m_Address: paladin Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fb77ebb2236357746acb3de676d6ad5c
+    m_Address: Rogue Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8379a367b3c43e3489d4f3d4772ec677
+    m_Address: Shaman Power
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 314092f8ff34e894c87401dd78c2ddb4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 93f9e7c614f86dc49a1659e69c968cb7, type: 2}
+    - {fileID: 11400000, guid: b75a7c5c6b0e3d4438338ce202fd10ef, type: 2}

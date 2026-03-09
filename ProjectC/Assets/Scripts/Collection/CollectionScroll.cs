@@ -116,6 +116,10 @@ public class CollectionScroll : MonoBehaviour, IChannel
         CloseDeck();
         PushDeck();
         isSelect = false;
+
+        // 여기서 카드 좌클릭 했을 때 덱에 넣을 수 있는 기능을 활성화 하면 된다.
+        var eventManager = Locator<EventManager>.Get();
+        eventManager.Notify(ChannelInfo.SelectingDeck, true);
     }
     
     public void PushDeck()

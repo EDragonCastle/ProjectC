@@ -1,0 +1,19 @@
+UID,Name,Cost,Attack,Health,Description,SpriteName,Gem
+0,테스타,0,1,1,,Test (1),Gem_Common
+1,테스탸,1,2,1,카드설명입니다,Test (2),Gem_Rare
+2,테스터,2,3,2,카드설명란을 적습니다.,Test (3),Gem_Epic
+3,테스텨,3,3,1,,Test (4),Gem_Legendary
+4,테스토,4,1,13,카드가 있습니다.,Test (5),Gem_Epic
+5,테스툐,5,2,10,카드가 있었는데요,Test (6),Gem_Common
+6,테스투,6,3,23,카드가 있을까요?,Test (7),Gem_Rare
+7,테스튜,7,3,4,,Test (8),Gem_Epic
+8,테스트,8,4,1,살려주세요,Test (9),Gem_Common
+9,테스티,8,11,2,테스트 카드를 만들고 있어요,Test (10),Gem_Epic
+10,테스태,9,23,32,테스트 카드 설명란을 만들고 있습니다.,Test (11),Gem_Legendary
+11,테스턔,10,30,30,,Test (12),Gem_Common
+12,테스톄,6,2,2,스테이크 굽기는 어느정도가 적당할까요?,Test (13),Gem_Rare
+13,테스테,4,12,4,카드를 CSV파일로 옮겨서 만든다는 것은 어려운 작업이에요.,Test (14),Gem_Rare
+14,테스탁,3,33,1,하스스톤 모작을 만들 때 어떤게 가장 어려울까요?,Test (15),Gem_Common
+15,테스톡,2,12,33,거의다 왔다 조금만 더 가자 영~차!,Test (16),Gem_Rare
+16,테스툭,1,1,1,"너 멈춰라",Test (17),Gem_Legendary
+17,테스팅,3,2,2,모든 적을 없앱니다.,Test (18),Gem_Epic
