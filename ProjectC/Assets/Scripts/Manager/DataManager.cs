@@ -3,7 +3,7 @@ using System.Linq;
 
 public class DataManager
 {
-    private Dictionary<uint, CardData> cardTable;
+    private readonly Dictionary<uint, CardData> cardTable;
     private List<CardData> sortCardTable;
     
     private Dictionary<uint, HeroData> heroTable;

@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class DeckViewPort : MonoBehaviour, IChannel
 {
@@ -11,12 +13,21 @@ public class DeckViewPort : MonoBehaviour, IChannel
     private readonly int deckCardMaxCount = 2;
     public TextMeshProUGUI cardNumber;
 
+    // 여기가 실제 Deck List인데 Card 개수는 모르지만, 어떤 Card들이 들어있는지는 알 수 있어.
+    // 카드 Count만 알면 되겠네?
     private List<CardData> deckListCards = new List<CardData>();
+    private List<DeckData> deckList;
+
+    public List<DeckData> GetDeckData() => deckList;
+    public int GetCurrentCard() => currentCard;
+    public int GetMaxCard() => maxCard;
+
 
     private void OnEnable()
     {
         cardNumber.text = $"{currentCard}/{maxCard}\n장";
         var eventManager = Locator<EventManager>.Get();
+        deckList = new List<DeckData>();
         eventManager.Subscription(ChannelInfo.InputDeck, HandleEvent);
         eventManager.Subscription(ChannelInfo.OutputDeck, HandleEvent);
     }
@@ -26,7 +37,9 @@ public class DeckViewPort : MonoBehaviour, IChannel
         var eventManager = Locator<EventManager>.Get();
         eventManager.Unsubscription(ChannelInfo.InputDeck, HandleEvent);
         eventManager.Unsubscription(ChannelInfo.OutputDeck, HandleEvent);
-        deckListCards.Clear();
+        deckList = null;
+        ClearAllDeckData();
+        cardNumber.text = $"{currentCard}/{maxCard}\n장";
     }
 
     public void HandleEvent(ChannelInfo channel, object information = null)
@@ -46,7 +59,8 @@ public class DeckViewPort : MonoBehaviour, IChannel
                     return;
                 }
 
-                InputDeckCard(cardDeck);
+                //InputDeckCard(cardDeck);
+                InputDeckCard2(cardDeck);
                 break;
             case ChannelInfo.OutputDeck:
                 if (currentCard < 0) {
@@ -60,10 +74,24 @@ public class DeckViewPort : MonoBehaviour, IChannel
                     return;
                 }
 
-                OutputDeckCard(destoryObject);
+                //OutputDeckCard(destoryObject);
+                OutputDeckCard2(destoryObject);
                 break;
         }
     }
+
+    private void ClearAllDeckData()
+    {
+        for(int i = content.transform.childCount - 1; i >= 0; i--)
+        {
+            GameObject child = content.transform.GetChild(i).gameObject;
+            Destroy(child);
+        }
+        currentCard = 0;
+        maxCard = 30;
+    }
+
+    #region Dummy
 
     private void InputDeckCard(GameObject cardDeck)
     {
@@ -97,6 +125,7 @@ public class DeckViewPort : MonoBehaviour, IChannel
                 Destroy(cardDeck);
 
                 // 오래 걸리는 작업이다.
+     
                 var deckCardComponent = child.GetComponentInChildren<DeckCard>(true);
 
                 if (deckCardComponent == null)
@@ -136,16 +165,16 @@ public class DeckViewPort : MonoBehaviour, IChannel
         int newCost = cardData.cost;
         string cardName = cardData.cardName;
 
-        foreach(Transform child in content.transform)
+        foreach (Transform child in content.transform)
         {
             Card cardComponent = child.GetComponent<Card>();
-            if(cardComponent != null)
+            if (cardComponent != null)
             {
                 CardData childCardData = cardComponent.cardData;
 
                 if (childCardData.cost > newCost)
                     return index;
-                else if(childCardData.cost == newCost)
+                else if (childCardData.cost == newCost)
                 {
                     if (string.Compare(childCardData.cardName, cardName, System.StringComparison.Ordinal) > 0)
                         return index;
@@ -156,12 +185,12 @@ public class DeckViewPort : MonoBehaviour, IChannel
 
         return index;
     }
-    
+
     private int SortIndexVer2(CardData cardData)
     {
         int index = deckListCards.Count;
 
-        if(index == 0)
+        if (index == 0)
         {
             deckListCards.Add(cardData);
             return index;
@@ -170,7 +199,7 @@ public class DeckViewPort : MonoBehaviour, IChannel
         int left = 0;
         int right = index - 1;
 
-        while(left <= right)
+        while (left <= right)
         {
             int mid = (left + right) / 2;
             int compare = CompareCard(cardData, deckListCards[mid]);
@@ -187,12 +216,36 @@ public class DeckViewPort : MonoBehaviour, IChannel
         return index;
     }
 
-    private int CompareCard(CardData newCard, CardData oldCard)
+    private int SortIndexVer3(CardData cardData)
     {
-        if (newCard.cost != oldCard.cost)
-            return newCard.cost.CompareTo(oldCard.cost);
+        int index = deckListCards.Count;
+        DeckData deckData = new DeckData();
+        deckData.cardData = cardData;
+        deckData.count = 1;
 
-        return string.Compare(newCard.cardName, oldCard.cardName, System.StringComparison.Ordinal); 
+        if (index == 0)
+        {
+            deckList.Add(deckData);
+            return index;
+        }
+
+        int left = 0;
+        int right = index - 1;
+
+        while (left <= right)
+        {
+            int mid = (left + right) / 2;
+            int compare = CompareCard(cardData, deckList[mid].cardData);
+
+            if (compare < 0)
+                right = mid - 1;
+            else
+                left = mid + 1;
+        }
+
+        index = left;
+        deckList.Insert(index, deckData);
+        return index;
     }
 
 
@@ -205,7 +258,7 @@ public class DeckViewPort : MonoBehaviour, IChannel
         if (card == null || deckCardComponent == null)
             return;
 
-        if(deckCardComponent.deckCount == 1)
+        if (deckCardComponent.deckCount == 1)
         {
             // DeckList에서 빼야한다.
             RemoveDeckList(card.cardData);
@@ -224,21 +277,200 @@ public class DeckViewPort : MonoBehaviour, IChannel
         int left = 0;
         int right = deckListCards.Count - 1;
 
-        while(left <= right)
+        while (left <= right)
         {
             int mid = (left + right) / 2;
             int compare = CompareCard(cardData, deckListCards[mid]);
 
-            if(compare == 0)
+            if (compare == 0)
             {
                 deckListCards.RemoveAt(mid);
                 return;
             }
+
+            if (compare < 0)
+                right = mid - 1;
+            else
+                left = mid + 1;
+        }
+    }
+
+    #endregion
+
+    private void InputDeckCard2(GameObject cardDeck)
+    {
+        Card card = cardDeck.GetComponent<Card>();
+        if (card != null)
+        {
+            if (card.cardData == null)
+            {
+                Debug.LogError($"{cardDeck.name}에는 cardData가 존재하지 않는다.");
+                return;
+            }
+        }
+        else
+        {
+            Debug.LogError($"{cardDeck.name}에는 Card Component가 존재하지 않는다.");
+            return;
+        }
+
+        CardData newCardData = card.cardData;
+
+        int targetIndex = FindDeckList(newCardData);
+        
+        if(targetIndex != -1)
+        {
+            DeckData deckData = deckList[targetIndex];
+
+            Destroy(cardDeck);
+            if(deckData.count >= deckCardMaxCount)
+            {
+                Debug.Log("이 카드는 덱에 더 넣을 수 없습니다.");
+                return;
+            }
+            deckData.count++;
+
+            Transform child = content.transform.GetChild(targetIndex);
+            var deckCardComponent = child.GetComponentInChildren<DeckCard>(true);
+
+            if(deckCardComponent != null)
+            {
+                deckCardComponent.CurrentDeckCount(deckData.count);
+            }
+        }
+        else
+        {
+            int index = SortInsert(newCardData);
+            cardDeck.transform.SetParent(content.transform);
+            cardDeck.transform.SetSiblingIndex(index);
+
+            var deckCardComponent = cardDeck.GetComponentInChildren<DeckCard>(true);
+            if(deckCardComponent != null)
+            {
+                deckCardComponent.CurrentDeckCount(1);
+            }
+        }
+
+        currentCard++;
+        cardNumber.text = $"{currentCard}/{maxCard}\n장";
+    }
+
+    private int FindDeckList(CardData newCardData)
+    {
+        int left = 0;
+        int right = deckList.Count - 1;
+
+        while(left <= right)
+        {
+            int mid = (left + right) / 2;
+            int compare = CompareCard(newCardData, deckList[mid].cardData);
+
+            if (compare == 0)
+                return mid;
+
+            if (compare < 0) right = mid - 1;
+            else left = mid + 1;
+        }
+
+        return -1;
+    }
+
+    private int SortInsert(CardData cardData)
+    {
+        DeckData newDeckData = new DeckData();
+        newDeckData.cardData = cardData;
+        newDeckData.count = 1;
+
+        int left = 0;
+        int right = deckList.Count - 1;
+
+        while(left <= right)
+        {
+            int mid = (left + right) / 2;
+            int compare = CompareCard(cardData, deckList[mid].cardData);
 
             if (compare < 0) 
                 right = mid - 1;
             else 
                 left = mid + 1;
         }
+
+        deckList.Insert(left, newDeckData);
+        return left;
+    }
+
+    
+
+    private int CompareCard(CardData newCard, CardData oldCard)
+    {
+        if (newCard.cost != oldCard.cost)
+            return newCard.cost.CompareTo(oldCard.cost);
+
+        return string.Compare(newCard.cardName, oldCard.cardName, System.StringComparison.Ordinal); 
+    }
+
+    private void OutputDeckCard2(GameObject cardDeck)
+    {
+        var card = cardDeck.GetComponent<Card>();
+
+        if (card == null)
+            return;
+
+        int index = FindDeckList(card.cardData);
+
+        if(index == -1)
+        {
+            Debug.Log("삭제하려는 Data가 없습니다");
+            return;
+        }
+
+        DeckData deckData = deckList[index];
+
+        if(deckData.count <= 1)
+        {
+            deckList.RemoveAt(index);
+            Destroy(cardDeck);
+        }
+        else
+        {
+            deckData.count--;
+            var deckCardComponent = cardDeck.GetComponentInChildren<DeckCard>(true);
+            if (deckCardComponent != null)
+            {
+                deckCardComponent.CurrentDeckCount(deckData.count);
+            }
+        }
+
+        currentCard--;
+        cardNumber.text = $"{currentCard}/{maxCard}\n장";
+    }
+
+
+    public async UniTask RecontructDeck(DeckInformation deckInfo)
+    {
+        var resourceManager = Locator<ResourceManager>.Get();
+        var dataManager = Locator<DataManager>.Get();
+        var cardTable = dataManager.GetCardData();
+
+        GameObject cardOrigin = await resourceManager.Get<GameObject>("Card");
+        Card cardPrefab = cardOrigin.GetComponent<Card>();
+
+        var factory = Locator<Factory>.Get();
+        currentCard = deckInfo.currentCard;
+        maxCard = deckInfo.maxCard;
+
+        List<UniTask> tasks = new List<UniTask>();
+        deckList = deckInfo.deckData;
+        foreach (var data in deckInfo.deckData)
+        {
+            Card cardInstance = factory.Create(cardPrefab, content.transform);
+            tasks.Add(cardInstance.CardSetting(cardTable[data.cardData.cardId]));
+            cardInstance.deckCardScript.CurrentDeckCount(data.count);
+        }
+
+        await UniTask.WhenAll(tasks);
+
+        var eventManager = Locator<EventManager>.Get();
+        eventManager.Notify(ChannelInfo.SelectingDeck, true);
     }
 }

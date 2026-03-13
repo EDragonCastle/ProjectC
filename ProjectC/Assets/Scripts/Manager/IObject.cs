@@ -13,5 +13,6 @@ public interface IObject
     public void SetObjectKey(int _key); 
 
     public void SetTransform(Transform transform, Transform parent);
+    public void SetParent(Transform parent);
     public Transform GetTransform();
 }

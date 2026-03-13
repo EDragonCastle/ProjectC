@@ -22,6 +22,7 @@ public class ResourceManager
         if(handle.TryGetValue(assetName, out var _handle))
         {
             Addressables.Release(_handle);
+            // 근데 GC Count가 있다던데? 그게 0이 되어야 handle에 있는 것도 삭제할 수 있는거 아닌가?
             handle.Remove(assetName);
         }
     }

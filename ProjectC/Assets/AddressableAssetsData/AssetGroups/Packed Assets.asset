@@ -221,6 +221,10 @@ MonoBehaviour:
     m_Address: Shaman Power
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 5856b79a502b80c429f25793e37dd389
+    m_Address: Card
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 314092f8ff34e894c87401dd78c2ddb4, type: 2}
   m_SchemaSet:

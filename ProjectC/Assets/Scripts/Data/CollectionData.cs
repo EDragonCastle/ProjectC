@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "New Card", menuName = "CardData")]
 public class CardData : ScriptableObject
@@ -23,4 +25,19 @@ public class HeroData : ScriptableObject
     public string heroPowerSprite;
     public string heroPowerExplanation;
     public string heroPowerIconSprite;
+}
+
+public class DeckData
+{
+    public CardData cardData;
+    public int count;
+}
+
+public class DeckInformation
+{
+    public List<DeckData> deckData;
+    public Sprite deckImage;
+    public string deckName;
+    public int currentCard;
+    public int maxCard;
 }

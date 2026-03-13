@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
         DataManager dataManager = new DataManager(parserManager.GetCardTable(), parserManager.GetHeroTable());
         Locator<DataManager>.Provide(dataManager);
 
+        UIManager uiManager = new UIManager();
+        Locator<UIManager>.Provide(uiManager);
+
+        Factory factory = new Factory();
+        Locator<Factory>.Provide(factory);
+
         isReadyGameManager = true;
     }
 }

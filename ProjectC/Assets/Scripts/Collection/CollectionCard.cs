@@ -64,10 +64,11 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             }
 
             if(draggingObject == null)
-            {
+            { 
                 draggingObject = Instantiate(origin, collectionCanvas);
 
                 var canvasGroup = draggingObject.GetComponent<CanvasGroup>();
+               
 
                 if (canvasGroup == null)
                     canvasGroup = draggingObject.AddComponent<CanvasGroup>();

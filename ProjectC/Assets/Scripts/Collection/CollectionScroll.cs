@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using DG.Tweening;
+using Cysharp.Threading.Tasks;
 
 public class CollectionScroll : MonoBehaviour, IChannel
 {
@@ -32,11 +33,15 @@ public class CollectionScroll : MonoBehaviour, IChannel
 
     private int contentIndex;
 
-    private void Start()
+    private async void Start()
     {
+        await UniTask.WaitUntil(() => GameManager.isReadyGameManager);
+
+        var uiManager = Locator<UIManager>.Get();
+        uiManager.SetDeckScroll(this.gameObject);
+
         leftOriginPos = leftDeckList.anchoredPosition;
         rightOriginPos = rightDeckList.anchoredPosition;
-        newDeckListObject.SetActive(false);
 
         foreach (var obj in contents)
         {

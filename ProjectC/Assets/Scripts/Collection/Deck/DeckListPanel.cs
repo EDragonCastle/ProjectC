@@ -8,6 +8,7 @@ public class DeckListPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if(eventData.dragging)
         {
             var card = eventData.pointerDrag;
+            Debug.Log(card.transform.parent.name);
             if (card == null)
                 return;
 
