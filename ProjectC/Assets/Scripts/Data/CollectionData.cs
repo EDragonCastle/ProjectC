@@ -13,6 +13,14 @@ public class CardData : ScriptableObject
     public string description;
     public string spriteName;
     public string gem;
+    public bool isMinion;
+    public string jobType;
+    public string packgeType;
+    public string cardType;
+    public uint[] spawn;
+    public float posX;
+    public float posY;
+    public float rotation;
 }
 
 [CreateAssetMenu(fileName = "New Hero", menuName = "HeroName")]
@@ -25,6 +33,7 @@ public class HeroData : ScriptableObject
     public string heroPowerSprite;
     public string heroPowerExplanation;
     public string heroPowerIconSprite;
+    public string heroDeckName;
 }
 
 public class DeckData
@@ -37,6 +46,7 @@ public class DeckInformation
 {
     public List<DeckData> deckData;
     public Sprite deckImage;
+    public uint heroIndex;
     public string deckName;
     public int currentCard;
     public int maxCard;

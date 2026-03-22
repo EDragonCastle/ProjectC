@@ -16,7 +16,7 @@ public class DeckViewPort : MonoBehaviour, IChannel
     // 여기가 실제 Deck List인데 Card 개수는 모르지만, 어떤 Card들이 들어있는지는 알 수 있어.
     // 카드 Count만 알면 되겠네?
     private List<CardData> deckListCards = new List<CardData>();
-    private List<DeckData> deckList;
+    private List<DeckData> deckList = new List<DeckData>();
 
     public List<DeckData> GetDeckData() => deckList;
     public int GetCurrentCard() => currentCard;

@@ -13,7 +13,7 @@ public class DeckComplete : MonoBehaviour
     public GameObject origin;
 
     public DeckViewPort deckViewPort;
-    public NewDeckOpenning deckOpenning;
+    public NewDeckOpening deckOpening;
     public TextMeshProUGUI originDeckName;
 
     public GameObject newDeck;
@@ -37,7 +37,7 @@ public class DeckComplete : MonoBehaviour
             var cardIndex = dataManager.GetHeroIndex();
 
             var heroSprite = await resourceManager.Get<Sprite>(cardList[cardIndex].heroSprite);
-            SettingNewDeck(heroSprite);
+            SettingNewDeck(heroSprite, cardIndex);
         }
         else
         {
@@ -45,7 +45,7 @@ public class DeckComplete : MonoBehaviour
         }
     }
 
-    private void SettingNewDeck(Sprite heroSprite)
+    private void SettingNewDeck(Sprite heroSprite, uint heroIndex)
     {
         // 음 Prefab을 만드는 데 width랑 height를 조절해야 할 것 같은데
         var deckObject = Instantiate(prefab, collection);
@@ -68,9 +68,10 @@ public class DeckComplete : MonoBehaviour
         sequence.OnComplete(() => {
             var deckComponent = deckObject.GetComponent<Deck>();
 
-            if (deckComponent != null && deckOpenning != null) {
+            if (deckComponent != null && deckOpening != null) {
                 DeckInformation deckInformation = new DeckInformation();
                 deckInformation.deckImage = heroSprite;
+                deckInformation.heroIndex = heroIndex;
                 deckInformation.deckName = originDeckName.text;
                 deckInformation.deckData = deckViewPort.GetDeckData();
                 deckInformation.currentCard = deckViewPort.GetCurrentCard();
@@ -129,7 +130,7 @@ public class DeckComplete : MonoBehaviour
         sequence.OnComplete(() => {
             var deckComponent = origin.GetComponent<Deck>();
 
-            if (deckComponent != null && deckOpenning != null)
+            if (deckComponent != null && deckOpening != null)
             {
                 DeckInformation deckInformation = new DeckInformation();
                 deckInformation.deckImage = deckComponent.deckImage.sprite;

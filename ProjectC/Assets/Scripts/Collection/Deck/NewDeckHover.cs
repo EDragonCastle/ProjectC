@@ -2,22 +2,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using Cysharp.Threading.Tasks;
+using System.Collections.Generic;
 
 public class NewDeckHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject cardCostObject;
     public GameObject nameField;
     public TextMeshProUGUI deckName;
+    public DeckViewPort viewPort;
 
-    // Down 눌렀을 때 이름을 바꾸도록 한다.
-    public void OnPointerEnter(PointerEventData eventData)
+    public uint heroIndex;
+    public List<DeckData> deckList;
+
+
+
+    public async void OnPointerEnter(PointerEventData eventData)
     {
-        CostObejct(true);
+        await CostObejct(true);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public async void OnPointerExit(PointerEventData eventData)
     {
-        CostObejct(false);
+        await CostObejct(false);
     }
 
     public void ChangeNameButton()
@@ -42,8 +49,17 @@ public class NewDeckHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         deckName.gameObject.SetActive(true);
     }
 
-    private void CostObejct(bool isActvie)
+    private async UniTask CostObejct(bool isActive)
     {
-        cardCostObject.SetActive(isActvie);
+        var cardCostComponent = cardCostObject.GetComponent<CostCard>();
+        cardCostComponent.heroIndex = heroIndex;
+
+        if (deckList == null || deckList != viewPort.GetDeckData())
+            deckList = viewPort.GetDeckData();
+
+        await cardCostComponent.CardSetup(deckList);
+        cardCostObject.SetActive(isActive);
     }
+
+
 }

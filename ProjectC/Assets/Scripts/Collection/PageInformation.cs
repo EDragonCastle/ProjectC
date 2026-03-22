@@ -1,11 +1,17 @@
 using UnityEngine;
 using Cysharp.Threading.Tasks;
 
+public enum PageType
+{
+    Previous, Current, Future
+}
+
 public class PageInformation : MonoBehaviour, IChannel
 {
     public bool isSelectingDeckList = false;
 
     public int page;
+    public PageType pageType;
 
     public Card[] cards;
 

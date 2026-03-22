@@ -46,9 +46,11 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             Debug.Log("Card를 우클릭했다.");
             explanationCard.SetActive(true);
 
-            var exComponent = explanationCard.GetComponentInChildren<ExplanationCard>(true);
+            var cardComponent = origin.GetComponent<Card>();
+            var collectionCardData = cardComponent.GetCollectionCardData();
+            var explanationComponent = explanationCard.GetComponentInChildren<ExplanationCard>(true);
             RectTransform buttonRect = this.GetComponent<RectTransform>();
-            exComponent.SetUp(buttonRect.position);
+            explanationComponent.SetUp(buttonRect.position, collectionCardData);
         }
     }
 

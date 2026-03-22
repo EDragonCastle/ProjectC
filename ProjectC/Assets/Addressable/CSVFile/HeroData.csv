@@ -1,10 +1,10 @@
-UID,HeroName,Hero Sprite,Hero Power Name,Hero Power Sprite,Hero Power Explanation,Hero Power Icon Sprite
-100,가로쉬,garrosh,방어도 증가,Warrior Power,방어도 2를 얻습니다.,Warrior_icon
-101,안두인,Anduin,생명력 회복,Prist Power,체력 2를 회복합니다.,Priest_icon
-102,렉사르,Rexxar,영웅 사격,Hunter Power,적 영웅에게 2의 피해를 줍니다.,Druid_icon
-103,말퓨리온,Malfurion,방어도 증가,Druid Power,공격력 1과 방어도 1을 얻습니다.,Hunter_icon
-104,제이나,Jaina,화염작렬,Mage Power,피해 1를 줍니다.,Mage_icon
-105,우서,Uther,신병 모집,paladin Power,신병을 소환합니다.,Paladin_icon
-106,발리라,Valeera,단검 포착,Rogue Power,1/2 무기를 착용합니다.,Rogue_icon
-107,스랄,Thrall,토템 소환,Shaman Power,무작위 토템을 소환합니다.,Shaman_icon
-108,굴단,Guldan,생명력 착취,Warlock Power,내 영웅이 피해 2를 입습니다.\n 카드 한 장을 뽑습니다.,Warlock_icon
+UID,HeroName,Hero Sprite,Hero Power Name,Hero Power Sprite,Hero Power Explanation,Hero Power Icon Sprite,DeckName
+100,가로쉬,garrosh,방어도 증가,Warrior Power,방어도 2를 얻습니다.,Warrior_icon,전사
+101,안두인,Anduin,생명력 회복,Prist Power,체력 2를 회복합니다.,Priest_icon,사제
+102,렉사르,Rexxar,영웅 사격,Hunter Power,적 영웅에게 2의 피해를 줍니다.,Hunter_icon,사냥꾼
+103,말퓨리온,Malfurion,방어도 증가,Druid Power,공격력 1과 방어도 1을 얻습니다.,Druid_icon,드루이드
+104,제이나,Jaina,화염작렬,Mage Power,피해 1를 줍니다.,Mage_icon,마법사
+105,우서,Uther,신병 모집,paladin Power,신병을 소환합니다.,Paladin_icon,성기사
+106,발리라,Valeera,단검 포착,Rogue Power,1/2 무기를 착용합니다.,Rogue_icon,도적
+107,스랄,Thrall,토템 소환,Shaman Power,무작위 토템을 소환합니다.,Shaman_icon,주술사
+108,굴단,Guldan,생명력 착취,Warlock Power,내 영웅이 피해 2를 입습니다.\n 카드 한 장을 뽑습니다.,Warlock_icon,흑마법사
