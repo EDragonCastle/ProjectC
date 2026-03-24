@@ -15,4 +15,10 @@ public class SlotPanel : MonoBehaviour, IPointerDownHandler
         slotScript.Ending(isEnter);
     }
 
+    public void SelectJob(string hero)
+    {
+        var eventManager = Locator<EventManager>.Get();
+        FilterParameter parameter = new FilterParameter(FilterType.Jump, _job: hero);
+        eventManager.Notify(ChannelInfo.Filter, parameter);
+    }
 }

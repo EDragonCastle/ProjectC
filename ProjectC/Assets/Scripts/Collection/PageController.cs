@@ -1,15 +1,15 @@
 using UnityEngine;
 using DG.Tweening;
 using Cysharp.Threading.Tasks;
+using System;
 
-public class PageController : MonoBehaviour
+public class PageController : MonoBehaviour, IChannel
 {
     // Deck Controller 
     public GameObject leftButton;
     public GameObject rightButton;
     public GameObject leftPageDummy;
 
-    // Pivot Object∏¶ ¬¸¡∂«“ ∞Õ ∞∞¥Ÿ.
     public GameObject prePage;
     public GameObject curPage;
     public GameObject nextPage;
@@ -20,22 +20,62 @@ public class PageController : MonoBehaviour
     [SerializeField]
     private float bookSpeed = 0.2f;
 
-    private void Start()
+    private bool isProcessing = false;
+
+    private async void Start()
     {
+        await UniTask.WaitUntil(() => GameManager.isReadyGameManager);
+
         leftPageDummy.SetActive(false);
         prePage.SetActive(false);
         curPage.SetActive(true);
         nextPage.SetActive(true);
         leftButton.SetActive(false);
+
+    }
+
+    private void OnEnable()
+    {
+        var eventManager = Locator<EventManager>.Get();
+        eventManager.Subscription(ChannelInfo.Filter, HandleEvent);
+    }
+
+    private void OnDisable()
+    {
+        var eventManager = Locator<EventManager>.Get();
+        eventManager.Unsubscription(ChannelInfo.Filter, HandleEvent);
+    }
+
+
+    public void HandleEvent(ChannelInfo channel, object information = null)
+    {
+        switch (channel)
+        {
+            case ChannelInfo.Filter:
+                if (information is FilterParameter parameter)
+                {
+                    if (isProcessing) 
+                        return;
+
+                    var token = this.GetCancellationTokenOnDestroy();
+                    ProcessFilter(parameter, token).Forget();
+                }
+
+                break;
+        }
     }
 
     public async void RightButtonClick()
     {
         Debug.Log("Right Button Click");
-        bool toggle = false;
+        await UniTask.WhenAll(RightLoadingResource(), TurnRightPage());
+    }
+
+    private async UniTask TurnRightPage()
+    {
         SetButtonInteraction(false);
 
-        var loadTask = RightLoadingResource();
+        bool toggle = false;
         prePage.SetActive(true);
         prePage.transform.rotation = Quaternion.identity;
 
@@ -43,27 +83,27 @@ public class PageController : MonoBehaviour
                          .SetEase(Ease.OutQuad)
                          .OnUpdate(() => {
                              float currentY = prePage.transform.localEulerAngles.y;
-                             if (!toggle && currentY >= angle) {
+                             if (!toggle && currentY >= angle)
+                             {
                                  toggle = true;
-                                 
+
                                  leftPageDummy.SetActive(false);
                              }
                          }).ToUniTask();
 
-        await loadTask;
-
         RightFinalizeVisuality();
     }
-
 
     public async void LeftButtonClick()
     {
         Debug.Log("Left Button Click");
+        await UniTask.WhenAll(LeftComplete(), TurnLeftPage());
+    }
+
+    private async UniTask TurnLeftPage()
+    {
         SetButtonInteraction(false);
-
         prePage.SetActive(false);
-
-        var loadTask = LeftComplete();
 
         curPage.transform.localRotation = Quaternion.Euler(0, 180, 0);
 
@@ -71,19 +111,16 @@ public class PageController : MonoBehaviour
                          .SetEase(Ease.OutQuad)
                          .ToUniTask();
 
-        await loadTask;
-
         LeftFinalVisuality();
     }
 
 
     private async UniTask RightLoadingResource()
     {
-        // prePage, curPage, nextPage¿« pageInformation¿ª πﬁ∞Ì page++∏¶ «œ∞Ì pageInfoø° ¿÷¥¬ async «‘ºˆ ResttingCard∏¶ Ω««‡«œ∞Ì ΩÕæÓ.
-        PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true); 
+        PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true);
         PageInformation curInfo = curPage.GetComponentInChildren<PageInformation>(true);
         PageInformation nextInfo = nextPage.GetComponentInChildren<PageInformation>(true);
-        
+
         preInfo.ReleaseCard();
 
         preInfo.page++;
@@ -93,12 +130,9 @@ public class PageController : MonoBehaviour
         await UniTask.WhenAll(preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard());
 
         var dataManager = Locator<DataManager>.Get();
-        var sortList = dataManager.GetSortCardData();
+        int pageIndex = dataManager.GetPageCount();
 
-        if (nextInfo.cards.Length * nextInfo.page > sortList.Count)
-            rightButton.SetActive(false);
-        else
-            rightButton.SetActive(true);
+        rightButton.SetActive(curInfo.page < pageIndex - 1);
     }
 
     private void RightFinalizeVisuality()
@@ -111,7 +145,6 @@ public class PageController : MonoBehaviour
 
     private async UniTask LeftComplete()
     {
-        // prePage, curPage, nextPage¿« pageInformation¿ª πﬁ∞Ì page++∏¶ «œ∞Ì pageInfoø° ¿÷¥¬ async «‘ºˆ ResttingCard∏¶ Ω««‡«œ∞Ì ΩÕæÓ.
         PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true);
         PageInformation curInfo = curPage.GetComponentInChildren<PageInformation>(true);
         PageInformation nextInfo = nextPage.GetComponentInChildren<PageInformation>(true);
@@ -124,7 +157,6 @@ public class PageController : MonoBehaviour
 
         await UniTask.WhenAll(preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard());
 
-        // active false¥¬ page ¡§∫∏ø° µ˚∂Û true∑Œ «“ ¡ˆ false∑Œ «“ ¡ˆ ¡§«ÿæﬂ «—¥Ÿ.
         if (preInfo.page < 1)
         {
             if (preInfo.page != 0)
@@ -145,8 +177,6 @@ public class PageController : MonoBehaviour
 
     private void LeftFinalVisuality()
     {
-        PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true);
-
         SetButtonInteraction(true);
         rightButton.SetActive(true);
     }
@@ -156,21 +186,145 @@ public class PageController : MonoBehaviour
         leftButton.GetComponent<UnityEngine.UI.Button>().interactable = isInteract;
         rightButton.GetComponent<UnityEngine.UI.Button>().interactable = isInteract;
     }
+
+    private async UniTask ProcessFilter(FilterParameter parameter, System.Threading.CancellationToken token)
+    {
+        isProcessing = true;
+
+        try {
+            var dataManager = Locator<DataManager>.Get();
+            switch (parameter.filterType)
+            {
+                case FilterType.Jump:
+                    int pageIndex = dataManager.GetHeroStartPage(parameter.job);
+                    await JumpPage(pageIndex, token);
+                    break;
+                case FilterType.Search:
+                    dataManager.UpdateFilter(job: parameter.job, cost: parameter.cost, keyword: parameter.searchName);
+                    await JumpPage(0, token);
+                    break;
+            }
+        }
+        catch(OperationCanceledException) {
+            Debug.Log("Ìï¥Îãπ ÏûëÏóÖÏù¥ Ïú†Ï†ÄÎÇò ÏãúÏä§ÌÖúÏóê ÏùòÌï¥ Ï∑®ÏÜå ÎêòÏóàÏäµÎãàÎã§.");
+        }
+        catch(Exception e) {
+            Debug.Log($"Error Î∞úÏÉù : {e.Message}");
+        }
+        finally { isProcessing = false; }
+    }
+
+    private void SearchParameter(FilterParameter parameter)
+    {
+        int? manaCost = null;
+        if (parameter.cost != null)
+            manaCost = parameter.cost;
+
+        string? keyword = null;
+        if (parameter.searchName != null)
+            keyword = parameter.searchName;
+
+        
+    }
+
+    private async UniTask JumpPage(int jumpPage, System.Threading.CancellationToken token)
+    {
+        var dataManager = Locator<DataManager>.Get();
+        int maxPageIndex = dataManager.GetPageCount();
+
+        PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true);
+        PageInformation curInfo = curPage.GetComponentInChildren<PageInformation>(true);
+        PageInformation nextInfo = nextPage.GetComponentInChildren<PageInformation>(true);
+
+        preInfo.ReleaseCard();
+        curInfo.ReleaseCard();
+        nextInfo.ReleaseCard();
+
+        UniTask turnTask = UniTask.CompletedTask;
+        turnTask = ActiveJumpButton(jumpPage, curInfo.page, maxPageIndex);
+  
+        preInfo.page = jumpPage - 1;
+        curInfo.page = jumpPage;
+        nextInfo.page = jumpPage + 1;
+
+        await UniTask.WhenAll(turnTask, preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard()).AttachExternalCancellation(token);
+    }
+
+    private UniTask ActiveJumpButton(int jumpingPage, int currentPage, int maxPageIndex)
+    {
+        UniTask turnTask = UniTask.CompletedTask;
+        if (currentPage > jumpingPage)
+        {
+            if (jumpingPage-1 < 1)
+            {
+                if (jumpingPage-1 != 0)
+                {
+                    leftButton.SetActive(false);
+                    leftPageDummy.SetActive(false);
+                    prePage.SetActive(false);
+                }
+                else
+                {
+                    leftPageDummy.SetActive(false);
+                    prePage.SetActive(true);
+                }
+            }
+            else
+                leftButton.SetActive(true);
+
+            turnTask = TurnLeftPage();
+        }
+        else if (currentPage < jumpingPage)
+        {
+            rightButton.SetActive(jumpingPage + 1 < maxPageIndex);
+            turnTask = TurnRightPage();
+        }
+        else
+        {
+            if (jumpingPage-1 < 1)
+            {
+                if (jumpingPage-1 != 0)
+                {
+                    leftButton.SetActive(false);
+                    leftPageDummy.SetActive(false);
+                    prePage.SetActive(false);
+                }
+                else
+                {
+                    leftPageDummy.SetActive(false);
+                    prePage.SetActive(true);
+                }
+            }
+            else
+                leftButton.SetActive(true);
+
+            rightButton.SetActive(jumpingPage + 1 < maxPageIndex);
+        }
+
+        return turnTask;
+    }
 }
 
 
 
-// «ˆ¿Á πÆ¡¶
-// ¿Â¿ª ≥—±Ê∂ß ±Ù∫˝¿Ã¥¬ «ˆªÛ¿∏∑Œ πÆ¡¶∞° ª˝∞Â¥Ÿ.
+public enum FilterType
+{
+    Jump, Search, Reset,
+}
 
-// Resource ∫“∑Ø¿∏¥¬ µ• ª˝±‰ πÆ¡¶¿Œ µÌ «œ¥Ÿ.
-// ¿Ω..
+public struct FilterParameter
+{
+    public FilterType filterType;
+    public string job;
+    public string searchName;
+    public int? cost;
 
-// pre cur next
-// right
-// cur¿Ã ≥—æÓ∞°¥¬ ¡ﬂ¿Ã¥Ÿ. next ¡§∫∏ ∫Ø∞Ê¿∫ æ∆¡˜, pre¥¬ π›≥≥
-// cur¿Ã ¥Ÿ ≥—æÓ∞¨¥Ÿ. cur ¿ßƒ°∑Œ µπæ∆ø¿∏Èº≠ cur ¡§∫∏ ∫Ø∞Ê next ¡§∫∏ ∫Ø∞Ê
-// ¿Ã∑°µµ ±Ù∫˝¿Ã¥¬ «ˆªÛ¿Ã ≥™ø√ ∞Õ ∞∞±‰«—µ•?
-// cur¿Ã ø¯∑°¿⁄∏Æ∑Œ µπæ∆ø¿∏Èº≠ ª˝±‰ πÆ¡¶∞° æ∆¥“±Ó?
+    public FilterParameter(FilterType type, string _job = null, string _search = null, int? _cost = null)
+    {
+        filterType = type;
+        job = _job;
+        searchName = _search;
+        cost = _cost;
+    }
+}
 
-// ±◊∑Ø∏È dummy page∞° øÚ¡˜ø©æﬂ «“ ∞Õ ∞∞æ∆∫∏¿Ã≥◊.

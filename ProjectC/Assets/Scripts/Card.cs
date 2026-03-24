@@ -110,17 +110,17 @@ public class Card : MonoBehaviour, IObject
         int currentPage = pageInfoComponent.page;
 
         DataManager dataManager = Locator<DataManager>.Get();
-        var sortCardList = dataManager.GetSortCardData();
+        var pageData = dataManager.GetPageData(currentPage);
 
         // outofIndex를 대비해야 한다.
-        if (sortCardList.Count <= currentPage * maxCard + cardIndex || currentPage * maxCard + cardIndex < 0)
+        if (pageData == null || cardIndex >= pageData.Count)
         {
             cardObject.SetActive(false);
             deckObject.SetActive(false);
             return;
         }
 
-        CardData _cardData = sortCardList[currentPage * maxCard + cardIndex];
+        CardData _cardData = pageData[cardIndex];
         cardData = _cardData;
 
         if (cardData.isMinion)
@@ -131,16 +131,14 @@ public class Card : MonoBehaviour, IObject
         SettingCollectionCardData();
     }
 
-    public async UniTask CardSetting(int index)
+    public async UniTask CardSetting(int pageIndex)
     {
         DataManager dataManager = Locator<DataManager>.Get();
-        ResourceManager resourceManager = Locator<ResourceManager>.Get();
-        var sortCardList = dataManager.GetSortCardData();
+        var pageData = dataManager.GetPageData(pageIndex);
 
         // outofIndex를 대비해야 한다.
-        if (sortCardList.Count <= index * maxCard + cardIndex || index * maxCard + cardIndex < 0)
+        if (pageData == null || cardIndex >= pageData.Count)
         {
-            Debug.Log("Out of Index다.");
             cardObject.SetActive(false);
             deckObject.SetActive(false);
             return;
@@ -149,7 +147,7 @@ public class Card : MonoBehaviour, IObject
         cardObject.SetActive(true);
         deckObject.SetActive(false);
 
-        CardData _cardData = sortCardList[index * maxCard + cardIndex];
+        CardData _cardData = pageData[cardIndex];
         cardData = _cardData;
 
         if (cardData.isMinion)
@@ -172,19 +170,17 @@ public class Card : MonoBehaviour, IObject
         SettingCollectionCardData();
     }
 
-
-
-    public void ReleaseCard(int index)
+    public void ReleaseCard(int page)
     {
         DataManager dataManager = Locator<DataManager>.Get();
         ResourceManager resourceManager = Locator<ResourceManager>.Get();
-        var sortCardList = dataManager.GetSortCardData();
+        var pageData = dataManager.GetPageData(page);
 
-        if (sortCardList.Count <= index * maxCard + cardIndex || index * maxCard + cardIndex < 0) {
+        if (pageData == null || cardIndex >= pageData.Count) {
             return;
         }
 
-        CardData _cardData = sortCardList[index * maxCard + cardIndex];
+        CardData _cardData = pageData[cardIndex];
         resourceManager.Release(_cardData.spriteName);
         resourceManager.Release(_cardData.gem);
     }
@@ -572,6 +568,7 @@ public async UniTask CardSetting()
 }
  */
 
+/// Only once Card Version 1
 /*
  public async UniTask CardSetting(int index)
  {
@@ -646,3 +643,69 @@ public async UniTask CardSetting()
      SetCollectionCardData();
  }
   */
+
+
+
+
+/// Magic Minion Card Setting Ver 2
+/*
+    public async UniTask CardSetting()
+    {
+        if (page == null)
+            return;
+
+        var pageInfoComponent = page.GetComponent<PageInformation>();
+        int currentPage = pageInfoComponent.page;
+
+        DataManager dataManager = Locator<DataManager>.Get();
+        var sortCardList = dataManager.GetSortCardData();
+
+        // outofIndex를 대비해야 한다.
+        if (sortCardList.Count <= currentPage * maxCard + cardIndex || currentPage * maxCard + cardIndex < 0)
+        {
+            cardObject.SetActive(false);
+            deckObject.SetActive(false);
+            return;
+        }
+
+        CardData _cardData = sortCardList[currentPage * maxCard + cardIndex];
+        cardData = _cardData;
+
+        if (cardData.isMinion)
+            await MinionCardSetting(cardData);
+        else
+            await MagicCardSetting(cardData);
+
+        SettingCollectionCardData();
+    }
+
+    
+    public async UniTask CardSetting(int index)
+    {
+        DataManager dataManager = Locator<DataManager>.Get();
+        var sortCardList = dataManager.GetSortCardData();
+
+        // outofIndex를 대비해야 한다.
+        if (sortCardList.Count <= index * maxCard + cardIndex || index * maxCard + cardIndex < 0)
+        {
+            Debug.Log("Out of Index다.");
+            cardObject.SetActive(false);
+            deckObject.SetActive(false);
+            return;
+        }
+
+        cardObject.SetActive(true);
+        deckObject.SetActive(false);
+
+        CardData _cardData = sortCardList[index * maxCard + cardIndex];
+        cardData = _cardData;
+
+        if (cardData.isMinion)
+            await MinionCardSetting(cardData);
+        else
+            await MagicCardSetting(cardData);
+
+        SettingCollectionCardData();
+    }
+
+ */

@@ -12,6 +12,9 @@ public class Filter : MonoBehaviour
     [Header("Fliter Inner")]
     public GameObject filterWindow;
     public GameObject manaCostList;
+    public GameObject deleteButton;
+
+    public ManaCost[] manaList;
 
     public RectTransform filterSearchRectTransform;
 
@@ -23,6 +26,11 @@ public class Filter : MonoBehaviour
 
     // Magic Number -> Search Image Width다.
     private float manaInitPos;
+
+    private void Start()
+    {
+        deleteButton.SetActive(false);
+    }
 
     private void OnEnable()
     {
@@ -49,8 +57,6 @@ public class Filter : MonoBehaviour
 
         inputComponent.Select();
         inputComponent.ActivateInputField();
-
-        Debug.Log("Search Input Mode 시작");
     }
 
     /// <summary>
@@ -64,21 +70,81 @@ public class Filter : MonoBehaviour
         {
             inputComponent.text = "";
             searchText.text = "검색";
+            deleteButton.SetActive(false);
         }
         else
         {
-            inputComponent.text = "";
             searchText.text = inputComponent.text.Trim();
+
+            var eventManager = Locator<EventManager>.Get();
+            FilterParameter parameter = new FilterParameter(FilterType.Search, _search: searchText.text);
+            eventManager.Notify(ChannelInfo.Filter, parameter);
+
+            inputComponent.text = "";
+
+            // Filter 작동과 Delete Object 활성화
+            deleteButton.SetActive(true);
         }
 
         nameField.SetActive(false);
         searchText.gameObject.SetActive(true);
     }
 
+    // Mana를 Click 했을 때 작동되는 것
+    public void SelectMana(int mana)
+    {
+        int current = 0;
+        foreach(var manaArray in manaList)
+        {
+            if (current == mana)
+                manaArray.Select();
+            else
+                manaArray.NoneSelect();
+
+            current++;
+        }
+
+        var eventManager = Locator<EventManager>.Get();
+        FilterParameter parameter = new FilterParameter(FilterType.Search, _cost: mana);
+        eventManager.Notify(ChannelInfo.Filter, parameter);
+    }
+
+
+    public void NoneSelectMana()
+    {
+        // parameter로 int를 넣을까? 
+        foreach (var manaArray in manaList)
+        {
+            manaArray.NoneSelect();
+        }
+
+        var eventManager = Locator<EventManager>.Get();
+        FilterParameter parameter = new FilterParameter(FilterType.Search, _cost: -1);
+        eventManager.Notify(ChannelInfo.Filter, parameter);
+    }
+
+
+
     // Filter Complete를 클릭하면 된다.
     public void FilterComplete()
     {
         Ending();
+    }
+
+    /// <summary>
+    /// Delete Button 눌렀을 때 실행되는 methord
+    /// </summary>
+    public void DeleteSearch()
+    {
+        var inputComponent = nameField.GetComponent<TMP_InputField>();
+        inputComponent.text = "";
+        searchText.text = "검색";
+        deleteButton.SetActive(false);
+
+        // Filter 작동
+        var eventManager = Locator<EventManager>.Get();
+        FilterParameter parameter = new FilterParameter(FilterType.Search, _search: "");
+        eventManager.Notify(ChannelInfo.Filter, parameter);
     }
 
     private void Opening()
@@ -134,3 +200,8 @@ public class Filter : MonoBehaviour
                 });
     }
 }
+
+
+// 생각좀 해볼까
+// Button에 작동할거다. on off 기능을 제작할건데
+// 그러면 배열을 두개로 만들어야 한다고? 차라리 Script 배열이 낫지 않을까?

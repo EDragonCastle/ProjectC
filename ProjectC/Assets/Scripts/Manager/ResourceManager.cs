@@ -28,14 +28,14 @@ public class ResourceManager
     }
 
 
-    public async UniTask<T> Get<T>(string assetName) where T : Object
+    public async UniTask<T> Get<T>(string assetName, System.Threading.CancellationToken token = default) where T : Object
     {
         if(handle.TryGetValue(assetName, out var _handle))
         {
             if (_handle.IsDone)
                 return (T)_handle.Result;
 
-            await _handle.Convert<T>().ToUniTask();
+            await _handle.Convert<T>().ToUniTask(cancellationToken: token);
             return (T)_handle.Result;
         }
 
@@ -44,7 +44,11 @@ public class ResourceManager
 
         try
         {
-            return await loadHandle.ToUniTask();
+            return await loadHandle.ToUniTask(cancellationToken: token);
+        }
+        catch(System.OperationCanceledException)
+        {
+            throw;
         }
         catch (System.Exception e)
         {

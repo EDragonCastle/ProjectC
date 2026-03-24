@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC740\uBE5B\uACE0\uB300 \uB3CC\uACA9\uB300\uC7A5 \uACE0\uB9B4\uB77C \uC548\uB155\uB85C\uBD07"
+  m_text: "\uCE74\uB4DC\uC774\uB984"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 049a37127cae30f459e19c6e3266d48a, type: 2}
   m_sharedMaterial: {fileID: -5358998292839821540, guid: 049a37127cae30f459e19c6e3266d48a, type: 2}
@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.45
+  m_fontSize: 12
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1

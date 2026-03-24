@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 public class Slot : MonoBehaviour
 {
     [Header("Slot Outer")]
     public GameObject origin;
+    public TextMeshProUGUI slotName;
 
     [Header("Slot Inner")]
     public GameObject slot;

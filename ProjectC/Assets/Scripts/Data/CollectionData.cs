@@ -51,3 +51,17 @@ public class DeckInformation
     public int currentCard;
     public int maxCard;
 }
+
+public struct FilterInformation
+{
+    public string job;
+    public int? mana;
+    public string keyword;
+
+    public void Clear()
+    {
+        job = null;
+        mana = null;
+        keyword = "";
+    }
+}

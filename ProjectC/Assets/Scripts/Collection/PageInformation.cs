@@ -43,7 +43,6 @@ public class PageInformation : MonoBehaviour, IChannel
 
     public void ReleaseCard()
     {
-        // cards에 있는 card setting async methord 들을 병렬로 처리할 방법이 없을까?
         for (int i = 0; i < cards.Length; i++)
         {
             cards[i].ReleaseCard(page);
