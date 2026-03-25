@@ -28,6 +28,14 @@ public class ExcelConverter : EditorWindow
         }
     }
 
+    [MenuItem("Tools/Excel Data/Excel To Csv File")]
+    public static void ExcelToCSV2()
+    {
+        // 음 모든 Excel Data들을 csv로 바꿔야 하나?
+
+    }
+
+
     private static bool ConverterExcelToCSV(string inputPath, string outputPath)
     {
         UnityEngine.Debug.Log("PowerShell을 이용해 Excel Converter start (UTF-8)");

@@ -50,6 +50,13 @@ public class NewDeckOpening : MonoBehaviour
             var heroData = dataManager.GetHeroData();
             var heroSprite = await resourceManager.Get<Sprite>(heroData[heroIndex].heroSprite);
             deckNameText.text = $"나만의 {heroData[heroIndex].heroDeckName} 덱";
+
+            // heroDeckName이 곧 영웅 이름과 Button 활성화 여부를 선택해야 한다.
+            var eventManager = Locator<EventManager>.Get();
+            string[] heros = { heroData[heroIndex].heroDeckName, "중립" };
+            FilterParameter parameter = new FilterParameter(FilterType.Search, _job: heros);
+            eventManager.Notify(ChannelInfo.Filter, parameter);
+
             deckHover.heroIndex = heroIndex;
             if (heroSprite != null)
                 deckImage.sprite = heroSprite;

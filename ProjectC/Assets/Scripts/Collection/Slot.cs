@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using Cysharp.Threading.Tasks;
 
 public class Slot : MonoBehaviour
 {
@@ -16,6 +17,19 @@ public class Slot : MonoBehaviour
 
     public float duration = 0.5f;
 
+    private async void Start()
+    {
+        await UniTask.WaitUntil(() => GameManager.isReadyGameManager);
+
+        if(slotName != null)
+        {
+            var dataManger = Locator<DataManager>.Get();
+            string hero = dataManger.GetPageToHeroName(0);
+            slotName.text = hero;
+        }
+
+    }
+
     private void OnEnable()
     {
         if (slot == null)
@@ -27,6 +41,12 @@ public class Slot : MonoBehaviour
     public void StartSlot()
     {
         origin.SetActive(true);
+    }
+
+    public void SetSlotName(string name)
+    {
+        if (slotName != null)
+            slotName.text = name;
     }
 
     private void Opening()
@@ -69,4 +89,5 @@ public class Slot : MonoBehaviour
                     isComplete = false;
                 });
     }
+
 }

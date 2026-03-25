@@ -18,7 +18,8 @@ public class SlotPanel : MonoBehaviour, IPointerDownHandler
     public void SelectJob(string hero)
     {
         var eventManager = Locator<EventManager>.Get();
-        FilterParameter parameter = new FilterParameter(FilterType.Jump, _job: hero);
+        string[] heros = { hero };
+        FilterParameter parameter = new FilterParameter(FilterType.Jump, _job: heros);
         eventManager.Notify(ChannelInfo.Filter, parameter);
     }
 }

@@ -471,6 +471,13 @@ public class DeckViewPort : MonoBehaviour, IChannel
         await UniTask.WhenAll(tasks);
 
         var eventManager = Locator<EventManager>.Get();
+        var heroDataTable = dataManager.GetHeroData();
+        var heroData = heroDataTable[deckInfo.heroIndex];
+
+        string[] heros = { heroData.heroDeckName, "중립" };
+        FilterParameter parameter = new FilterParameter(FilterType.Search, _job: heros);
+        eventManager.Notify(ChannelInfo.Filter, parameter);
+
         eventManager.Notify(ChannelInfo.SelectingDeck, true);
     }
 }

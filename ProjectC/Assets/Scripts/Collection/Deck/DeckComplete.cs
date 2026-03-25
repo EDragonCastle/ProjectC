@@ -33,9 +33,10 @@ public class DeckComplete : MonoBehaviour
         {
             var dataManager = Locator<DataManager>.Get();
             var resourceManager = Locator<ResourceManager>.Get();
+
             var cardList = dataManager.GetHeroData();
             var cardIndex = dataManager.GetHeroIndex();
-
+            
             var heroSprite = await resourceManager.Get<Sprite>(cardList[cardIndex].heroSprite);
             SettingNewDeck(heroSprite, cardIndex);
         }
@@ -43,6 +44,11 @@ public class DeckComplete : MonoBehaviour
         {
             ResettingNewDeck();
         }
+
+        var eventManager = Locator<EventManager>.Get();
+        string[] none = { "All" };
+        FilterParameter parameter = new FilterParameter(FilterType.Search, _job: none);
+        eventManager.Notify(ChannelInfo.Filter, parameter);
     }
 
     private void SettingNewDeck(Sprite heroSprite, uint heroIndex)
@@ -116,7 +122,6 @@ public class DeckComplete : MonoBehaviour
         // 음 Prefab을 만드는 데 width랑 height를 조절해야 할 것 같은데
         var rectTransform = origin.GetComponent<RectTransform>();
 
-
         // Scale을 1로 되돌리고 새로운 덱 위치는 고정인것 같다.
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
@@ -138,6 +143,7 @@ public class DeckComplete : MonoBehaviour
                 deckInformation.deckData = deckViewPort.GetDeckData();
                 deckInformation.currentCard = deckViewPort.GetCurrentCard();
                 deckInformation.maxCard = deckViewPort.GetMaxCard();
+                deckInformation.heroIndex = deckOpening.deckHover.heroIndex;
 
                 deckComponent.SettingDeck(deckInformation);
             }

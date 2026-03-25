@@ -26,7 +26,6 @@ public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDra
     {
         var eventManager = Locator<EventManager>.Get();
         eventManager.Notify(ChannelInfo.OutputDeck, origin);
-        // Destroy(origin);
     }
 
     public void CurrentDeckCount()

@@ -54,14 +54,13 @@ public class DeckInformation
 
 public struct FilterInformation
 {
-    public string job;
+    public string[] job;
     public int? mana;
     public string keyword;
-
     public void Clear()
     {
         job = null;
         mana = null;
-        keyword = "";
+        keyword = string.Empty;
     }
 }

@@ -9,13 +9,14 @@ public class DataManager
     private FilterInformation filterInfo;
 
     private Dictionary<string, int> heroStartPages;
+    private List<KeyValuePair<string, int>> sortedHeroPages;
 
     // hero 정보들이 담겨져 있는 곳
     private Dictionary<uint, HeroData> heroTable;
     private uint heroIndex = 0;
 
     private int collectionMaxCard = 8;
-
+ 
     public Dictionary<uint, CardData> GetCardData() => cardTable;
     public Dictionary<uint, HeroData> GetHeroData() => heroTable;
 
@@ -23,6 +24,7 @@ public class DataManager
 
     public void SetHeroIndex(uint input) => heroIndex = input;
     public uint GetHeroIndex() => heroIndex;
+
     public List<CardData> GetPageData(int pageIndex)
     {
         if (pageIndex >= 0 && pageIndex < pages.Count)
@@ -31,12 +33,35 @@ public class DataManager
             return null;
     }
 
-    // Parser 한 Data를 DataManager가 가지고 있다는 건데
-    // Parser Data가 N개 늘어난다면?
+    public int GetHeroStartPage(string hero)
+    {
+        if (heroStartPages.TryGetValue(hero, out int pageIndex))
+            return pageIndex;
+        else
+            return 0;
+    }
+
+    public string GetPageToHeroName(int page)
+    {
+        string hero = "";
+        int heroPageIndex = sortedHeroPages.Count;
+
+        for (int i = heroPageIndex-1; i >= 0; i--)
+        {
+            if(sortedHeroPages[i].Value <= page)
+            {
+                hero = sortedHeroPages[i].Key;
+                break;
+            }
+        }
+        return hero;
+    }
+
     public DataManager(Dictionary<uint, CardData> cardDataTable, Dictionary<uint, HeroData> heroDataTable)
     {
         pages = new List<List<CardData>>();
         heroStartPages = new Dictionary<string, int>();
+        sortedHeroPages = new List<KeyValuePair<string, int>>();
         cardTable = cardDataTable;
         heroTable = heroDataTable;
         filterInfo = new FilterInformation();
@@ -44,15 +69,18 @@ public class DataManager
         RefreshPage();
     }
 
-    public void RefreshPage()
+    private void RefreshPage()
     {
         pages.Clear();
         heroStartPages.Clear();
 
         var filterQuery = cardTable.Values.AsEnumerable();
 
-        if (!string.IsNullOrWhiteSpace(filterInfo.job))
-            filterQuery = filterQuery.Where(card => card.jobType == filterInfo.job);
+        if(filterInfo.job != null && filterInfo.job.Length > 0)
+        {
+            if(!filterInfo.job.Contains("All"))
+                filterQuery = filterQuery.Where(card => filterInfo.job.Contains(card.jobType));
+        }
 
         if (filterInfo.mana != null)
         {
@@ -76,9 +104,11 @@ public class DataManager
                 pages.Add(jobCardList.Skip(i).Take(collectionMaxCard).ToList());
             }
         }
+
+        sortedHeroPages = heroStartPages.OrderBy(card => card.Value).ToList();
     }
 
-    public void UpdateFilter(string job = null, int? cost = null, string keyword = null)
+    public void UpdateFilter(string[] job = null, int? cost = null, string keyword = null)
     {
         if (job != null) 
             filterInfo.job = job;
@@ -92,22 +122,11 @@ public class DataManager
         RefreshPage();
     }
 
+
     public void ClearFilter()
     {
         filterInfo.Clear();
         RefreshPage();
     }
-
-    public int GetHeroStartPage(string hero)
-    {
-        if (heroStartPages.TryGetValue(hero, out int pageIndex))
-            return pageIndex;
-        else
-            return 0;
-    }
 }
 
-
-// Update Filter Methord는 버튼을 눌렀을 때 작동되어야 하는 함수야.
-
-// 지금 있는 곳에서 이동하는 로직은 따로 없어.

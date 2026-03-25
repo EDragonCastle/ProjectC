@@ -162,6 +162,12 @@ public class Card : MonoBehaviour, IObject
     {
         cardData = _cardData;
 
+        cardObject.SetActive(false);
+        deckObject.SetActive(true);
+
+        var uiManager = Locator<UIManager>.Get();
+        deckCardScript.canvasParent = uiManager.GetCollectionCanvas().GetComponent<RectTransform>();
+
         if (cardData.isMinion)
             await MinionCardSetting(cardData);
         else
@@ -195,21 +201,6 @@ public class Card : MonoBehaviour, IObject
     {
         cardObject.SetActive(cardActive);
         deckObject.SetActive(deckActive);
-    }
-
-    private void SetCollectionCardData()
-    {
-        if (collectionCardData == null)
-            collectionCardData = new CollectionCardData();
-
-        collectionCardData.cardImage = cardImage;
-        collectionCardData.cardExplanation = cardExplanation;
-        collectionCardData.gem = gem;
-        collectionCardData.legandPortrait = legandPortrait;
-        collectionCardData.cost = cost;
-        collectionCardData.cardName = cardName;
-        collectionCardData.attack = attack;
-        collectionCardData.health = health;
     }
 
     private void SettingCollectionCardData()
@@ -257,14 +248,6 @@ public class Card : MonoBehaviour, IObject
             collectionCardData.cardTypeText = magicTypeName;
             collectionCardData.spawnID = cardData.spawn;
         }
-    }
-
-    private void GemToLegandPortrait(string gemName)
-    {
-        if (gemName == "Gem_Legendary")
-            legandPortrait.SetActive(true);
-        else
-            legandPortrait.SetActive(false);
     }
 
     private string GemToResourceName(bool isMinion, string gemType)
@@ -315,31 +298,31 @@ public class Card : MonoBehaviour, IObject
 
         switch (jobType)
         {
-            case "Neutral":
+            case "중립":
                 result = isMinion ? "Neutral" : "Neutral";
                 break;
-            case "Hunter":
+            case "사냥꾼":
                 result = isMinion ? "Hunter" : "Magic_Hunter";
                 break;
-            case "Mage":
+            case "마법사":
                 result = isMinion ? "Mage" : "Magic_Mage";
                 break;
-            case "Druid":
+            case "드루이드":
                 result = isMinion ? "Druid" : "Magic_Druid";
                 break;
-            case "Paladin":
+            case "성기사":
                 result = isMinion ? "Paladin" : "Magic_Paladin";
                 break;
-            case "Rogue":
+            case "도적":
                 result = isMinion ? "Rogue" : "Magic_Paladin";
                 break;
-            case "Shaman":
+            case "주술사":
                 result = isMinion ? "Shaman" : "Magic_Paladin";
                 break;
-            case "Warrior":
+            case "흑마법사":
                 result = isMinion ? "Warrior" : "Magic_Paladin";
                 break;
-            case "Prist":
+            case "사제":
                 result = isMinion ? "Priest" : "Magic_Paladin";
                 break;
         }
@@ -347,64 +330,25 @@ public class Card : MonoBehaviour, IObject
         return result;
     }
 
-    private string MinionCardType(string cardType)
+    private void MinionCardType(string cardType)
     {
-        string result = null;
         type.SetActive(true);
-        switch(cardType)
+
+        if(cardType == "None")
         {
-            case "None":
-                result = null;
-                type.SetActive(false);
-                break;
-            case "Beast":
-                result = "야수";
-                break;
-            case "Murloc":
-                result = "멀록";
-                break;
-            case "Element":
-                result = "정령";
-                break;
-            case "Dragon":
-                result = "용족";
-                break;
-            case "Mech":
-                result = "기계";
-                break;
+            type.SetActive(false);
         }
-        return result;
     }
 
-    private string MagicCardType(string cardType)
+    private void MagicCardType(string cardType)
     {
-        string result = null;
         magicType.SetActive(true);
-        switch(cardType)
+
+        if (cardType == "None")
         {
-            case "None":
-                magicType.SetActive(false);
-                break;
-            case "Nature":
-                result = "자연";
-                break;
-            case "Arcane":
-                result = "비전";
-                break;
-            case "Fire":
-                result = "화염";
-                break;
-            case "Frost":
-                result = "냉기";
-                break;
-            case "Holy":
-                result = "신성";
-                break;
-            case "Shadow":
-                result = "암흑";
-                break;
+            magicType.SetActive(false);
         }
-        return result;
+
     }
 
     private async UniTask MinionCardSetting(CardData cardData)
@@ -413,7 +357,7 @@ public class Card : MonoBehaviour, IObject
         string gemResourceName = GemToResourceName(cardData.isMinion, cardData.gem);
 
         string jobCardSprite = JobTypeToResourceName(cardData.isMinion, cardData.jobType);
-        string cardType = MinionCardType(cardData.cardType);
+        MinionCardType(cardData.cardType);
 
         var gemTask = !string.IsNullOrWhiteSpace(gemResourceName) ? resourceManager.Get<Sprite>(gemResourceName) : UniTask.FromResult<Sprite>(null);
         var cardSpriteTask = resourceManager.Get<Sprite>(cardData.spriteName);
@@ -422,7 +366,7 @@ public class Card : MonoBehaviour, IObject
         // card setting
         cardName.text = cardData.cardName;
         cardExplanation.text = cardData.description;
-        typeName.text = cardType;
+        typeName.text = cardData.cardType;
         cost.text = cardData.cost.ToString();
         attack.text = cardData.attack.ToString();
         health.text = cardData.health.ToString();
@@ -453,7 +397,7 @@ public class Card : MonoBehaviour, IObject
         string gemResourceName = GemToResourceName(cardData.isMinion, cardData.gem);
 
         string jobCardSprite = JobTypeToResourceName(cardData.isMinion, cardData.jobType);
-        string cardType = MagicCardType(cardData.cardType);
+        MagicCardType(cardData.cardType);
 
         var gemTask = !string.IsNullOrWhiteSpace(gemResourceName) ? resourceManager.Get<Sprite>(gemResourceName) : UniTask.FromResult<Sprite>(null);
         var cardSpriteTask = resourceManager.Get<Sprite>(cardData.spriteName);
@@ -463,7 +407,7 @@ public class Card : MonoBehaviour, IObject
         magicCardName.text = cardData.cardName;
         magicCardExplanation.text = cardData.description;
         magicCost.text = cardData.cost.ToString();
-        magicTypeName.text = cardType;
+        magicTypeName.text = cardData.cardType;
 
         // deck setting
         deckName.text = magicCardName.text;
@@ -506,20 +450,6 @@ public class CollectionCardData
     public TextMeshProUGUI attack;
     public TextMeshProUGUI health;
 }
-
-/*
- * 뭐가 좋을까?
- * 그러면 공통적인 부분을 뽑아보자.
- * Card Image
- * CardBackGround
- * CardExplanantion
- * gem 유무
- * LegandPortrait 유무
- * typeName 유무
- * 
- * minion과 magic의 다른점은?
- * attack health 여부네
- */
 
 /*
 public async UniTask CardSetting()

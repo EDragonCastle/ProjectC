@@ -1,107 +1,107 @@
 ﻿UID,Name,Cost,Attack,Health,Description,SpriteName,Gem,Card Type,Job,PackageType,Minion Type,Magic Type,SpawnID,PosX,PosY,Rotation
 0,엘프 궁수,1,1,1,"<b>전투의 함성:<b>
-피해를 1 줍니다.",Elven_Archer,None,Minion,Neutral,Original,Mech,,"1,2,3,4",,,
-1,황금골 보병,1,1,2,<b>도발<b>,Goldshire_Footman,None,Minion,Neutral,Original,None,,,,,
+피해를 1 줍니다.",Elven_Archer,None,Minion,중립,Original,기계,,,,,
+1,황금골 보병,1,1,2,<b>도발<b>,Goldshire_Footman,None,Minion,중립,Original,None,,,,,
 2,성난비늘 수련사,1,1,1,"내 다른 멀록들이
-공격력을 +1 얻습니다.",Grimscale_Oracle,None,Minion,Neutral,Original,Murloc,,,,,
-3,멀록 약탈꾼,1,2,1,,Murloc_Raid,None,Minion,Neutral,Original,Murloc,,,,,
-4,돌엄니멧돼지,1,1,1,<b>돌진<b>,Stonetusk_Boar,None,Minion,Neutral,Original,Beast,,,,,
+공격력을 +1 얻습니다.",Grimscale_Oracle,None,Minion,중립,Original,멀록,,,,,
+3,멀록 약탈꾼,1,2,1,,Murloc_Raid,None,Minion,중립,Original,멀록,,,,,
+4,돌엄니멧돼지,1,1,1,<b>돌진<b>,Stonetusk_Boar,None,Minion,중립,Original,야수,,,,,
 5,부두교 의술사,1,2,1,"<b>전투의 함성:<b>
-생명력을 2 회복시킵니다.",Voodoo_Doctor,None,Minion,Neutral,Original,None,,,,,
+생명력을 2 회복시킵니다.",Voodoo_Doctor,None,Minion,중립,Original,None,,,,,
 6,산성 늪수액 괴물,2,3,2,"<b>전투의 함성:<b> 상대편의 무기를 파괴합니다.
-",Acidic_Swamp_Ooze,None,Minion,Neutral,Original,None,,,,,
-7,붉은늪지랩터,2,3,2,,Bloodfen_Raptor,None,Minion,Neutral,Original,Beast,,,,,
-8,푸른아가미 전사,2,2,1,<b>돌진<b>,Bluegill_Warrior,None,Minion,Neutral,Original,Murloc,,,,,
-9,서리늑대 그런트,2,2,2,<b>도발<b>,Frostwolf_Grunt,None,Minion,Neutral,Original,None,,,,,
-10,코발트 흙점쟁이,2,2,2,<b>주문 공격력 + 1<b>,Kobold_Geomancer,None,Minion,Neutral,Original,None,,,,,
-11,멀록 바다사냥꾼,2,2,1,<b>전투의 함성:<b> 1/1 멀록 정찰병을 소환합니다. ,Murloc_Tidehunter,None,Minion,Neutral,Original,Murloc,,1,,,
+",Acidic_Swamp_Ooze,None,Minion,중립,Original,None,,,,,
+7,붉은늪지랩터,2,3,2,,Bloodfen_Raptor,None,Minion,중립,Original,야수,,,,,
+8,푸른아가미 전사,2,2,1,<b>돌진<b>,Bluegill_Warrior,None,Minion,중립,Original,멀록,,,,,
+9,서리늑대 그런트,2,2,2,<b>도발<b>,Frostwolf_Grunt,None,Minion,중립,Original,None,,,,,
+10,코발트 흙점쟁이,2,2,2,<b>주문 공격력 + 1<b>,Kobold_Geomancer,None,Minion,중립,Original,None,,,,,
+11,멀록 바다사냥꾼,2,2,1,<b>전투의 함성:<b> 1/1 멀록 정찰병을 소환합니다. ,Murloc_Tidehunter,None,Minion,중립,Original,멀록,,1,,,
 12,풋내기 기술자,2,1,1,"<b>전투의 함성:<b>
-카드를 뽑습니다.",Novice_Engineer,None,Minion,Neutral,Original,None,,,,,
-13,민물악어,2,2,3,,River_Crocolisk,None,Minion,Neutral,Original,Beast,,,,,
-14,달라란 마법사,3,1,4,<b>주문 공격력 + 1<b>,Dalaran_Mage,None,Minion,Neutral,Original,None,,,,,
+카드를 뽑습니다.",Novice_Engineer,None,Minion,중립,Original,None,,,,,
+13,민물악어,2,2,3,,River_Crocolisk,None,Minion,중립,Original,야수,,,,,
+14,달라란 마법사,3,1,4,<b>주문 공격력 + 1<b>,Dalaran_Mage,None,Minion,중립,Original,None,,,,,
 15,아이언포지 소총병,3,2,2,"<b>전투의 함성:<b>
-피해를 1 줍니다.",Ironforge_Rifleman,None,Minion,Neutral,Original,None,,,,,
-16,무쇠가죽 불곰,3,3,3,<b>도발<b>,Ironfur_Grizzly,None,Minion,Neutral,Original,Beast,,,,,
-17,용암 광전사,3,5,1,,Magma_Rager,None,Minion,Neutral,Original,Element,,,,,
-18,공격대장,3,2,2,내 다른 하수인들이 공격력을 +1 얻습니다.,Raid_Leader,None,Minion,Neutral,Original,None,,,,,
+피해를 1 줍니다.",Ironforge_Rifleman,None,Minion,중립,Original,None,,,,,
+16,무쇠가죽 불곰,3,3,3,<b>도발<b>,Ironfur_Grizzly,None,Minion,중립,Original,야수,,,,,
+17,용암 광전사,3,5,1,,Magma_Rager,None,Minion,중립,Original,정령,,,,,
+18,공격대장,3,2,2,내 다른 하수인들이 공격력을 +1 얻습니다.,Raid_Leader,None,Minion,중립,Original,None,,,,,
 19,가시덩굴 사냥꾼,3,2,3,"<b>전투의 함성:<b>
 1/1 멧돼지를
-소환합니다.",Razorfen_Hunter,None,Minion,Neutral,Original,None,,2,,,
+소환합니다.",Razorfen_Hunter,None,Minion,중립,Original,None,,2,,,
 20,무너진 태양 성직자,3,3,2,"<b>전투의 함성:<b>
 아군 하수인에게
-+1/+1을 부여합니다.",Shattered_Sun_Cleric,None,Minion,Neutral,Original,None,,,,,
-21,은빛털고릴라 우두머리,3,1,4,<b>도발<b>,Silverback_Patriarch,None,Minion,Neutral,Original,Beast,,,,,
-22,늑대기수,3,3,1,<b>돌진<b>,Wolfrider,None,Minion,Neutral,Original,None,,,,,
-23,서리바람 설인,4,4,5,,Chillwind_Yeti,None,Minion,Neutral,Original,None,,,,,
-24,기계용 정비사,4,2,4,<b>전투의 함성:<b> 2/1 소형 기계용을 소환합니다.,Dragonling_Mechanic,None,Minion,Neutral,Original,None,,3,,,
++1/+1을 부여합니다.",Shattered_Sun_Cleric,None,Minion,중립,Original,None,,,,,
+21,은빛털고릴라 우두머리,3,1,4,<b>도발<b>,Silverback_Patriarch,None,Minion,중립,Original,야수,,,,,
+22,늑대기수,3,3,1,<b>돌진<b>,Wolfrider,None,Minion,중립,Original,None,,,,,
+23,서리바람 설인,4,4,5,,Chillwind_Yeti,None,Minion,중립,Original,None,,,,,
+24,기계용 정비사,4,2,4,<b>전투의 함성:<b> 2/1 소형 기계용을 소환합니다.,Dragonling_Mechanic,None,Minion,중립,Original,None,,3,,,
 25,노움 발명가,4,2,4,"<b>전투의 함성:<b>
-카드를 뽑습니다.",Gnomish_Inventor,None,Minion,Neutral,Original,None,,,,,
-26,오아시스 무쇠턱거북,4,2,7,,Oasis_Snapjaw,None,Minion,Neutral,Original,None,,,,,
-27,오우거 마법사,4,4,4,<b>주문 공격력 + 1<b>,Ogre_Magi,None,Minion,Neutral,Original,None,,,,,
-28,센진 방패대가,4,3,5,<b>도발<b>,Sen'jin_Shieldmasta,None,Minion,Neutral,Original,None,,,,,
-29,스톰윈드 기사,4,2,5,<b>돌진<b>,Stormwind_Knight,None,Minion,Neutral,Original,None,,,,,
-30,무법항 경호원,5,5,4,<b>도발<b>,Booty_Bay_Bodyguard,None,Minion,Neutral,Original,None,,,,,
-31,어둠비늘 치유사,5,4,5,<b>전투의 함성:<b> 모든 아군 캐릭터의 생명력을 2 회복시킵니다.,Darkscale_Healer,None,Minion,Neutral,Original,None,,,,,
+카드를 뽑습니다.",Gnomish_Inventor,None,Minion,중립,Original,None,,,,,
+26,오아시스 무쇠턱거북,4,2,7,,Oasis_Snapjaw,None,Minion,중립,Original,None,,,,,
+27,오우거 마법사,4,4,4,<b>주문 공격력 + 1<b>,Ogre_Magi,None,Minion,중립,Original,None,,,,,
+28,센진 방패대가,4,3,5,<b>도발<b>,Sen'jin_Shieldmasta,None,Minion,중립,Original,None,,,,,
+29,스톰윈드 기사,4,2,5,<b>돌진<b>,Stormwind_Knight,None,Minion,중립,Original,None,,,,,
+30,무법항 경호원,5,5,4,<b>도발<b>,Booty_Bay_Bodyguard,None,Minion,중립,Original,None,,,,,
+31,어둠비늘 치유사,5,4,5,<b>전투의 함성:<b> 모든 아군 캐릭터의 생명력을 2 회복시킵니다.,Darkscale_Healer,None,Minion,중립,Original,None,,,,,
 32,서리늑대 전쟁군주,5,4,4,"<b>전투의 함성:<b> 전장의 다른 아군 하수인 하나당 
-+1/+1을 얻습니다.",Frostwolf_Warlord,None,Minion,Neutral,Original,None,,,,,
++1/+1을 얻습니다.",Frostwolf_Warlord,None,Minion,중립,Original,None,,,,,
 33,구루바시 광전사,5,2,7,"이 하수인은 피해를 받을 때마다 공격력을 
-+3 얻습니다.",Gurubashi_Berserker,None,Minion,Neutral,Original,None,,,,,
++3 얻습니다.",Gurubashi_Berserker,None,Minion,중립,Original,None,,,,,
 34,암흑칼날,5,4,4,"<b>전투의 함성:<b> 적 영웅에게
-피해를 3 줍니다.",Nightblade,None,Minion,Neutral,Original,None,,,,,
+피해를 3 줍니다.",Nightblade,None,Minion,중립,Original,None,,,,,
 35,스톰파이크 특공대,5,4,2,"<b>전투의 함성:<b>
-피해를 2 줍니다.",Stormpike_Commando,None,Minion,Neutral,Original,None,,,,,
-36,대마법사,6,4,7,<b>주문 공격력 + 1<b>,Archmage,None,Minion,Neutral,Original,None,,,,,
-37,돌주먹 오우거,6,6,7,,Boulderfist_Ogre,None,Minion,Neutral,Original,None,,,,,
-38,투기장의 제왕,6,6,5,<b>도발<b>,Lord_of_the_Arena,None,Minion,Neutral,Original,None,,,,,
-39,못 말리는 로켓병,6,5,2,<b>돌진<b>,Reckless_Rocketeer,None,Minion,Neutral,Original,None,,,,,
-40,심장부 사냥개,7,9,5,,Core_Hound,None,Minion,Neutral,Original,Beast,,,,,
+피해를 2 줍니다.",Stormpike_Commando,None,Minion,중립,Original,None,,,,,
+36,대마법사,6,4,7,<b>주문 공격력 + 1<b>,Archmage,None,Minion,중립,Original,None,,,,,
+37,돌주먹 오우거,6,6,7,,Boulderfist_Ogre,None,Minion,중립,Original,None,,,,,
+38,투기장의 제왕,6,6,5,<b>도발<b>,Lord_of_the_Arena,None,Minion,중립,Original,None,,,,,
+39,못 말리는 로켓병,6,5,2,<b>돌진<b>,Reckless_Rocketeer,None,Minion,중립,Original,None,,,,,
+40,심장부 사냥개,7,9,5,,Core_Hound,None,Minion,중립,Original,야수,,,,,
 41,스톰윈드 용사,7,6,6,"내 다른 하수인들이 
-+1/+1을 얻습니다.",Stormwind_Champion,None,Minion,Neutral,Original,None,,,,,
-42,전쟁골렘,7,7,7,,War_Golem,None,Minion,Neutral,Original,None,,,,,
++1/+1을 얻습니다.",Stormwind_Champion,None,Minion,중립,Original,None,,,,,
+42,전쟁골렘,7,7,7,,War_Golem,None,Minion,중립,Original,None,,,,,
 43,정신 자극,0,,,"이번 턴에만
 마나 수정을 2개
-얻습니다.",Innervate,None,Magic,Druid,Original,,Nature,,,,
-44,달빛섬광,0,,,피해를 1 줍니다.,Moonfire,None,Magic,Druid,Original,,Arcane,,,,
+얻습니다.",Innervate,None,Magic,드루이드,Original,,자연,,,,
+44,달빛섬광,0,,,피해를 1 줍니다.,Moonfire,None,Magic,드루이드,Original,,비전,,,,
 45,할퀴기,1,,,"방어도를 +2를 얻고,
 이번 턴에 내 영웅이
-공격력을 +2 얻습니다.",Claw,None,Magic,Druid,Original,,None,,,,
+공격력을 +2 얻습니다.",Claw,None,Magic,드루이드,Original,,None,,,,
 46,야생의 징표,2,,,"하수인에게
 <b>도발<b>과 +2/+2을
-부여합니다.",Mark_of_the_Wild,None,Magic,Druid,Original,,Nature,,,,
+부여합니다.",Mark_of_the_Wild,None,Magic,드루이드,Original,,자연,,,,
 47,치유의 손길,3,,,"생명력을 8
-회복시킵니다.",Healing_Touch,None,Magic,Druid,Original,,Nature,,,,
+회복시킵니다.",Healing_Touch,None,Magic,드루이드,Original,,자연,,,,
 48,야생의 포효,3,,,"이번 턴에 내
 캐릭터들에게 공격력을
-+2 부여합니다.",Savage_Roar,None,Magic,Druid,Original,,None,,,,
++2 부여합니다.",Savage_Roar,None,Magic,드루이드,Original,,None,,,,
 49,급속 성장,2,,,"빈 마나 수정을
-얻습니다.",Wild_Growth,None,Magic,Druid,Original,,Nature,4,,,
+얻습니다.",Wild_Growth,None,Magic,드루이드,Original,,자연,4,,,
 50,휘둘러치기,4,,,"적에게 피해를 4 주고
 다른 모든 적에게
-피해를 1 줍니다.",Swipe,None,Magic,Druid,Original,,None,,,,
+피해를 1 줍니다.",Swipe,None,Magic,드루이드,Original,,None,,,,
 51,별빛섬광,6,,,"피해를 5 줍니다.
-카드를 뽑습니다.",Starfire,None,Magic,Druid,Original,,Arcane,,,,
-52,무쇠껍질 수호정령,8,8,8,<b>도발<b>,Ironbark_Protector,None,Minion,Druid,Original,Element,,,,,
-53,신비한 사격,1,,,피해를 2 줍니다.,Arcane_Shot,None,Magic,Hunter,Original,,Arcane,,,,
+카드를 뽑습니다.",Starfire,None,Magic,드루이드,Original,,비전,,,,
+52,무쇠껍질 수호정령,8,8,8,<b>도발<b>,Ironbark_Protector,None,Minion,드루이드,Original,정령,,,,,
+53,신비한 사격,1,,,피해를 2 줍니다.,Arcane_Shot,None,Magic,사냥꾼,Original,,비전,,,,
 54,회갈색 늑대,1,1,1,"내 다른 야수들이
-공격력 +1을 얻습니다.",Timber_Wolf,None,Minion,Hunter,Original,Beast,,,,,
+공격력 +1을 얻습니다.",Timber_Wolf,None,Minion,사냥꾼,Original,야수,,,,,
 55,추적,1,,,"내 덱에서
-카드를 <b>발견<b>합니다.",Tracking,None,Magic,Hunter,Original,,None,,,,
+카드를 <b>발견<b>합니다.",Tracking,None,Magic,사냥꾼,Original,,None,,,,
 56,사냥꾼의 징표,1,,,"하수인의
 생명력을 1로
-바꿉니다.",Hunter's_Mark,None,Magic,Hunter,Original,,None,,,,
+바꿉니다.",Hunter's_Mark,None,Magic,사냥꾼,Original,,None,,,,
 57,야생의 벗,3,,,"무작위
 동료 야수를
-소환합니다.",Animal_Companion,None,Magic,Hunter,Original,,None,"5,6,7",,,
+소환합니다.",Animal_Companion,None,Magic,사냥꾼,Original,,None,"5,6,7",,,
 58,살상 명령,3,,,"피해를 3 줍니다.
 내 전장에 야수가 있으면,
-피해를 5 줍니다.",Kill_Command,None,Magic,Hunter,Original,,None,,,,
+피해를 5 줍니다.",Kill_Command,None,Magic,사냥꾼,Original,,None,,,,
 59,사냥개조련사,4,4,3,"<b>전투의 함성:<b> 아군
 야수에게 +2/+2와
-<b>도발<b>을 부여합니다.",Houndmaster,None,Minion,Hunter,Original,None,,,,,
+<b>도발<b>을 부여합니다.",Houndmaster,None,Minion,사냥꾼,Original,None,,,,,
 60,일제 사격,4,,,"무작위 적 하수인
 둘에게 피해를
-3 줍니다.",Multi-Shot,None,Magic,Hunter,Original,,None,,,,
+3 줍니다.",Multi-Shot,None,Magic,사냥꾼,Original,,None,,,,
 61,굶주린 대머리수리,2,2,1,"내가 야수를 소환할
-때마다 카드를 뽑습니다.",Starving_Buzzard,None,Minion,Hunter,Original,Beast,,,,,
+때마다 카드를 뽑습니다.",Starving_Buzzard,None,Minion,사냥꾼,Original,야수,,,,,
 62,툰드라 코뿔소,5,2,5,"내 야수들이 <b>돌진<b>을
-얻습니다.",Tundra_Rhino,None,Minion,Hunter,Original,Beast,,,,,
+얻습니다.",Tundra_Rhino,None,Minion,사냥꾼,Original,야수,,,,,

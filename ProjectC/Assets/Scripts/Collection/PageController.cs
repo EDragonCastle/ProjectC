@@ -14,6 +14,9 @@ public class PageController : MonoBehaviour, IChannel
     public GameObject curPage;
     public GameObject nextPage;
 
+    // SlotObject 이곳에 있으면 안 되는 애다.
+    public Slot slotScript;
+
     [SerializeField]
     private float angle = 40f;
 
@@ -127,9 +130,13 @@ public class PageController : MonoBehaviour, IChannel
         curInfo.page++;
         nextInfo.page++;
 
+        // slotName
+        var dataManager = Locator<DataManager>.Get();
+        string hero = dataManager.GetPageToHeroName(curInfo.page);
+        slotScript.SetSlotName(hero);
+
         await UniTask.WhenAll(preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard());
 
-        var dataManager = Locator<DataManager>.Get();
         int pageIndex = dataManager.GetPageCount();
 
         rightButton.SetActive(curInfo.page < pageIndex - 1);
@@ -154,6 +161,11 @@ public class PageController : MonoBehaviour, IChannel
         preInfo.page--;
         curInfo.page--;
         nextInfo.page--;
+
+        // slotName
+        var dataManger = Locator<DataManager>.Get();
+        string hero = dataManger.GetPageToHeroName(curInfo.page);
+        slotScript.SetSlotName(hero);
 
         await UniTask.WhenAll(preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard());
 
@@ -196,13 +208,14 @@ public class PageController : MonoBehaviour, IChannel
             switch (parameter.filterType)
             {
                 case FilterType.Jump:
-                    int pageIndex = dataManager.GetHeroStartPage(parameter.job);
+                    int pageIndex = dataManager.GetHeroStartPage(parameter.job[0]);
                     await JumpPage(pageIndex, token);
                     break;
                 case FilterType.Search:
                     dataManager.UpdateFilter(job: parameter.job, cost: parameter.cost, keyword: parameter.searchName);
                     await JumpPage(0, token);
                     break;
+
             }
         }
         catch(OperationCanceledException) {
@@ -212,19 +225,6 @@ public class PageController : MonoBehaviour, IChannel
             Debug.Log($"Error 발생 : {e.Message}");
         }
         finally { isProcessing = false; }
-    }
-
-    private void SearchParameter(FilterParameter parameter)
-    {
-        int? manaCost = null;
-        if (parameter.cost != null)
-            manaCost = parameter.cost;
-
-        string? keyword = null;
-        if (parameter.searchName != null)
-            keyword = parameter.searchName;
-
-        
     }
 
     private async UniTask JumpPage(int jumpPage, System.Threading.CancellationToken token)
@@ -246,6 +246,10 @@ public class PageController : MonoBehaviour, IChannel
         preInfo.page = jumpPage - 1;
         curInfo.page = jumpPage;
         nextInfo.page = jumpPage + 1;
+
+        // Slot Name
+        string hero = dataManager.GetPageToHeroName(curInfo.page);
+        slotScript.SetSlotName(hero);
 
         await UniTask.WhenAll(turnTask, preInfo.ResettingCard(), curInfo.ResettingCard(), nextInfo.ResettingCard()).AttachExternalCancellation(token);
     }
@@ -281,6 +285,9 @@ public class PageController : MonoBehaviour, IChannel
         }
         else
         {
+            // 0번째일 때는 너무 부자연스러운데 어떻게 해결해야하는 편이 좋을까?
+            // 연출로 가리는 게 베스트긴한데..
+
             if (jumpingPage-1 < 1)
             {
                 if (jumpingPage-1 != 0)
@@ -309,17 +316,17 @@ public class PageController : MonoBehaviour, IChannel
 
 public enum FilterType
 {
-    Jump, Search, Reset,
+    Jump, Search, Reset
 }
 
 public struct FilterParameter
 {
     public FilterType filterType;
-    public string job;
+    public string[] job;
     public string searchName;
     public int? cost;
 
-    public FilterParameter(FilterType type, string _job = null, string _search = null, int? _cost = null)
+    public FilterParameter(FilterType type, string[] _job = null, string _search = null, int? _cost = null)
     {
         filterType = type;
         job = _job;

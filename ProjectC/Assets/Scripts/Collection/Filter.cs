@@ -29,7 +29,8 @@ public class Filter : MonoBehaviour
 
     private void Start()
     {
-        deleteButton.SetActive(false);
+        if(deleteButton != null)
+            deleteButton.SetActive(false);
     }
 
     private void OnEnable()
