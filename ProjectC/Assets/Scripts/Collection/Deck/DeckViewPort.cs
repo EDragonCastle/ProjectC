@@ -47,15 +47,17 @@ public class DeckViewPort : MonoBehaviour, IChannel
         switch(channel)
         {
             case ChannelInfo.InputDeck:
-                if (currentCard >= maxCard) {
-                    Debug.Log("카드가 가득 차서 넣을 수 없다.");
-                    return;
-                }
+                
 
                 // information -> DeckObject 바꾸고
                 GameObject cardDeck = information as GameObject;
                 if(cardDeck == null) {
                     Debug.Log($"해당 Object는 GameObject로 변환할 수 없습니다.");
+                    return;
+                }
+                if (currentCard >= maxCard) {
+                    Debug.Log("카드가 가득 차서 넣을 수 없다.");
+                    Destroy(cardDeck);
                     return;
                 }
 

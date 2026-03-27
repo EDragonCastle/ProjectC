@@ -32,10 +32,11 @@ public class Card : MonoBehaviour, IObject
     public GameObject legandPortrait;
     public TextMeshProUGUI cost;
     public TextMeshProUGUI cardName;
-    public TextMeshProUGUI attack;
-    public TextMeshProUGUI health;
     public GameObject type;
     public TextMeshProUGUI typeName;
+
+    public TextMeshProUGUI attack;
+    public TextMeshProUGUI health;
     
 
     [Header("Magic Card Data")]
@@ -54,10 +55,13 @@ public class Card : MonoBehaviour, IObject
     public TextMeshProUGUI deckManaCost;
     public TextMeshProUGUI deckName;
 
-   
-
     private CollectionCardData collectionCardData;
     public CollectionCardData GetCollectionCardData() => collectionCardData;
+
+    // Weapon card나 영웅 카드 기타 카드들이 추가될떄마다 위와 같이 Card들을 세팅할 수는 없다.
+    // 왜냐하면 weapon card나 hero card들이 추가될때마다 그에 맞게 설정해줘야 하기 때문이다.
+    // 추가로 넣고 코드도 길어지고 유지보수가 힘들어진다. -> 수정 필요.
+
 
     #region IObject Interface
     public void OnSpawn()
@@ -292,6 +296,8 @@ public class Card : MonoBehaviour, IObject
         return gemName;
     }
 
+
+    // 바꿔야 한다.
     private string JobTypeToResourceName(bool isMinion, string jobType)
     {
         string result = null;

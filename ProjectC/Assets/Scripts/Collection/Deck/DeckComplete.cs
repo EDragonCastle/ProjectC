@@ -27,6 +27,7 @@ public class DeckComplete : MonoBehaviour
     public float duration = 0.2f;
     public float offset = 0.4f;
 
+
     public async void Complete()
     {
         if(!isResetting)

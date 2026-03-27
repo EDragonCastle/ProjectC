@@ -29,22 +29,27 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private DeckInformation deckInformation;
 
+    private readonly string lackName = "\n<color=yellow>모자란 카드</color>";
+
     public void SettingDeck(DeckInformation deckInfo)
     {
         deckInformation = deckInfo;
         deckList = new List<DeckData>(deckInfo.deckData);
         currentCard = deckInfo.currentCard;
         maxCard = deckInfo.maxCard;
+        string pureName = deckName.text.Replace(lackName, "").Trim();
 
         if (deckInfo.currentCard < deckInfo.maxCard)
         {
             requireObject.SetActive(true);
             cardText.text = $"{deckInfo.currentCard}/{deckInfo.maxCard}";
+            deckName.text = pureName + lackName;
             isEmpty = true;
         }
         else
         {
             requireObject.SetActive(false);
+            deckName.text = pureName;
             isEmpty = false;
         }
     }

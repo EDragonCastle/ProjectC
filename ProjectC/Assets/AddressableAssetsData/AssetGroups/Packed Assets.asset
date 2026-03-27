@@ -493,6 +493,274 @@ MonoBehaviour:
     m_Address: Magic_Mage
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 37fac36fa59ddfc45bf324515774641c
+    m_Address: Polymorph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dfcbaeda90945a44589251b89f6193ab
+    m_Address: Arcane_Missiles
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b85eb24ae2ecf214ea27eff4421253b3
+    m_Address: Frostbolt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6002162ab432d734c8ad9248b7457aa0
+    m_Address: Fireball
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dbc48af197c743f4a95d391f3d76cabd
+    m_Address: Mirror_Image
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a285cc322b22f3b4ba1376bb49f8424e
+    m_Address: Water_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 583b814be1bc74643a0419db80a98fc2
+    m_Address: Arcane_Explosion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1b721af4e1906c147831dde2c03eece5
+    m_Address: Arcane_Intellect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f97ac789fc0bf3c45a215db4790ae457
+    m_Address: Flamestrike
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 47cd35feef5f28a4dab6a75693a8587f
+    m_Address: Mirror_Minion_Image
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4347dcaacefeee84995928fb9631e432
+    m_Address: Frost_Nova
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f2373f90018c654e95c8214bb516bcf
+    m_Address: Blessing_of_Kings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6b4a355330166e4aa11b60b683c4dd5
+    m_Address: Holy_Light
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b1442980fad5ac4491c4cee367c7a27
+    m_Address: Hand_of_Protection
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e9f4715c66c05f14abaf714b883040ae
+    m_Address: Light's_Justice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 752838a965823374c87d972819ca8d99
+    m_Address: Consecration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ef55ea54e0065f41a90efe33233b7a5
+    m_Address: Truesilver_Champion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93b96e375c010284083eada219dfc3ad
+    m_Address: Humility
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0e7292f498440f46975826ceda08fd0
+    m_Address: Hammer_of_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5364adfe68a05cb4cb9c0344c1406d61
+    m_Address: Blessing_of_Might
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9e3fcac33f22c8c4dbb4c0809fd7c87c
+    m_Address: Guardian_of_Kings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 69e0c3dbb6305154c83a25497e1398ac
+    m_Address: Backstab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f32c869667f0404b8baa799368b7545
+    m_Address: Sinister_Strike
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 088da509cf0bd4c43a88a2fc4859cd0d
+    m_Address: Assassin's_Blade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d5de3d4b3d9b2a44082d2577e1ea2a09
+    m_Address: Deadly_Poison
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50cb8700d7ed8004981509b376ef1347
+    m_Address: Shiv
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f0486b875a58e348a595a886dcbbd03
+    m_Address: Assassinate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e7e583c274eac704296192c8b5eea1d8
+    m_Address: Sap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e9ba89704b4f12749acb6c0bf82402ab
+    m_Address: Fan_of_Knives
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fca184fccef788645ac4e94e6218b483
+    m_Address: Sprint
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fdd9f28a14431144a806b4ad2080d199
+    m_Address: Power_Word-_Shield
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ae46d9defb54374ca59a1bcdcc8e50e
+    m_Address: Shadow_Word-_Death
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3af7b00216a88ad4d9c3da56b11ad621
+    m_Address: Holy_Smite
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 52c5a166bae5d044e9d2d7d4631d6fae
+    m_Address: Mind_Control
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4d02988012c759d49b284bc4d951020a
+    m_Address: Shadow_Word-_Pain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9068af8a3daa8b04f9e7889efc7085dd
+    m_Address: Mind_Vision
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: feb862143d07e8c4c833ddf22b88c49e
+    m_Address: Holy_Nova
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae95975afb1c07d4b8a41fb3448c165c
+    m_Address: Windspeaker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66e1330453f0f174bab6710d3ec9d9d2
+    m_Address: Totemic_Might
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01011e393f940224a964ceeba09ee5ee
+    m_Address: Ancestral_Healing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c957ee7496dda4f4a8698ff33e943076
+    m_Address: Frost_Shock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1b93b760dff43534c8ded0b16f99f391
+    m_Address: Windfury
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 553a5a27e865d0444a6757d76fcce7a7
+    m_Address: Flametongue_Totem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 622d7950e8583d74abcb95eaff958b20
+    m_Address: Rockbiter_Weapon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6ee976c4b25b1e49914ea99e6ac465a
+    m_Address: Hex
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a5aaf0f27169bfe4f849ed9e77d1215c
+    m_Address: Bloodlust
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c564abb15e135a440a738d4c550ed927
+    m_Address: Felstalker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f1d65988d61c21249888dff04cb6afd9
+    m_Address: Shadow_Bolt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ddb9296427e7b914aaf5d57cd296e1fa
+    m_Address: Sacrificial_Pact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6619fac58bb80e14b9c17578893ed526
+    m_Address: Corruption
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ad2fc089e68b664f8d505c5e5bf07ca
+    m_Address: Drain_Life
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c7c96fdf87d3554d940035b287fb199
+    m_Address: Hellfire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c7f144a9fe9ad6e42a20a6e44fa94f6c
+    m_Address: Voidwalker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 310061c9e4ee4b6439185832a8ab14fa
+    m_Address: Dread_Infernal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e6cbde0c11e3154794374400a8d762c
+    m_Address: Soulfire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8374a04fd8eaa04abfc5d338f896fe4
+    m_Address: Mortal_Coil
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6e42be6800045f4c909e340d9fb4140
+    m_Address: Charge
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 171869e56b355bf4fb6fb4259492281b
+    m_Address: Warsong_Commander
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dcd0a84d2bd903047bd7ab2a352de0ee
+    m_Address: Execute
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ea6b6195c7df9d14cb2e6dec1f061be3
+    m_Address: Arcanite_Reaper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2813dce99c8a5074ebcb3bfdedda537f
+    m_Address: Fiery_War_Axe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b3b19908a4590a445aa54c74cddbe92f
+    m_Address: Heroic_Strike
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73da1df7b3da3b845b6ef182dcc7cd1e
+    m_Address: Whirlwind
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 42e74c1a08ae9ff409ad958631ac874e
+    m_Address: Kor'kron_Elite
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e786c44142ecec44197722d18d7f18c6
+    m_Address: Cleave
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6e56eae1d27a9f4b9f876901fcf0bad
+    m_Address: Shield_Block
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70ffbe7f23359e9469dca40f36a10cf6
+    m_Address: Fire_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 314092f8ff34e894c87401dd78c2ddb4, type: 2}
   m_SchemaSet:

@@ -33,6 +33,11 @@ public class DataManager
             return null;
     }
 
+    public bool HasJob(string hero)
+    {
+        return heroStartPages.ContainsKey(hero) ? true : false;
+    }
+
     public int GetHeroStartPage(string hero)
     {
         if (heroStartPages.TryGetValue(hero, out int pageIndex))

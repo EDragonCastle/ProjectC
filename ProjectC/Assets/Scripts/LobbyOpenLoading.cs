@@ -4,12 +4,19 @@ using DG.Tweening;
 // 최상단으로 빼는게 더 나을 수 있겠다. 어차피 하나의 Class로 치기 때문에
 public class LobbyOpenLoading : MonoBehaviour
 {
+    public GameObject lobbyParent;
+
     public GameObject centerDoor;
     public GameObject centerLogo;
     public GameObject loading;
 
     public GameObject leftPivot;
     public GameObject rightPivot;
+
+    public GameObject questUI;
+    public GameObject shopUI;
+    public GameObject cardUI;
+    public GameObject collectionUI;
 
     // Testing ui
     public GameObject battle;
@@ -38,9 +45,14 @@ public class LobbyOpenLoading : MonoBehaviour
         loadingRectTransform = loading.GetComponent<RectTransform>();
     }
 
-    private void Start()
+    private async void Start()
     {
-        centerLogo.SetActive(false);
+        LobbyOpening();
+        await Cysharp.Threading.Tasks.UniTask.WaitUntil(() => GameManager.isReadyGameManager);
+
+        var uiManager = Locator<UIManager>.Get();
+        uiManager.SetLobby(this.gameObject);
+
     }
 
     private void OnEnable()
@@ -57,13 +69,62 @@ public class LobbyOpenLoading : MonoBehaviour
         centerLogo.SetActive(false);
     }
 
+    private void LobbyOpening()
+    {
+        var lobbyRectTransform = lobbyParent.GetComponent<RectTransform>();
+
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        centerLogo.SetActive(true);
+        centerDoor.SetActive(false);
+        centerLogoTransform.localRotation = Quaternion.Euler(0, 0, 0);
+
+        var questRectTransfrom = questUI.GetComponent<RectTransform>();
+        var shopRectTransfrom = shopUI.GetComponent<RectTransform>();
+        var cardRectTransfrom = cardUI.GetComponent<RectTransform>();
+        var collectionRectTransfrom = collectionUI.GetComponent<RectTransform>();
+
+        questRectTransfrom.anchoredPosition = new Vector2(questRectTransfrom.anchoredPosition.x - distance, questRectTransfrom.anchoredPosition.y);
+        shopRectTransfrom.anchoredPosition = new Vector2(shopRectTransfrom.anchoredPosition.x - distance, shopRectTransfrom.anchoredPosition.y);
+        cardRectTransfrom.anchoredPosition = new Vector2(cardRectTransfrom.anchoredPosition.x + distance, cardRectTransfrom.anchoredPosition.y);
+        collectionRectTransfrom.anchoredPosition = new Vector2(collectionRectTransfrom.anchoredPosition.x + distance, collectionRectTransfrom.anchoredPosition.y);
+
+        float openingDuration = 0.5f;
+
+        sequence.Append(lobbyRectTransform.DOScale(1f, openingDuration));
+        sequence.Append(centerLogoTransform.DORotate(new Vector3(0, -90, 0), openingDuration/2).SetEase(Ease.Linear));
+        sequence.AppendCallback(() => {
+            centerLogo.SetActive(false); 
+            centerDoor.SetActive(true);
+            centerDoorRectTransform.localRotation = Quaternion.Euler(0, 90, 0);
+        });
+        sequence.Append(centerDoorRectTransform.DORotate(new Vector3(0, 0, 0), openingDuration/2).SetEase(Ease.Linear));
+
+        sequence.OnComplete(() => { 
+            centerLogo.SetActive(false);
+            CloseOther();
+        });
+    }
+
     public void OnButtonClick(int index)
+    {
+        openIndex = index;
+
+        OpenOther();
+
+        var sequence = CenterLogo();
+        sequence.OnComplete(() => {
+            Open(index);
+            OpenDoor();
+            isOpen = true;
+        });
+    }
+
+    private DG.Tweening.Sequence CenterLogo()
     {
         DOTween.Kill(centerDoorRectTransform);
         DOTween.Kill(centerLogoTransform);
         DOTween.Kill(loadingRectTransform);
-
-        openIndex = index;
 
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
@@ -79,18 +140,14 @@ public class LobbyOpenLoading : MonoBehaviour
 
         sequence.Append(centerLogoTransform.DORotate(new Vector3(0, 0, 0), 0.5f).SetEase(Ease.OutQuad));
 
-        if(trigger)
+        if (trigger)
             sequence.Join(loadingRectTransform.DORotate(new Vector3(0, 0, 120), 0.5f).From(new Vector3(0, -90, 30)));
         else
             sequence.Join(loadingRectTransform.DORotate(new Vector3(0, 0, 30), 0.5f).From(new Vector3(0, -90, -60)));
 
         trigger = !trigger;
 
-        sequence.OnComplete(() => {
-            Open(index);
-            OpenDoor();
-            isOpen = true;
-        });
+        return sequence;
     }
 
     private void OpenDoor()
@@ -119,6 +176,36 @@ public class LobbyOpenLoading : MonoBehaviour
         });
     }
 
+    private void OpenOther()
+    {
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        var questRectTransfrom = questUI.GetComponent<RectTransform>();
+        var shopRectTransfrom = shopUI.GetComponent<RectTransform>();
+        var cardRectTransfrom = cardUI.GetComponent<RectTransform>();
+        var collectionRectTransfrom = collectionUI.GetComponent<RectTransform>();
+        
+        sequence.Append(questRectTransfrom.DOAnchorPosX(-distance, duration).SetRelative().SetEase(Ease.InCubic));
+        sequence.Join(shopRectTransfrom.DOAnchorPosX(-distance, duration).SetRelative().SetEase(Ease.InCubic));
+        sequence.Join(cardRectTransfrom.DOAnchorPosX(distance, duration).SetRelative().SetEase(Ease.InCubic));
+        sequence.Join(collectionRectTransfrom.DOAnchorPosX(distance, duration).SetRelative().SetEase(Ease.InCubic));
+    }
+
+    private void CloseOther()
+    {
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        var questRectTransfrom = questUI.GetComponent<RectTransform>();
+        var shopRectTransfrom = shopUI.GetComponent<RectTransform>();
+        var cardRectTransfrom = cardUI.GetComponent<RectTransform>();
+        var collectionRectTransfrom = collectionUI.GetComponent<RectTransform>();
+
+        sequence.Append(questRectTransfrom.DOAnchorPosX(distance, duration).SetRelative().SetEase(Ease.OutCubic));
+        sequence.Join(shopRectTransfrom.DOAnchorPosX(distance, duration).SetRelative().SetEase(Ease.OutCubic));
+        sequence.Join(cardRectTransfrom.DOAnchorPosX(-distance, duration).SetRelative().SetEase(Ease.OutCubic));
+        sequence.Join(collectionRectTransfrom.DOAnchorPosX(-distance, duration).SetRelative().SetEase(Ease.OutCubic));
+    }
+
 
     private void CloseDoor(int index)
     {
@@ -127,6 +214,7 @@ public class LobbyOpenLoading : MonoBehaviour
         // RectTransform을 받아온다.
         var leftRectTransform = leftPivot.GetComponent<RectTransform>();
         var rightRectTransform = rightPivot.GetComponent<RectTransform>();
+
 
         // 좌우 회전
         sequence.Append(leftRectTransform.DORotate(new Vector3(0, 0, 0), 0.8f).SetEase(Ease.InCubic));
@@ -143,9 +231,9 @@ public class LobbyOpenLoading : MonoBehaviour
         sequence.OnComplete(() => {
             Debug.Log("Complete Close Door");
             Close(index);
+            CloseOther();
         });
     }
-
 
     private void Open(int index)
     {

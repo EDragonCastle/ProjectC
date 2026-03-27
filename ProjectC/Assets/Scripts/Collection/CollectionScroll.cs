@@ -74,6 +74,17 @@ public class CollectionScroll : MonoBehaviour, IChannel
         }
     }
 
+    public void CloseCollection()
+    {
+        var uiManager = Locator<UIManager>.Get();
+        var collectionCanvas = uiManager.GetCollectionCanvas();
+        var lobby = uiManager.GetLobby();
+        collectionCanvas.SetActive(true);
+        lobby.SetActive(true);
+        var provideComponent = collectionCanvas.GetComponent<ProvideCollection>();
+        provideComponent.ExitCollection();
+    }
+
     // New Deck List 추가하는 버튼
     public void CreateDeck()
     {
