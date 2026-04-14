@@ -18,11 +18,6 @@ public class CostCard : MonoBehaviour
     private readonly float barTexture = 78f;
 
 
-    private void Start()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     public async UniTask CardSetup(List<DeckData> _deckList)
     {
         deckList = _deckList;

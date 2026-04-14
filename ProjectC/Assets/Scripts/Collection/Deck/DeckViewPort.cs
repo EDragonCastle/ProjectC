@@ -164,7 +164,7 @@ public class DeckViewPort : MonoBehaviour, IChannel
     {
         int index = 0;
 
-        int newCost = cardData.cost;
+        int cost = cardData.cost;
         string cardName = cardData.cardName;
 
         foreach (Transform child in content.transform)
@@ -174,9 +174,9 @@ public class DeckViewPort : MonoBehaviour, IChannel
             {
                 CardData childCardData = cardComponent.cardData;
 
-                if (childCardData.cost > newCost)
+                if (childCardData.cost > cost)
                     return index;
-                else if (childCardData.cost == newCost)
+                else if (childCardData.cost == cost)
                 {
                     if (string.Compare(childCardData.cardName, cardName, System.StringComparison.Ordinal) > 0)
                         return index;

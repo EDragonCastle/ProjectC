@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3714ec81fe5f6439d248135239ae04, type: 3}
+  m_Name: WeaponSetting
+  m_EditorClassIdentifier: 
+  mask:
+    position: {x: 0, y: 35}
+    ratio: {x: 100, y: 100}
+    scale: {x: 1, y: 1, z: 1}
+  cardMainImage:
+    position: {x: 0, y: 0}
+    ratio: {x: 100, y: 100}
+    scale: {x: 1, y: 1, z: 1}
+  legandPortrait:
+    position: {x: -37.9, y: -30}
+    ratio: {x: 136.6, y: 90}
+    scale: {x: 0.8, y: 0.8, z: 0.8}
+  cardExplanation:
+    position: {x: 0, y: 40}
+    ratio: {x: 80, y: 44}
+    scale: {x: 1, y: 1, z: 1}
+  gem:
+    position: {x: 0, y: -21.6}
+    ratio: {x: 20.6, y: 17.8}
+    scale: {x: 1, y: 1, z: 1}
+  cardName:
+    position: {x: 0, y: -10.9}
+    ratio: {x: 130, y: 40}
+    scale: {x: 1, y: 1, z: 1}
+  cardNameText:
+    position: {x: 0, y: 6.6}
+    ratio: {x: 130, y: 18}
+    scale: {x: 1, y: 1, z: 1}
+  cardType:
+    position: {x: 0, y: 0}
+    ratio: {x: 0, y: 0}
+    scale: {x: 0, y: 0, z: 0}
+  cardTypeText:
+    position: {x: 0, y: 0}
+    ratio: {x: 0, y: 0}
+    scale: {x: 0, y: 0, z: 0}
+  attack:
+    position: {x: 12.3, y: 13.1}
+    ratio: {x: 30, y: 30}
+    scale: {x: 1, y: 1, z: 1}
+  attackText:
+    position: {x: 0, y: 0}
+    ratio: {x: 200, y: 50}
+    scale: {x: 1, y: 1, z: 1}
+  health:
+    position: {x: -12.5, y: 12.6}
+    ratio: {x: 30, y: 30}
+    scale: {x: 1, y: 1, z: 1}
+  healthText:
+    position: {x: 0, y: 0}
+    ratio: {x: 200, y: 50}
+    scale: {x: 1, y: 1, z: 1}

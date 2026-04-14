@@ -1,9 +1,10 @@
 using UnityEngine;
+using System;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "New Card", menuName = "CardData")]
-public class CardData : ScriptableObject
+[System.Serializable]
+public class CardData
 {
     public uint cardId;
     public string cardName;
@@ -13,15 +14,19 @@ public class CardData : ScriptableObject
     public string description;
     public string spriteName;
     public string gem;
-    public bool isMinion;
+    public bool isMinion; // 삭제 예정
+    public string cardCategory;
     public string jobType;
     public string packgeType;
-    public string cardType;
+    public string cardType; // 변경 예정
+    public bool isCollector;
+    public string[] cardTypes; 
     public uint[] spawn;
     public float posX;
     public float posY;
     public float rotation;
 }
+
 
 [CreateAssetMenu(fileName = "New Hero", menuName = "HeroName")]
 public class HeroData : ScriptableObject
@@ -35,6 +40,7 @@ public class HeroData : ScriptableObject
     public string heroPowerIconSprite;
     public string heroDeckName;
 }
+
 
 public class DeckData
 {
@@ -63,4 +69,12 @@ public struct FilterInformation
         mana = null;
         keyword = string.Empty;
     }
+}
+
+[System.Serializable]
+public struct CardTransform
+{
+    public Vector2 position;
+    public Vector2 ratio;
+    public Vector3 scale;
 }

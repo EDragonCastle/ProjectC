@@ -100,7 +100,7 @@ public class PageController : MonoBehaviour, IChannel
     public async void LeftButtonClick()
     {
         Debug.Log("Left Button Click");
-        await UniTask.WhenAll(LeftComplete(), TurnLeftPage());
+        await UniTask.WhenAll(LeftLoadingResource(), TurnLeftPage());
     }
 
     private async UniTask TurnLeftPage()
@@ -150,7 +150,7 @@ public class PageController : MonoBehaviour, IChannel
         leftButton.SetActive(true);
     }
 
-    private async UniTask LeftComplete()
+    private async UniTask LeftLoadingResource()
     {
         PageInformation preInfo = prePage.GetComponentInChildren<PageInformation>(true);
         PageInformation curInfo = curPage.GetComponentInChildren<PageInformation>(true);
@@ -215,7 +215,6 @@ public class PageController : MonoBehaviour, IChannel
                     dataManager.UpdateFilter(job: parameter.job, cost: parameter.cost, keyword: parameter.searchName);
                     await JumpPage(0, token);
                     break;
-
             }
         }
         catch(OperationCanceledException) {

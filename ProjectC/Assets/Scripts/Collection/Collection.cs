@@ -234,6 +234,8 @@ public class Collection : MonoBehaviour
 
     public void PushDeck()
     {
+        Debug.Log("Push Push Deck Deck");
+
         if (maxDeckCount <= newDeckIndex)
         {
             newDeckButton.SetActive(false);
@@ -250,7 +252,13 @@ public class Collection : MonoBehaviour
         }
 
         // »ý¼º
-        Instantiate(dummyDeck, contentPivot.transform);
+        var factory = Locator<Factory>.Get();
+        Card cardComponent = dummyDeck.GetComponent<Card>();
+        //RectTransform contentRect = contentPivot.GetComponent<RectTransform>();
+
+        factory.Create(cardComponent, contentPivot.transform);
+
+        //Instantiate(dummyDeck, contentPivot.transform);
         newDeckIndex++;
 
         if (maxDeckCount <= newDeckIndex)

@@ -17,24 +17,24 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 7f5af8fd2f069804da79e9cefbf0bbb8
   m_SerializeEntries:
-  - m_GUID: 291a4d48982df4b4aa5bbacde4b8802a
-    m_Address: Shattered_Sun_Cleric
+  - m_GUID: b62cb3a8a4e62154caf3a9288e179b6b
+    m_Address: Core_Hound
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 6b393993f49bb3b45acc6dbaa8df5331
-    m_Address: Magma_Rager
+  - m_GUID: 2b5c9883445b0494f97879a504374442
+    m_Address: Reckless_Rocketeer
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: ded15a094539e4549aa1cc89d3429d1d
-    m_Address: Archmage
+  - m_GUID: 28a0b8f6a4226ab489843f31dd45c2fe
+    m_Address: Dragonling_Mechanic
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 02d1aacac6e4ef145ab63065042b13df
-    m_Address: Ogre_Magi
+  - m_GUID: d4a487793a6818b45aaa04013fd8ca4e
+    m_Address: Gurubashi_Berserker
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 529a49859e4a5844fbdf2e6d7fb001de
-    m_Address: Murloc_Tidehunter
+  - m_GUID: 1851b738313bac944987f94d446ffa70
+    m_Address: Poultryizer
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: c478cdd3cd8131243857f17816c38679
@@ -265,160 +265,160 @@ MonoBehaviour:
     m_Address: Mark_of_the_Wild
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: e0a1b6072edfa7b47b47a2eff78690b6
-    m_Address: Sen'jin_Shieldmasta
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e2b404440ec59e24893da5e5e91de39c
-    m_Address: Kobold_Geomancer
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: afe3a13650c48924592abfe41f8b9bb2
-    m_Address: Mechanical_Dragonling
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 28a0b8f6a4226ab489843f31dd45c2fe
-    m_Address: Dragonling_Mechanic
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 01b3ee3bbec7d3d4ba2d8478a78eaae0
-    m_Address: Grimscale_Oracle
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: ec0cacda663125441aed0f4b126be13a
     m_Address: Stormpike_Commando
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 06a92ae67bfe7b24f9d218681addacc4
-    m_Address: Bluegill_Warrior
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 11ea39b3700aacb45a816d0ee0bb2145
-    m_Address: Stormwind_Champion
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e2169a2e79c42684e9ebe58198379e3b
-    m_Address: Murloc_Raid
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 98b187205b808d24fa213d4cb3e27a53
-    m_Address: Stonetusk_Boar
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: aafce13c0d9dbed4b867ba2a9d8001d7
-    m_Address: Frostwolf_Warlord
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: edab268419296af4cb6e932e3a25b7d5
-    m_Address: War_Golem
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 2cda39768ca35aa47a80590a355d552c
-    m_Address: Ironforge_Rifleman
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 2a68b2ed2d0456c4d920380fa0e30cde
-    m_Address: Nightblade
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 0c3ac04794cd9924eaef02b6f2030e0d
-    m_Address: Dalaran_Mage
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: bdf020001b563f9499414b948ae338ec
-    m_Address: Elven_Archer
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 4d5ae4807cf8e3848a72999140b07f4b
-    m_Address: Gnomish_Inventor
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d72576e65ca7246499218b26dff894cd
-    m_Address: Boulderfist_Ogre
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 911424d28a5f77a44b3a1dc3c672f5e9
-    m_Address: Lord_of_the_Arena
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d4a487793a6818b45aaa04013fd8ca4e
-    m_Address: Gurubashi_Berserker
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6501f62728eba5841943ddc475dccab4
-    m_Address: Raid_Leader
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 604d8ab05ce8e5745a4f244d458a6fb9
-    m_Address: Bloodfen_Raptor
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: bb740622b354d9b43917285eebec177d
-    m_Address: Ironfur_Grizzly
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 36e112ad9f8bab54b81c55143373b57b
-    m_Address: Novice_Engineer
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a77e86bcdecb4b340977a64a0482c42f
-    m_Address: Voodoo_Doctor
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a56a9ad0ebbbf814fb34d353b6da95fa
-    m_Address: Chillwind_Yeti
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 261da4401a04e5e44969cab3e2fb1429
-    m_Address: Booty_Bay_Bodyguard
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 7d84b6da6df95d8489af601e21f8fde5
-    m_Address: Frostwolf_Grunt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f8718ea88374f13418be597147a19ff4
-    m_Address: Darkscale_Healer
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 1d7fd89b814beda4b84cf5df24c660cb
-    m_Address: Oasis_Snapjaw
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b5ca8da5d0a3a5f4c83a765d9508c6ff
-    m_Address: Goldshire_Footman
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: cbc7ff183dd346f42b90269acc86af2e
-    m_Address: River_Crocolisk
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b62cb3a8a4e62154caf3a9288e179b6b
-    m_Address: Core_Hound
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 31a7a5b781ce5cb4cbf42ddf1cdd4255
-    m_Address: Acidic_Swamp_Ooze
+  - m_GUID: 3eb7af4abd5391d45a9579a157832d40
+    m_Address: Whelp
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 66b6f678c57cf484b8177ec63a8c4a5d
     m_Address: Wolfrider
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 803f92bbe390f9e47966fd433eae8799
-    m_Address: Silverback_Patriarch
+  - m_GUID: ded15a094539e4549aa1cc89d3429d1d
+    m_Address: Archmage
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: a6606677882d3a149b683e5a61094e9b
-    m_Address: Razorfen_Hunter
+  - m_GUID: a3272e59f68c99942bcf59e30a83f5b6
+    m_Address: Rogues_Do_It...
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 2b5c9883445b0494f97879a504374442
-    m_Address: Reckless_Rocketeer
+  - m_GUID: e0a1b6072edfa7b47b47a2eff78690b6
+    m_Address: Sen'jin_Shieldmasta
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f6f5917b20c3b24f88fc3b2b6377ae1
+    m_Address: Dream
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb740622b354d9b43917285eebec177d
+    m_Address: Ironfur_Grizzly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a520cd3d747d0a945ace245b7aa9e79f
+    m_Address: Scavenging_Hyena
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6c06f019dd57774aa2d09dc5c665c60
+    m_Address: Violet_Apprentice
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: dc9e30399059cfc488557086273c22b9
     m_Address: Stormwind_Knight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0c3ac04794cd9924eaef02b6f2030e0d
+    m_Address: Dalaran_Mage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 911424d28a5f77a44b3a1dc3c672f5e9
+    m_Address: Lord_of_the_Arena
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a56a9ad0ebbbf814fb34d353b6da95fa
+    m_Address: Chillwind_Yeti
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: edab268419296af4cb6e932e3a25b7d5
+    m_Address: War_Golem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b65db3dcbd5c52d4b92a9e34ce8e5e75
+    m_Address: I_Am_Murloc
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8718ea88374f13418be597147a19ff4
+    m_Address: Darkscale_Healer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 803f92bbe390f9e47966fd433eae8799
+    m_Address: Silverback_Patriarch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2cda39768ca35aa47a80590a355d552c
+    m_Address: Ironforge_Rifleman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 02d1aacac6e4ef145ab63065042b13df
+    m_Address: Ogre_Magi
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4d2f062c9370ab340ad2a067d992b3c1
+    m_Address: Emerald_Drake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6de840878c71d4f47a37e0732758a01a
+    m_Address: Repair_Bot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 11ea39b3700aacb45a816d0ee0bb2145
+    m_Address: Stormwind_Champion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6299b8370ebe0e048bb25e195f4a928f
+    m_Address: Nightmare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 42f2ac115947b5744a35d4eb97e58ad6
+    m_Address: Ysera_Awakens
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a68b2ed2d0456c4d920380fa0e30cde
+    m_Address: Nightblade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d7fd89b814beda4b84cf5df24c660cb
+    m_Address: Oasis_Snapjaw
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d1bc5c79dda774d40820ad750c0f7785
+    m_Address: Xavian_Satyr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4d5ae4807cf8e3848a72999140b07f4b
+    m_Address: Gnomish_Inventor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 261da4401a04e5e44969cab3e2fb1429
+    m_Address: Booty_Bay_Bodyguard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8bb3a7d260e4f0045b399db02bef69f6
+    m_Address: Emboldener_3000
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 00a04ef2d1c3a0644981ab804dc11304
+    m_Address: Homing_Chicken
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 291a4d48982df4b4aa5bbacde4b8802a
+    m_Address: Shattered_Sun_Cleric
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0064d7eba160dd14382134b9060b9e84
+    m_Address: Gnoll
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: afe3a13650c48924592abfe41f8b9bb2
+    m_Address: Mechanical_Dragonling
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d72576e65ca7246499218b26dff894cd
+    m_Address: Boulderfist_Ogre
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8858c0aa9f4232347bff2d0d470968c8
+    m_Address: Laughing_Sister
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b393993f49bb3b45acc6dbaa8df5331
+    m_Address: Magma_Rager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aafce13c0d9dbed4b867ba2a9d8001d7
+    m_Address: Frostwolf_Warlord
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 15dacaf73948d0a4aa15699510cc44cb
@@ -481,16 +481,16 @@ MonoBehaviour:
     m_Address: Warrior
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 62daf07f108c54c4a9ed167b99cb6688
-    m_Address: Magic_Druid
+  - m_GUID: 4b1f05c665ef89b49b1a2b99506e70d2
+    m_Address: Spell_Rogue
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 448a5f1318e7d2b4ca94e4c3ce0c0891
-    m_Address: Magic_Hunter
+  - m_GUID: a89ccf31e748d2a45a610e8e327b61e7
+    m_Address: Spell_Priest
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 6842110d599c2ef4f83d70ba3808dbad
-    m_Address: Magic_Mage
+  - m_GUID: 11cb4737fd2683846910603e2c918042
+    m_Address: Spell_Paladin
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 37fac36fa59ddfc45bf324515774641c
@@ -759,6 +759,1378 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 70ffbe7f23359e9469dca40f36a10cf6
     m_Address: Fire_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3768c900970a9ad4c9fa4e6e62e9fa60
+    m_Address: Weapon_Gem_Rare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f2ff1aac482a7f48b86cf9ed7dcf015
+    m_Address: Weapon_Gem_Epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a5a0a577c42e2434d8449539664f4927
+    m_Address: Weapon_Gem_Legendary
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d36465e9498e936429f1ff785f71474c
+    m_Address: Weapon_Gem_Common
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 15d94099edd7d974aaa6836f411a11a4
+    m_Address: HeroSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 555bee9497544a74380e7d67aa37fa11
+    m_Address: Spell_Warrior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 737aa86f9899d2341825b6ca2e2aeefc
+    m_Address: Spell_Warlock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e58e9b5b8bba16a4c964685f57fbe19b
+    m_Address: Spell_Shaman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 48fccde4cda38d846ae8f0877a96e052
+    m_Address: Minion_Text
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1739950f299baa64ea9d733b9e24881d
+    m_Address: Minion_Title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e272b28db327fa14d8086a81a0f47c0a
+    m_Address: Attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb3a79c143ec8f44297aa1c504ed20e6
+    m_Address: Health
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2d696edee294270498ffa74cbc20c7dc
+    m_Address: Minion_Type
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6dd9ade5bb16d241be6e4a62c0da161
+    m_Address: Spell_Neutral
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6842110d599c2ef4f83d70ba3808dbad
+    m_Address: Spell_Mage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 448a5f1318e7d2b4ca94e4c3ce0c0891
+    m_Address: Spell_Hunter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 62daf07f108c54c4a9ed167b99cb6688
+    m_Address: Spell_Druid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c99aaeeba2d89747ab54a9723853aa8
+    m_Address: Spell_Text
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85f459ab2cff15343ad6bb6da6124f1c
+    m_Address: Spell_Type
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 328e17d7b23e3aa46be233a574d6f69c
+    m_Address: Spell_Title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8dd2c1974ae83344db23ad8c07782fae
+    m_Address: circle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 682fa5f8253de7d408d56f0cf602c2f8
+    m_Address: SpellBackGround
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f09ac19ad96b4ad448bf3cdcaaed5d64
+    m_Address: WeaponSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 149ed1deb18e6ae4f9c97cb1464f4d30
+    m_Address: MinionSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 727688743dededb43bb07213749175a2
+    m_Address: SpellSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d49f48e7f5462254c92013f9fdf1ea17
+    m_Address: Weapon_Attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a1f324fcfd17a584aa43e8edffd5b60e
+    m_Address: Weapon_Title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 92b893abee84b0d4f9ae5c9e4d6dc5dc
+    m_Address: Weapon_Druid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 39167eaa1ca057d4a9f462f5f4e98c4b
+    m_Address: Weapon_Health
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 199bbfb646cc85f489c956b0e65a8b7c
+    m_Address: Weapon_Hunter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 29b3a73a1e874494d850896e003ad438
+    m_Address: Weapon_Mage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 950d6fefebdb8894ba853f3cfc2fb1f2
+    m_Address: Weapon_Neutral
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b474c1b3fbdba6442972415d7d318940
+    m_Address: Weapon_Paladin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 15d2ae577ee65794b8c538751defd2b1
+    m_Address: Weapon_Priest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec8c1edeabd80554b818aec6603b7ca5
+    m_Address: Weapon_Rogue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6914f8d4783dcaf46a23f3a72716a589
+    m_Address: Weapon_Shaman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b83b3d9efba2c4b4b9e2e0d0febaa4a6
+    m_Address: Weapon_Warlock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b048fbe867e1ba642a2cd59899e16a6e
+    m_Address: Weapon_Warrior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 90ffb20cf27685845b77a6fa0726088a
+    m_Address: Rampant_Growth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2fcbeb570d339df48b14a25c753d03c1
+    m_Address: Freezing_Trap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c34eec758d121794a8bd41d128d19229
+    m_Address: Ancient_Secrets
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9eaaba4aeb935d9489560afedd25a7b8
+    m_Address: Pip_Quickwit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe49f0fc57dc45b4587b79587a173d29
+    m_Address: Rooted
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 715f9127aaed080469530cad0ae5f585
+    m_Address: Xavius
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8087f483dc401cf458aa1176194c2d38
+    m_Address: Baron_Geddon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f354a5135ed00d9419f9d57ea634d6d1
+    m_Address: Deadly_Shot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2be35784dffb7454cb532a4e841fbadd
+    m_Address: Misdirection
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb02a5ecbadf6da4487ae7c2259721df
+    m_Address: The_Beast
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3634b713e6729584bb998dc9e77dd0b5
+    m_Address: Cenarius
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bc42106b2660ce84ba11e8f43605ddbb
+    m_Address: Flare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3750514eca9a3824088af3f030a82da3
+    m_Address: Stellar_Drift
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 491d20b793b1426458b050b9a3d58912
+    m_Address: Squirrel_(Tinkmaster_Overspark)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 220d35af9597a8541bc57ea727a94ec0
+    m_Address: Starlord
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9604e69aa58eaca43ae3da1e953677e7
+    m_Address: Tinkmaster_Overspark
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8e18054d440b69429b742330c45015f
+    m_Address: Moonfire_(Keeper_of_the_Grove)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 024aff906547d6348bf61472b8eeb4f2
+    m_Address: Dispel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f13aa371e1c750459783e8d45999b10
+    m_Address: Explosive_Trap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 406c3be7efdfba543bb3e3a5b99bc4b5
+    m_Address: Savannah_Highmane
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 706f41557825e9645b0bfa82ad56b236
+    m_Address: Snipe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: faed462c536ab434c905557472353601
+    m_Address: Explosive_Shot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b85ef5e98ebd769458ffea4f80790b01
+    m_Address: Unleash_the_Hounds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f7c84f92abae1a4fbc654e3aeb7845d
+    m_Address: Ancient_Teachings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c605323fb2af51f4f92313fd5ac76e9f
+    m_Address: Enrich
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8532b99bb9c05884b9a0a2b9d8168505
+    m_Address: Gruul
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a711d8ac741801045aedc542cadf3df0
+    m_Address: Demigod's_Favor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d387af4f9ddde246b702c321f8b82e8
+    m_Address: Deathwing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a223b1eb5ce98a4aa0492dbd9de41f6
+    m_Address: Uproot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 902402c0edb9cf04fabc158ed03801a6
+    m_Address: Ancient_of_War
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1a5f31894902aac43a7bf99d348f1730
+    m_Address: Ancient_of_Lore
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e3c13e00d011774394c6d695f8bd91b
+    m_Address: The_Black_Knight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e991d27d75c7f064e998265d304067f7
+    m_Address: Sylvanas_Windrunner
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d51d8bdad53911488917714b658bfca
+    m_Address: Elite_Tauren_Chieftain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0a41e0a4cf3094f47848ef5adc88cd73
+    m_Address: Captain_Greenskin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 060aad0c0dcc5dd4cade46bf3fa3a8a0
+    m_Address: Bloodmage_Thalnos
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6501f62728eba5841943ddc475dccab4
+    m_Address: Raid_Leader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6606677882d3a149b683e5a61094e9b
+    m_Address: Razorfen_Hunter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36e112ad9f8bab54b81c55143373b57b
+    m_Address: Novice_Engineer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 06a92ae67bfe7b24f9d218681addacc4
+    m_Address: Bluegill_Warrior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e2b404440ec59e24893da5e5e91de39c
+    m_Address: Kobold_Geomancer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d84b6da6df95d8489af601e21f8fde5
+    m_Address: Frostwolf_Grunt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31a7a5b781ce5cb4cbf42ddf1cdd4255
+    m_Address: Acidic_Swamp_Ooze
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 604d8ab05ce8e5745a4f244d458a6fb9
+    m_Address: Bloodfen_Raptor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cbc7ff183dd346f42b90269acc86af2e
+    m_Address: River_Crocolisk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 529a49859e4a5844fbdf2e6d7fb001de
+    m_Address: Murloc_Tidehunter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b5ca8da5d0a3a5f4c83a765d9508c6ff
+    m_Address: Goldshire_Footman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bdf020001b563f9499414b948ae338ec
+    m_Address: Elven_Archer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01b3ee3bbec7d3d4ba2d8478a78eaae0
+    m_Address: Grimscale_Oracle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a77e86bcdecb4b340977a64a0482c42f
+    m_Address: Voodoo_Doctor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e2169a2e79c42684e9ebe58198379e3b
+    m_Address: Murloc_Raid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 98b187205b808d24fa213d4cb3e27a53
+    m_Address: Stonetusk_Boar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f675b3a820d8b341b5b241b55506b1f
+    m_Address: Lorewalker_Cho
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 48ec500a5b3a8ef45a83a57f62837f32
+    m_Address: Millhouse_Manastorm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a1e52333efe83a24080687290e5fa4cd
+    m_Address: Nat_Pagle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a29d18fe6e7ab94a80231bf9f494117
+    m_Address: King_Mukla
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d56846fcd0dfd3b42b623e6245abe008
+    m_Address: Leeroy_Jenkins
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8875172b4648ca549b778f0f36f56aaa
+    m_Address: Harrison_Jones
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b72437f01a3e894e94adae347ce33d7
+    m_Address: Cairne_Bloodhoof
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d819e91b6b247c44875be19258a9642
+    m_Address: Baine_Bloodhoof
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6944786319929e84886c86435cced9b6
+    m_Address: Gelbin_Mekkatorque
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e875dd557573a6e4e88d2bdc95d2a856
+    m_Address: Hogger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a6c68a8a36a03d4691580c19278c48a
+    m_Address: Ragnaros_the_Firelord
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0c06c60ba3b02ec4693b1f2e7f609c5a
+    m_Address: Alexstrasza
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e0a634a3c295a0141b8010559512573a
+    m_Address: Malygos
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: efdbdb618e539444086d3e180ba27794
+    m_Address: Nozdormu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 363a1e79c35dc3b4f9dab3c832892f87
+    m_Address: Onyxia
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0aeafb6bf247e9849b7d2226f37210fd
+    m_Address: Ysera
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac0d12b1fc0ea5e4ab452ca29a79d45a
+    m_Address: Molten_Giant
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 923f39a3c251c484a8924bba1d948b3a
+    m_Address: Mountain_Giant
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 750f561720f5ee242ade012aa421600c
+    m_Address: Sea_Giant
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8bfbcb402c59ef94bb1a8438e6dcc13b
+    m_Address: Faceless_Manipulator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 09c73c57040ffe347bfa2a7100accbe9
+    m_Address: Southsea_Captain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 675899e083c14a647a7c16ca1ce2d42f
+    m_Address: Murloc_Warleader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abc8371134403b844b1a2ec75127f276
+    m_Address: Blood_Knight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb29f313ef6c2c04a89ed5d74e936ad0
+    m_Address: Big_Game_Hunter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e8b52163eeaab1047bf3342ed47aa5c9
+    m_Address: Doomsayer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae74980e4a6348842816e840033d9b02
+    m_Address: Captain's_Parrot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce7d64d6ca33c1a40b38bc22523d521c
+    m_Address: Hungry_Crab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d05c9b9a314b3254e810ac21973c50ea
+    m_Address: Solar_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 08bc4cffcb360194282eef72f58204bd
+    m_Address: Summon_a_Panther
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e570c87d80331740a086cfa9fb87874
+    m_Address: Druid_of_the_Claw
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7502ef7b532681d4da29dcdcb81f0c52
+    m_Address: Leader_of_the_Pack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac990fc062616da4f924667465281e99
+    m_Address: Thick_Hide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3aa8b45c02bda564391560ccae2b4d6c
+    m_Address: Panther
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d4505156d85c8284ab2f474c4f13cf41
+    m_Address: Naturalize
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7581a26cbd9191f4b8a6a37284de3847
+    m_Address: Soul_of_the_Forest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e856a4a2d53afb54a94628bce5a2911a
+    m_Address: Nature's_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50375a37b9c4f894283cb8e72dbf9397
+    m_Address: Tiger's_Fury
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3192165739fbaeb479a4d10379482536
+    m_Address: Treant
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a481914a336b34419ac7e0f0c8139e2
+    m_Address: Bear_Form
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f2f82f6fc93dc834bb8b05a1561126f7
+    m_Address: Power_of_the_Wild
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b774d69cf8e1d304bafc47fdf6f9276d
+    m_Address: Mark_of_Nature
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 161aeab2422fec3469555b94e0309aec
+    m_Address: Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6df18b0c07a89af43ab34c625a7be9c4
+    m_Address: Cat_Form
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cd46f6b3dd316324493c6750094b2886
+    m_Address: Eaglehorn_Bow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9ea8e23b3adb6e4e83eca302b8423e4
+    m_Address: King_Krush
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b8bffc1338dff5d499bdcb00ac64bc57
+    m_Address: Gladiator's_Longbow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a889585866b5e3143ab59e45f16292bf
+    m_Address: Bestial_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 94aeea276ac4b7a478b5188c909702dc
+    m_Address: Snake_Trap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8240c45513632594f97a54314364f170
+    m_Address: Hyena
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 34471556aa7a27847837d58eaf4a3da2
+    m_Address: Snake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 074e0a512ce426940be224418605bab8
+    m_Address: Mirror_Entity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9f5eab01406b2f4ca93c3bb1f7bd264
+    m_Address: Ice_Barrier
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fb707c3ed2bb78442a26fd06c3a5e093
+    m_Address: Cone_of_Cold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: daff3c584ae6495498237e6ffea3f37d
+    m_Address: Sorcerer's_Apprentice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b4c8ef228c224545a7a154c3c79f388
+    m_Address: Mana_Wyrm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c79212add67212040b7f9a25c7463dec
+    m_Address: Ice_Lance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cee0c6af1434f7d4ca71d4e89d52c2c7
+    m_Address: Ethereal_Arcanist
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 84187c3f39385f1409c1714537df79c9
+    m_Address: Kirin_Tor_Mage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 80efd5b96f45d1743bff5681ea28f6a7
+    m_Address: Vaporize
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36ff4ccf775e9a742b004ad84e7a47aa
+    m_Address: Blizzard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5cb12db5d4085cb4f89b9e6a54888264
+    m_Address: Counterspell
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d476cd3ada3ac1e4e9a831145bf0a373
+    m_Address: Archmage_Antonidas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 45113929722ddef408793b8a89165516
+    m_Address: Pyroblast
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4c04cc5a9379d744fbdca1af40d50587
+    m_Address: Spellbender
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f81e5e42ac169c4d9cfe1eabfe0c61c
+    m_Address: Ice_Block
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de5994db518f60048b9a7b71a054be78
+    m_Address: Redemption
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 77add5726a0c4b0488a72b4fb451c160
+    m_Address: Argent_Protector
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c119a3067fa927c47a7c6571eceb2abc
+    m_Address: Eye_for_an_Eye
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d938e5595cf03b94da971f7e46bce732
+    m_Address: Repentance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 940f88196ab77d145860b2281c685fc1
+    m_Address: Noble_Sacrifice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ad7f6ffb7351e8d418c4022cb74fdb5f
+    m_Address: Blessing_of_Wisdom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5bf19d979d06b6d4db4b45f54ae81e51
+    m_Address: Holy_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 524f1384d9cd16e46b591a86c91d265d
+    m_Address: Aldor_Peacekeeper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fa156280f7bcbc645a05c4b47d53c965
+    m_Address: Divine_Favor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6e5ba94a9787b6c4486836d4b3aa7f13
+    m_Address: Blessed_Champion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2069fb144bdf1c742b95fdc377b3d999
+    m_Address: Equality
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fd803e88706fdb04fa551f5f369685df
+    m_Address: Ashbringer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c67154f99d7b9dc43b94cad0ba80e8df
+    m_Address: Tirion_Fordring
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aae863088c8370e4ba452bb20a88c4fc
+    m_Address: Avenging_Wrath
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01ee9b0e59b06004eba85808aed8cf63
+    m_Address: Sword_of_Justice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3e51c272845c9b04fab978efc0543bca
+    m_Address: Lay_on_Hands
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 95bb1c2ccb6e1234c89fbbbf54ba8d46
+    m_Address: Lightspawn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fefe5f2eb7a112e47958f015d33f4a7f
+    m_Address: Northshire_Cleric
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 244a287406616534b93752e5dbcc3523
+    m_Address: Temple_Enforcer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9bd40b7091edd3847b9196f1c35315f8
+    m_Address: Mind_Blast
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26b69afec6a8da847b88ef8972107d94
+    m_Address: Divine_Spirit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d2bd5e4046a6ff47982e13228970948
+    m_Address: Circle_of_Healing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0332fcf07de288c498c76a0f007a0208
+    m_Address: Silence
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3186b0eeaf9c0b449df5dc4b62aebda
+    m_Address: Thoughtsteal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1ebf21337cfed6a47a5db3f3f5a25df0
+    m_Address: Inner_Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 692825d140a21ba4da0bbddf58131b28
+    m_Address: Lightwell
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b5e315071e4ced94b8b300fbf512a874
+    m_Address: Auchenai_Soulpriest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5f6b8c73d02c84342bf154fd77f06d43
+    m_Address: Holy_Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ab93e31e12c3ae4498f1d947b3288a9
+    m_Address: Mass_Dispel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c019327c5daf8184e9610bd9bf668264
+    m_Address: Shadow_Madness
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2dffb39a419906e468b3db78896a9d38
+    m_Address: Shadowform
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 696da4c47f33fa04a9cbeeec35099c7b
+    m_Address: Mindgames
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e5855b8e5e4c7d46a3b922b7c1e24d3
+    m_Address: Prophet_Velen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dc8c2b2fb58e9854aacc1293799b7b6a
+    m_Address: Cabal_Shadow_Priest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aeb88ee9b86d01d429a8b5c62e58ceac
+    m_Address: Shadow_of_Nothing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38ea4b4f9aa3f7c43aefeb7e3890fdcc
+    m_Address: Shadowstep
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31c77b68dbe862140b9a71e6b2ee7cad
+    m_Address: Conceal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 04078bcea1b239b4e99b3111d61dfff1
+    m_Address: Cold_Blood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c91332be68f8ab64c9d74a213496acf3
+    m_Address: Betrayal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d8376e85719df204aa6244a35b9fa707
+    m_Address: Eviscerate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a7cf50765b10524ca9e0e12758b34c9
+    m_Address: Defias_Bandit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4508b91d7c768d24386dd91614cdd6bf
+    m_Address: Vanish
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe0bfefadb0fce940ad618661ec200cf
+    m_Address: Defias_Ringleader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a228a9b668256ac4c87f6dddfaa7bb06
+    m_Address: Master_of_Disguise
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 433605b0b086ec5418d11869da3469ff
+    m_Address: Headcrack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9639c6f8d4a484e4092766f79f66b4b7
+    m_Address: Blade_Flurry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6bde6e3f78547814aa07955eee1cd6b4
+    m_Address: SI7_Agent
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86a71763bf8598947916c4ea48033302
+    m_Address: Perdition's_Blade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0365e72453cd7a24e93ca91a92060f88
+    m_Address: Preparation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0613be18083f8bb489f99b9362161393
+    m_Address: Edwin_VanCleef
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0307ca6b4198d984b9fbc6fab820186f
+    m_Address: Kidnapper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0440543ac6d0974dbcbb29e42d84b3b
+    m_Address: Patient_Assassin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 98980dbebd215aa42a82641cdb66d3d7
+    m_Address: Stormforged_Axe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b36a28a557088f04c9d925315d244ae9
+    m_Address: Dust_Devil
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b6dc86db9d6c75f49aec355df9b0f3db
+    m_Address: Earth_Shock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ca6d80a9c2969c46b00afc6a6fe9219
+    m_Address: Unbound_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 674ef64cf62daa44f9a0f0de40ed40f7
+    m_Address: Lightning_Bolt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2cfa8d9e0a6500f4e86847b435631e14
+    m_Address: Forked_Lightning
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 54d60e28c85da8546a265d30c31ca567
+    m_Address: Lava_Burst
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 140cd78e8f5a3694e82575f4288aced5
+    m_Address: Ancestral_Spirit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0164030abe771f7429024b5eb8951b65
+    m_Address: Lightning_Storm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 97c457ff4569b794b862fbaeb6e19b1c
+    m_Address: Spirit_Wolf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 846ab654035162947949bf688f3f5df7
+    m_Address: Feral_Spirit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b19a41a97214ed94aa7f438a03d365de
+    m_Address: Mana_Tide_Totem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8ec113b3897269448bf5dee62a7665e9
+    m_Address: Al'Akir_the_Windlord
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbda5d97b75aacd439ec844d2d9bd3df
+    m_Address: Doomhammer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 45399ebdc42afcb4e88a84500f054cf5
+    m_Address: Far_Sight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af7c640f74696ca46bffe74df2cc52c4
+    m_Address: Earth_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 99ed313d46810264ca04c58c2f77974b
+    m_Address: Sense_Demons
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 044d8f678fc12714b8a6fe38c024d368
+    m_Address: Flame_Imp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26d8be5454df50f4fba8e75a807626b9
+    m_Address: Summoning_Portal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6f7461fa886f0541acf9997ded33f6d
+    m_Address: Demonfire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0778b76c283d51143a8376a1d04956c7
+    m_Address: Worthless_Imp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5540e7726ca35274387c41e21df229a7
+    m_Address: Blood_Imp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec66e8aab75dce946bc9883f124e4f0d
+    m_Address: Power_Overwhelming
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6edc827810a2fd74987ada4fcd1c141a
+    m_Address: Felguard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bf51e2601b06095409ee65620cbf7d4e
+    m_Address: Doomguard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9915b7f995ffa5c4fb020745c5a9bdd9
+    m_Address: Siphon_Soul
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cd9bfe7f59be78f418e2e401216ec0c0
+    m_Address: Void_Terror
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fa8cea77c20b0584c804253be52bbded
+    m_Address: Shadowflame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16062a3f95b70014186998e02dddce5c
+    m_Address: Bane_of_Doom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7cde843ad406054bb9fad2e9606618a
+    m_Address: Lord_Jaraxxus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88f65bc09f0bc19498ce0c3c9c0d2684
+    m_Address: Pit_Lord
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dd15c88f2acd4a34d998a00f02915d1d
+    m_Address: Twisting_Nether
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5d53f41d82cd9fc45a0fb1b6970decfd
+    m_Address: Blood_Fury
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 84267d4b4ccf656498dc701dd0abbe9d
+    m_Address: Infernal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bd23bcc344ca40e49a297f4a168ffe4a
+    m_Address: Arathi_Weaponsmith
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 78e0ce91fc4a8204e8648605fe97c185
+    m_Address: Slam
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6c5217dea0cb62a4dad914524d6f9daf
+    m_Address: Inner_Rage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d66ee2fe2f00dc04db604adf10d8999a
+    m_Address: Cruel_Taskmaster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ddd7c500aac118b4daa0f89367c868c0
+    m_Address: Battle_Rage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5a9e9e6c0113ffc48ae7a2be6f3aebab
+    m_Address: Rampage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0cb32ce13910fc4489e5d2d6de9ac616
+    m_Address: Mortal_Strike
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8ea7e42d2180b4643ac42c8a7e480552
+    m_Address: Heavy_Axe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bccdf66adae419f46aff4abdf0e24b0f
+    m_Address: Armorsmith
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa61bf80075f0b84abf2437a7b305888
+    m_Address: Upgrade!
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa72e0d251541eb48a8f86ebee8d0a01
+    m_Address: Commanding_Shout
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 447310036e3efc14eb386b54a7d8f2e5
+    m_Address: Frothing_Berserker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d476c03d7a075b14893a642a63f75883
+    m_Address: Shield_Slam
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ede82a6123ee5e4469ed204605ec7284
+    m_Address: Gorehowl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d4962918c44645645a4055b5b7f2fd8f
+    m_Address: Brawl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af32feda795f1094786311e23b9ccfdd
+    m_Address: Grommash_Hellscream
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ef87948ab735bf48b413bfffea9a812
+    m_Address: Angry_Chicken
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 29c44a47d96b72241813155b6556088a
+    m_Address: Violet_Teacher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ea8817679ee1cc4489bf9b525ad1039
+    m_Address: Azure_Drake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4eb2f33589637f546b9b948d69b374ce
+    m_Address: Sunwalker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9641054f9cbae7547a794b38dc462f3a
+    m_Address: Ancient_Mage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4546c3cf7f286d64cbe67145747bc539
+    m_Address: Mind_Control_Tech
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e12c84f07c106294fae8e598c03df6f6
+    m_Address: Twilight_Drake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f1e3e2de3796e4d48a9e27aa40964fce
+    m_Address: Ravenholdt_Assassin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cbff793160e15d94193eb1cc40f23f92
+    m_Address: Gadgetzan_Auctioneer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 514a749cc706c72428813ebf576f4ea9
+    m_Address: Abomination
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d4fa31c20c31a545a8811feb63d1ad7
+    m_Address: Stampeding_Kodo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 435d0d0835d77e04a9a2e54917b69397
+    m_Address: Argent_Commander
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e1d3a676291435b4c872ed157d6f5102
+    m_Address: Defender_of_Argus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e5f1b9bb440e02342a227da0f2c9c9d5
+    m_Address: Questing_Adventurer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 90ddb169e34ec874e88bcb24e7acff6a
+    m_Address: Lightwarden
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c26e3ad971919ee4d923a3092996cc14
+    m_Address: Imp_Master
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16e82ad4dc901be48a00405cd9700792
+    m_Address: Master_Swordsmith
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 78e9d7423693c234fa469743e3db12bc
+    m_Address: Mana_Addict
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4a812eac039e1ed4fb87404e70a554d0
+    m_Address: Murloc_Tidecaller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 80a123f9a81187249a8701f4c3375518
+    m_Address: Alarm-o-Bot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 78b831ca7e5c2c441b0d29376641a2ee
+    m_Address: Ancient_Watcher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce7d28102be9a844c8d7a70a4701c7ae
+    m_Address: Coldlight_Seer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c2a25738657f78a4fa1030420ef7c63a
+    m_Address: Mana_Wraith
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef824cae2dda51d4ea8eea3aae4dae8f
+    m_Address: Injured_Blademaster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 110e6c52e8f24374fbaf654b98f73b41
+    m_Address: Wild_Pyromancer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf9a584bd6cad054bac701dee711bc20
+    m_Address: Bloodsail_Corsair
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f54d6d0f27fd5d4b82310fe2d5e1d42
+    m_Address: Coldlight_Oracle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73fed027649485848b1dd4975535bd6f
+    m_Address: Arcane_Golem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fe79962b0c4e77a479712b52b08954bf
+    m_Address: Sunfury_Protector
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20efb45c95c407849be5eb40d49ba6ee
+    m_Address: Demolisher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 60017b224d21d4a439bbf878d0c63277
+    m_Address: Knife_Juggler
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 09596d5ad3bf08e49838b0396b46fc9c
+    m_Address: Crazed_Alchemist
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d698000a00273c4eb87548792f46104
+    m_Address: Pint-Sized_Summoner
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f75c766b00394e418b1bd43c5fe0522
+    m_Address: Emperor_Cobra
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eab9e28f72d573040a0668d7c87e9937
+    m_Address: Secretkeeper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0c865390884083447888592e3f3e8d8f
+    m_Address: Young_Priestess
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0443122fd7dd5946b7da87485db0bda
+    m_Address: Assets/Addressable/CardTexture/Original/Netural/Relative/Crazy_Monkey.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 39391f5432fb47d4489b284f7e256d11
+    m_Address: Force_of_Nature
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 08bec13059f202247a9dffed00f5de22
+    m_Address: Bite
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0eae0440ac13bb540a9cfab8df583283
+    m_Address: Keeper_of_the_Grove
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dd5722f11c461a34d81f1b5cb1462e1f
+    m_Address: Nourish
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b5aee1ad9b3edc49b2d90244cc3782f
+    m_Address: Savagery
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 841df2b8a015a724a9d420a5e3332c6e
+    m_Address: Starfall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f8e350295cbf2e40b62070d418bd4ff
+    m_Address: Abusive_Sergeant
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e6078ee5e6528a47af67b02bf52524e
+    m_Address: Acolyte_of_Pain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72e852a2c1a0a09439551e97ebaaf446
+    m_Address: Amani_Berserker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c5fcb421755117e45b54ab606d803e07
+    m_Address: Ancient_Brewmaster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be2f4e9232e6f0840983de46704bcf09
+    m_Address: Argent_Squire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 666d94ad9e4b7cc41a151646f79ed0c6
+    m_Address: Bloodsail_Raider
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a25f248f634a6aa42a76d87f3d0d2e48
+    m_Address: Cult_Master
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d8417081ec1cb0a4da6f9909c7f19b82
+    m_Address: Damaged_Golem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3709ab8782610244197ab85cf93bfcd9
+    m_Address: Dark_Iron_Dwarf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d430b7293286c3345a358172cf7b5cad
+    m_Address: Dire_Wolf_Alpha
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8c1e74e516a7574cafcca951499df19
+    m_Address: Dread_Corsair
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 338072ee83d6aef488c33dfd572a92c3
+    m_Address: Earthen_Ring_Farseer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ecc7fb3f0f815648a56435f80307f06
+    m_Address: Faerie_Dragon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f2f0986e3b6f81743b202ba24fbaa2d5
+    m_Address: Fen_Creeper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 427086686f9f52945adbb896778bc216
+    m_Address: Flesheating_Ghoul
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b3f41d12d7f5f849b46d37d548b327f
+    m_Address: Frost_Elemental
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cea8ea607dc9901449751bd2e4be5f07
+    m_Address: Harvest_Golem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e5a961d9d1d987a4dbbda4995c5422d8
+    m_Address: Ironbeak_Owl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 067f2bad363f49844a97e525744931f9
+    m_Address: Jungle_Panther
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 046270b9a50408d4ab7f8e8631eda5d3
+    m_Address: Leper_Gnome
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d658ab1ebf5bc349b9170862ee58a67
+    m_Address: Loot_Hoarder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a432c92c5c08d8e41a9ab8d9dbcb0261
+    m_Address: Mad_Bomber
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 45de19277b5974e419a45f0435763ec2
+    m_Address: Mogu'shan_Warden
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1916ac70c6964be478778316e0fbdb84
+    m_Address: Priestess_of_Elune
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8645d746f767b24c8ef343ded931406
+    m_Address: Raging_Worgen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d565584543882c4793fad00b90091c0
+    m_Address: Scarlet_Crusader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b92ad69a049e39c47b67ebd4ad7275c9
+    m_Address: Shieldbearer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 041c2097d722d724298b41f885a67d78
+    m_Address: Silver_Hand_Knight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e33ce14c7d9c6da4a81340d8ebd1afc6
+    m_Address: Silvermoon_Guardian
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a38e30a7160160b438da4296ca4d2667
+    m_Address: Southsea_Deckhand
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6094bf5e9a7e96641b78be362ab404bd
+    m_Address: Spellbreaker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5280b6417e5b71141857495aaceea5bd
+    m_Address: Spiteful_Smith
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c25eec4ad98d0646be13428de26d26a
+    m_Address: Squire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6a97dc953912e5c408259743cb5779d0
+    m_Address: Stranglethorn_Tiger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86db620fa396a044da254d6f1cc17872
+    m_Address: Tauren_Warrior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f3765d09c8ab02447af77a5c404e96cf
+    m_Address: Thrallmar_Farseer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9039a13dc86bb5c46af0b687eb01c908
+    m_Address: Venture_Co._Mercenary
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b8c68543e0546c49979d45aa2dcb0de
+    m_Address: Windfury_Harpy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85d3df86db1b5174eae2c184f4835173
+    m_Address: Wisp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f5116cb76e8c89f46a2e96b3a3f1b180
+    m_Address: Worgen_Infiltrator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0d576144c67b5f4bbc4190c9a2431d4
+    m_Address: Young_Dragonhawk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4b4af20352195b64fba989844d3398d4
+    m_Address: Youthful_Brewmaster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ea28f4d4e48008d4192140856d71fa27
+    m_Address: SOCardData
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

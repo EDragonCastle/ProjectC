@@ -66,11 +66,10 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             }
 
             if(draggingObject == null)
-            { 
+            {
                 draggingObject = Instantiate(origin, collectionCanvas);
-
+       
                 var canvasGroup = draggingObject.GetComponent<CanvasGroup>();
-               
 
                 if (canvasGroup == null)
                     canvasGroup = draggingObject.AddComponent<CanvasGroup>();
@@ -105,6 +104,7 @@ public class CollectionCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
             Debug.Log("Card를 좌클릭에서 드래그를 시작했다.");
             GameObject cardInstance = Instantiate(origin, collectionCanvas);
+
             
             draggingObject = cardInstance;
             currentTransform = cardInstance.GetComponent<RectTransform>();

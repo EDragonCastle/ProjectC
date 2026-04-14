@@ -1,107 +1,603 @@
-﻿UID,Name,Cost,Attack,Health,Description,SpriteName,Gem,Card Type,Job,PackageType,Minion Type,Magic Type,SpawnID,PosX,PosY,Rotation
+﻿UID,Name,Cost,Attack,Health,Description,SpriteName,Gem,Card Type,Job,PackageType,Minion Type,Magic Type,SpawnID,IsCollection,PosX,PosY,Rotation
 0,엘프 궁수,1,1,1,"<b>전투의 함성:<b>
-피해를 1 줍니다.",Elven_Archer,None,Minion,중립,Original,기계,,,,,
-1,황금골 보병,1,1,2,<b>도발<b>,Goldshire_Footman,None,Minion,중립,Original,None,,,,,
+피해를 1 줍니다.",Elven_Archer,None,Minion,중립,Original,None,,,TRUE,,,
+1,황금골 보병,1,1,2,<b>도발<b>,Goldshire_Footman,None,Minion,중립,Original,None,,,TRUE,,,
 2,성난비늘 수련사,1,1,1,"내 다른 멀록들이
-공격력을 +1 얻습니다.",Grimscale_Oracle,None,Minion,중립,Original,멀록,,,,,
-3,멀록 약탈꾼,1,2,1,,Murloc_Raid,None,Minion,중립,Original,멀록,,,,,
-4,돌엄니멧돼지,1,1,1,<b>돌진<b>,Stonetusk_Boar,None,Minion,중립,Original,야수,,,,,
+공격력을 +1 얻습니다.",Grimscale_Oracle,None,Minion,중립,Original,멀록,,,TRUE,,,
+3,멀록 약탈꾼,1,2,1,,Murloc_Raid,None,Minion,중립,Original,멀록,,,TRUE,,,
+4,돌엄니멧돼지,1,1,1,<b>돌진<b>,Stonetusk_Boar,None,Minion,중립,Original,야수,,,TRUE,,,
 5,부두교 의술사,1,2,1,"<b>전투의 함성:<b>
-생명력을 2 회복시킵니다.",Voodoo_Doctor,None,Minion,중립,Original,None,,,,,
+생명력을 2 회복시킵니다.",Voodoo_Doctor,None,Minion,중립,Original,None,,,TRUE,,,
 6,산성 늪수액 괴물,2,3,2,"<b>전투의 함성:<b> 상대편의 무기를 파괴합니다.
-",Acidic_Swamp_Ooze,None,Minion,중립,Original,None,,,,,
-7,붉은늪지랩터,2,3,2,,Bloodfen_Raptor,None,Minion,중립,Original,야수,,,,,
-8,푸른아가미 전사,2,2,1,<b>돌진<b>,Bluegill_Warrior,None,Minion,중립,Original,멀록,,,,,
-9,서리늑대 그런트,2,2,2,<b>도발<b>,Frostwolf_Grunt,None,Minion,중립,Original,None,,,,,
-10,코발트 흙점쟁이,2,2,2,<b>주문 공격력 + 1<b>,Kobold_Geomancer,None,Minion,중립,Original,None,,,,,
-11,멀록 바다사냥꾼,2,2,1,<b>전투의 함성:<b> 1/1 멀록 정찰병을 소환합니다. ,Murloc_Tidehunter,None,Minion,중립,Original,멀록,,1,,,
+",Acidic_Swamp_Ooze,None,Minion,중립,Original,None,,,TRUE,,,
+7,붉은늪지랩터,2,3,2,,Bloodfen_Raptor,None,Minion,중립,Original,야수,,,TRUE,,,
+8,푸른아가미 전사,2,2,1,<b>돌진<b>,Bluegill_Warrior,None,Minion,중립,Original,멀록,,,TRUE,,,
+9,서리늑대 그런트,2,2,2,<b>도발<b>,Frostwolf_Grunt,None,Minion,중립,Original,None,,,TRUE,,,
+10,코발트 흙점쟁이,2,2,2,<b>주문 공격력 + 1<b>,Kobold_Geomancer,None,Minion,중립,Original,None,,,TRUE,,,
+11,멀록 바다사냥꾼,2,2,1,<b>전투의 함성:<b> 1/1 멀록 정찰병을 소환합니다. ,Murloc_Tidehunter,None,Minion,중립,Original,멀록,,43,TRUE,,,
 12,풋내기 기술자,2,1,1,"<b>전투의 함성:<b>
-카드를 뽑습니다.",Novice_Engineer,None,Minion,중립,Original,None,,,,,
-13,민물악어,2,2,3,,River_Crocolisk,None,Minion,중립,Original,야수,,,,,
-14,달라란 마법사,3,1,4,<b>주문 공격력 + 1<b>,Dalaran_Mage,None,Minion,중립,Original,None,,,,,
+카드를 뽑습니다.",Novice_Engineer,None,Minion,중립,Original,None,,,TRUE,,,
+13,민물악어,2,2,3,,River_Crocolisk,None,Minion,중립,Original,야수,,,TRUE,,,
+14,달라란 마법사,3,1,4,<b>주문 공격력 + 1<b>,Dalaran_Mage,None,Minion,중립,Original,None,,,TRUE,,,
 15,아이언포지 소총병,3,2,2,"<b>전투의 함성:<b>
-피해를 1 줍니다.",Ironforge_Rifleman,None,Minion,중립,Original,None,,,,,
-16,무쇠가죽 불곰,3,3,3,<b>도발<b>,Ironfur_Grizzly,None,Minion,중립,Original,야수,,,,,
-17,용암 광전사,3,5,1,,Magma_Rager,None,Minion,중립,Original,정령,,,,,
-18,공격대장,3,2,2,내 다른 하수인들이 공격력을 +1 얻습니다.,Raid_Leader,None,Minion,중립,Original,None,,,,,
+피해를 1 줍니다.",Ironforge_Rifleman,None,Minion,중립,Original,None,,,TRUE,,,
+16,무쇠가죽 불곰,3,3,3,<b>도발<b>,Ironfur_Grizzly,None,Minion,중립,Original,야수,,,TRUE,,,
+17,용암 광전사,3,5,1,,Magma_Rager,None,Minion,중립,Original,정령,,,TRUE,,,
+18,공격대장,3,2,2,내 다른 하수인들이 공격력을 +1 얻습니다.,Raid_Leader,None,Minion,중립,Original,None,,,TRUE,,,
 19,가시덩굴 사냥꾼,3,2,3,"<b>전투의 함성:<b>
 1/1 멧돼지를
-소환합니다.",Razorfen_Hunter,None,Minion,중립,Original,None,,2,,,
+소환합니다.",Razorfen_Hunter,None,Minion,중립,Original,None,,44,TRUE,,,
 20,무너진 태양 성직자,3,3,2,"<b>전투의 함성:<b>
 아군 하수인에게
-+1/+1을 부여합니다.",Shattered_Sun_Cleric,None,Minion,중립,Original,None,,,,,
-21,은빛털고릴라 우두머리,3,1,4,<b>도발<b>,Silverback_Patriarch,None,Minion,중립,Original,야수,,,,,
-22,늑대기수,3,3,1,<b>돌진<b>,Wolfrider,None,Minion,중립,Original,None,,,,,
-23,서리바람 설인,4,4,5,,Chillwind_Yeti,None,Minion,중립,Original,None,,,,,
-24,기계용 정비사,4,2,4,<b>전투의 함성:<b> 2/1 소형 기계용을 소환합니다.,Dragonling_Mechanic,None,Minion,중립,Original,None,,3,,,
++1/+1을 부여합니다.",Shattered_Sun_Cleric,None,Minion,중립,Original,None,,,TRUE,,,
+21,은빛털고릴라 우두머리,3,1,4,<b>도발<b>,Silverback_Patriarch,None,Minion,중립,Original,야수,,,TRUE,,,
+22,늑대기수,3,3,1,<b>돌진<b>,Wolfrider,None,Minion,중립,Original,None,,,TRUE,,,
+23,서리바람 설인,4,4,5,,Chillwind_Yeti,None,Minion,중립,Original,None,,,TRUE,,,
+24,기계용 정비사,4,2,4,<b>전투의 함성:<b> 2/1 소형 기계용을 소환합니다.,Dragonling_Mechanic,None,Minion,중립,Original,None,,45,TRUE,,,
 25,노움 발명가,4,2,4,"<b>전투의 함성:<b>
-카드를 뽑습니다.",Gnomish_Inventor,None,Minion,중립,Original,None,,,,,
-26,오아시스 무쇠턱거북,4,2,7,,Oasis_Snapjaw,None,Minion,중립,Original,None,,,,,
-27,오우거 마법사,4,4,4,<b>주문 공격력 + 1<b>,Ogre_Magi,None,Minion,중립,Original,None,,,,,
-28,센진 방패대가,4,3,5,<b>도발<b>,Sen'jin_Shieldmasta,None,Minion,중립,Original,None,,,,,
-29,스톰윈드 기사,4,2,5,<b>돌진<b>,Stormwind_Knight,None,Minion,중립,Original,None,,,,,
-30,무법항 경호원,5,5,4,<b>도발<b>,Booty_Bay_Bodyguard,None,Minion,중립,Original,None,,,,,
-31,어둠비늘 치유사,5,4,5,<b>전투의 함성:<b> 모든 아군 캐릭터의 생명력을 2 회복시킵니다.,Darkscale_Healer,None,Minion,중립,Original,None,,,,,
+카드를 뽑습니다.",Gnomish_Inventor,None,Minion,중립,Original,None,,,TRUE,,,
+26,오아시스 무쇠턱거북,4,2,7,,Oasis_Snapjaw,None,Minion,중립,Original,None,,,TRUE,,,
+27,오우거 마법사,4,4,4,<b>주문 공격력 + 1<b>,Ogre_Magi,None,Minion,중립,Original,None,,,TRUE,,,
+28,센진 방패대가,4,3,5,<b>도발<b>,Sen'jin_Shieldmasta,None,Minion,중립,Original,None,,,TRUE,,,
+29,스톰윈드 기사,4,2,5,<b>돌진<b>,Stormwind_Knight,None,Minion,중립,Original,None,,,TRUE,,,
+30,무법항 경호원,5,5,4,<b>도발<b>,Booty_Bay_Bodyguard,None,Minion,중립,Original,None,,,TRUE,,,
+31,어둠비늘 치유사,5,4,5,<b>전투의 함성:<b> 모든 아군 캐릭터의 생명력을 2 회복시킵니다.,Darkscale_Healer,None,Minion,중립,Original,None,,,TRUE,,,
 32,서리늑대 전쟁군주,5,4,4,"<b>전투의 함성:<b> 전장의 다른 아군 하수인 하나당 
-+1/+1을 얻습니다.",Frostwolf_Warlord,None,Minion,중립,Original,None,,,,,
++1/+1을 얻습니다.",Frostwolf_Warlord,None,Minion,중립,Original,None,,,TRUE,,,
 33,구루바시 광전사,5,2,7,"이 하수인은 피해를 받을 때마다 공격력을 
-+3 얻습니다.",Gurubashi_Berserker,None,Minion,중립,Original,None,,,,,
++3 얻습니다.",Gurubashi_Berserker,None,Minion,중립,Original,None,,,TRUE,,,
 34,암흑칼날,5,4,4,"<b>전투의 함성:<b> 적 영웅에게
-피해를 3 줍니다.",Nightblade,None,Minion,중립,Original,None,,,,,
+피해를 3 줍니다.",Nightblade,None,Minion,중립,Original,None,,,TRUE,,,
 35,스톰파이크 특공대,5,4,2,"<b>전투의 함성:<b>
-피해를 2 줍니다.",Stormpike_Commando,None,Minion,중립,Original,None,,,,,
-36,대마법사,6,4,7,<b>주문 공격력 + 1<b>,Archmage,None,Minion,중립,Original,None,,,,,
-37,돌주먹 오우거,6,6,7,,Boulderfist_Ogre,None,Minion,중립,Original,None,,,,,
-38,투기장의 제왕,6,6,5,<b>도발<b>,Lord_of_the_Arena,None,Minion,중립,Original,None,,,,,
-39,못 말리는 로켓병,6,5,2,<b>돌진<b>,Reckless_Rocketeer,None,Minion,중립,Original,None,,,,,
-40,심장부 사냥개,7,9,5,,Core_Hound,None,Minion,중립,Original,야수,,,,,
+피해를 2 줍니다.",Stormpike_Commando,None,Minion,중립,Original,None,,,TRUE,,,
+36,대마법사,6,4,7,<b>주문 공격력 + 1<b>,Archmage,None,Minion,중립,Original,None,,,TRUE,,,
+37,돌주먹 오우거,6,6,7,,Boulderfist_Ogre,None,Minion,중립,Original,None,,,TRUE,,,
+38,투기장의 제왕,6,6,5,<b>도발<b>,Lord_of_the_Arena,None,Minion,중립,Original,None,,,TRUE,,,
+39,못 말리는 로켓병,6,5,2,<b>돌진<b>,Reckless_Rocketeer,None,Minion,중립,Original,None,,,TRUE,,,
+40,심장부 사냥개,7,9,5,,Core_Hound,None,Minion,중립,Original,야수,,,TRUE,,,
 41,스톰윈드 용사,7,6,6,"내 다른 하수인들이 
-+1/+1을 얻습니다.",Stormwind_Champion,None,Minion,중립,Original,None,,,,,
-42,전쟁골렘,7,7,7,,War_Golem,None,Minion,중립,Original,None,,,,,
-43,정신 자극,0,,,"이번 턴에만
++1/+1을 얻습니다.",Stormwind_Champion,None,Minion,중립,Original,None,,,TRUE,,,
+42,전쟁골렘,7,7,7,,War_Golem,None,Minion,중립,Original,None,,,TRUE,,,
+43,멀록 정찰병,1,1,1,,Murloc_Raid,Gem_Common,Minion,Neutral,Original,멀록,,,FALSE,,,
+44,멧돼지,1,1,1,,Razorfen_Hunter,Gem_Common,Minion,Neutral,Original,야수,,,FALSE,,,
+45,소형 기계용,1,2,1,,Mechanical_Dragonling,None,Minion,Neutral,Original,"기계,용족",,,FALSE,,,
+46,정신 자극,0,,,"이번 턴에만
 마나 수정을 2개
-얻습니다.",Innervate,None,Magic,드루이드,Original,,자연,,,,
-44,달빛섬광,0,,,피해를 1 줍니다.,Moonfire,None,Magic,드루이드,Original,,비전,,,,
-45,할퀴기,1,,,"방어도를 +2를 얻고,
+얻습니다.",Innervate,None,Magic,드루이드,Original,,자연,,TRUE,,,
+47,달빛섬광,0,,,피해를 1 줍니다.,Moonfire,None,Magic,드루이드,Original,,"비전,자연",,TRUE,,,
+48,할퀴기,1,,,"방어도를 +2를 얻고,
 이번 턴에 내 영웅이
-공격력을 +2 얻습니다.",Claw,None,Magic,드루이드,Original,,None,,,,
-46,야생의 징표,2,,,"하수인에게
+공격력을 +2 얻습니다.",Claw,None,Magic,드루이드,Original,,None,,TRUE,,,
+49,야생의 징표,2,,,"하수인에게
 <b>도발<b>과 +2/+2을
-부여합니다.",Mark_of_the_Wild,None,Magic,드루이드,Original,,자연,,,,
-47,치유의 손길,3,,,"생명력을 8
-회복시킵니다.",Healing_Touch,None,Magic,드루이드,Original,,자연,,,,
-48,야생의 포효,3,,,"이번 턴에 내
+부여합니다.",Mark_of_the_Wild,None,Magic,드루이드,Original,,자연,,TRUE,,,
+50,치유의 손길,3,,,"생명력을 8
+회복시킵니다.",Healing_Touch,None,Magic,드루이드,Original,,자연,,TRUE,,,
+51,야생의 포효,3,,,"이번 턴에 내
 캐릭터들에게 공격력을
-+2 부여합니다.",Savage_Roar,None,Magic,드루이드,Original,,None,,,,
-49,급속 성장,2,,,"빈 마나 수정을
-얻습니다.",Wild_Growth,None,Magic,드루이드,Original,,자연,4,,,
-50,휘둘러치기,4,,,"적에게 피해를 4 주고
++2 부여합니다.",Savage_Roar,None,Magic,드루이드,Original,,None,,TRUE,,,
+52,급속 성장,2,,,"빈 마나 수정을
+얻습니다.",Wild_Growth,None,Magic,드루이드,Original,,자연,56,TRUE,,,
+53,휘둘러치기,4,,,"적에게 피해를 4 주고
 다른 모든 적에게
-피해를 1 줍니다.",Swipe,None,Magic,드루이드,Original,,None,,,,
-51,별빛섬광,6,,,"피해를 5 줍니다.
-카드를 뽑습니다.",Starfire,None,Magic,드루이드,Original,,비전,,,,
-52,무쇠껍질 수호정령,8,8,8,<b>도발<b>,Ironbark_Protector,None,Minion,드루이드,Original,정령,,,,,
-53,신비한 사격,1,,,피해를 2 줍니다.,Arcane_Shot,None,Magic,사냥꾼,Original,,비전,,,,
-54,회갈색 늑대,1,1,1,"내 다른 야수들이
-공격력 +1을 얻습니다.",Timber_Wolf,None,Minion,사냥꾼,Original,야수,,,,,
-55,추적,1,,,"내 덱에서
-카드를 <b>발견<b>합니다.",Tracking,None,Magic,사냥꾼,Original,,None,,,,
-56,사냥꾼의 징표,1,,,"하수인의
+피해를 1 줍니다.",Swipe,None,Magic,드루이드,Original,,None,,TRUE,,,
+54,별빛섬광,6,,,"피해를 5 줍니다.
+카드를 뽑습니다.",Starfire,None,Magic,드루이드,Original,,비전,,TRUE,,,
+55,무쇠껍질 수호정령,8,8,8,<b>도발<b>,Ironbark_Protector,None,Minion,드루이드,Original,정령,,,TRUE,,,
+56,넘치는 마나,0,,,"카드를 뽑습니다.
+(마나 수정은
+10개까지만 보유가능)",Excess_Mana,None,Magic,드루이드,Original,,None,,FALSE,,,
+57,신비한 사격,1,,,피해를 2 줍니다.,Arcane_Shot,None,Magic,사냥꾼,Original,,비전,,TRUE,,,
+58,회갈색 늑대,1,1,1,"내 다른 야수들이
+공격력 +1을 얻습니다.",Timber_Wolf,None,Minion,사냥꾼,Original,야수,,,TRUE,,,
+59,추적,1,,,"내 덱에서
+카드를 <b>발견<b>합니다.",Tracking,None,Magic,사냥꾼,Original,,None,,TRUE,,,
+60,사냥꾼의 징표,1,,,"하수인의
 생명력을 1로
-바꿉니다.",Hunter's_Mark,None,Magic,사냥꾼,Original,,None,,,,
-57,야생의 벗,3,,,"무작위
+바꿉니다.",Hunter's_Mark,None,Magic,사냥꾼,Original,,None,,TRUE,,,
+61,야생의 벗,3,,,"무작위
 동료 야수를
-소환합니다.",Animal_Companion,None,Magic,사냥꾼,Original,,None,"5,6,7",,,
-58,살상 명령,3,,,"피해를 3 줍니다.
+소환합니다.",Animal_Companion,None,Magic,사냥꾼,Original,,None,"67,68,69",TRUE,,,
+62,살상 명령,3,,,"피해를 3 줍니다.
 내 전장에 야수가 있으면,
-피해를 5 줍니다.",Kill_Command,None,Magic,사냥꾼,Original,,None,,,,
-59,사냥개조련사,4,4,3,"<b>전투의 함성:<b> 아군
+피해를 5 줍니다.",Kill_Command,None,Magic,사냥꾼,Original,,None,,TRUE,,,
+63,사냥개조련사,4,4,3,"<b>전투의 함성:<b> 아군
 야수에게 +2/+2와
-<b>도발<b>을 부여합니다.",Houndmaster,None,Minion,사냥꾼,Original,None,,,,,
-60,일제 사격,4,,,"무작위 적 하수인
+<b>도발<b>을 부여합니다.",Houndmaster,None,Minion,사냥꾼,Original,None,,,TRUE,,,
+64,일제 사격,4,,,"무작위 적 하수인
 둘에게 피해를
-3 줍니다.",Multi-Shot,None,Magic,사냥꾼,Original,,None,,,,
-61,굶주린 대머리수리,2,2,1,"내가 야수를 소환할
-때마다 카드를 뽑습니다.",Starving_Buzzard,None,Minion,사냥꾼,Original,야수,,,,,
-62,툰드라 코뿔소,5,2,5,"내 야수들이 <b>돌진<b>을
-얻습니다.",Tundra_Rhino,None,Minion,사냥꾼,Original,야수,,,,,
+3 줍니다.",Multi-Shot,None,Magic,사냥꾼,Original,,None,,TRUE,,,
+65,굶주린 대머리수리,2,2,1,"내가 야수를 소환할
+때마다 카드를 뽑습니다.",Starving_Buzzard,None,Minion,사냥꾼,Original,야수,,,TRUE,,,
+66,툰드라 코뿔소,5,2,5,"내 야수들이 <b>돌진<b>을
+얻습니다.",Tundra_Rhino,None,Minion,사냥꾼,Original,야수,,,TRUE,,,
+67,킁킁이,3,4,2,<b>돌진<b>,Huffer,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+68,레오크,3,2,4,"내 다른 하수인들이
+공격력 +1을 얻습니다.",Leokk,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+69,미샤,3,4,4,<b>도발<b>,Misha,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+70,신비한 화살,1,,,"모든 적에게 3의
+피해를 무작위로
+나누어 입힙니다.",Arcane_Missiles,None,Magic,마법사,Original,,비전,,TRUE,,,
+71,환영 복제,0,0,2,<b>도발<b>,Mirror_Minion_Image,None,Magic,마법사,Original,None,,,FALSE,,,
+72,환영 복제,1,,,"0/2 <b>도발<b> 하수인을
+둘 소환합니다.",Mirror_Image,None,Magic,마법사,Original,,None,71,TRUE,,,
+73,신비한 폭발,2,,,"모든 적 하수인에게
+피해를 1 줍니다. ",Arcane_Explosion,None,Magic,마법사,Original,,비전,,TRUE,,,
+74,얼음 화살,2,,,"캐릭터에게
+피해를 3 주고
+<b>빙결<b> 상태로 만듭니다.",Frostbolt,None,Magic,마법사,Original,,냉기,,TRUE,,,
+75,신비한 지능,3,,,카드를 2장 뽑습니다.,Arcane_Intellect,None,Magic,마법사,Original,,비전,,TRUE,,,
+76,얼음 회오리,3,,,"모든 적 하수인을 <b>빙결<b>
+상태로 만듭니다.",Frost_Nova,None,Magic,마법사,Original,,냉기,,TRUE,,,
+77,화염구,4,,,피해를 6 줍니다.,Fireball,None,Magic,마법사,Original,,화염,,TRUE,,,
+78,변이,4,,,"하수인을 1/1
+양으로 변신시킵니다.",Polymorph,None,Magic,마법사,Original,,비전,79,TRUE,,,
+79,양,1,1,1,,Polymorph,None,Minion,마법사,Original,야수,,,FALSE,,,
+80,물의 정령,4,3,6,"이 하수인에게 피해를
+받은 캐릭터는 <b>빙결<b>
+상태가 됩니다.",Water_Elemental,None,Minion,마법사,Original,정령,,,TRUE,,,
+81,불기둥,7,,,"모든 적 하수인에게
+피해를 4 줍니다. ",Flamestrike,None,Magic,마법사,Original,,화염,,TRUE,,,
+82,힘의 축복,1,,,"하수인에게
+공격력을 +3
+부여합니다.",Blessing_of_Might,None,Magic,성기사,Original,,신성,,TRUE,,,
+83,보호의 손길,1,,,"하수인에게
+<b>천상의 보호막<b>을
+부여합니다.",Hand_of_Protection,None,Magic,성기사,Original,,신성,,TRUE,,,
+84,겸손,1,,,"하수인의
+공격력을 1로
+만듭니다.",Humility,None,Magic,성기사,Original,,None,,TRUE,,,
+85,빛의 정의,1,1,4,,Light's_Justice,None,Weapon,성기사,Original,,,,TRUE,,,
+86,성스러운 빛,2,,,"내 영웅의
+생명력을 8
+회복시킵니다.",Holy_Light,None,Magic,성기사,Original,,신성,,TRUE,,,
+87,왕의 축복,4,,,"하수인에게
++4/+4를
+부여합니다.",Blessing_of_Kings,None,Magic,성기사,Original,,신성,,TRUE,,,
+88,신성화,4,,,"모든 적에게
+피해를 2 줍니다.",Consecration,None,Magic,성기사,Original,,신성,,TRUE,,,
+89,천벌의 망치,4,,,"피해를 3 줍니다.
+카드를 뽑습니다.",Hammer_of_Wrath,None,Magic,성기사,Original,,신성,,TRUE,,,
+90,용사의 진은검,4,4,2,"내 영웅이 공격할
+때마다 생명력을
+2 회복합니다.",Truesilver_Champion,None,Weapon,성기사,Original,,,,TRUE,,,
+91,왕의 수호자,7,5,6,"<b>도발<b>, <b>전투의 함성:<b>
+내 영웅의 생명력을
+6 회복시킵니다.",Guardian_of_Kings,None,Minion,성기사,Original,None,,,TRUE,,,
+92,성스러운 일격,1,,,"하수인에게
+피해를 3 줍니다.",Holy_Smite,None,Magic,사제,Original,,신성,,TRUE,,,
+93,마음의 눈,1,,,"상대편 손에 있는 카드를
+무작위로 복사하여
+내 손으로 가져옵니다.",Mind_Vision,None,Magic,사제,Original,,암흑,,TRUE,,,
+94,신의 권능: 보호막,1,,,"하수인에게 생명력을
++2 부여합니다.
+카드를 뽑습니다.",Power_Word-_Shield,None,Magic,사제,Original,,신성,,TRUE,,,
+95,어둠의 권능: 고통,2,,,"공격력이
+3 이하인 하수인을
+처치합니다.",Shadow_Word-_Pain,None,Magic,사제,Original,,암흑,,TRUE,,,
+96,어둠의 권능: 죽음,3,,,"공격력이 5
+이상인 하수인을
+처치합니다.",Shadow_Word-_Death,None,Magic,사제,Original,,암흑,,TRUE,,,
+97,신성한 폭발,5,,,"모든 적에게
+피해를 2 줍니다. 모든
+아군 캐릭터의 생명력을
+2 회복시킵니다.",Holy_Nova,None,Magic,사제,Original,,신성,,TRUE,,,
+98,정신 지배,10,,,"적 하수인을
+가져옵니다.",Mind_Control,None,Magic,사제,Original,,암흑,,TRUE,,,
+99,기습,0,,,"피해를 받지
+않은 하수인에게
+피해를 2 줍니다.",Backstab,None,Magic,도적,Original,,None,,TRUE,,,
+100,맹독,1,,,"내 무기에
+공격력을 +2
+부여합니다.",Deadly_Poison,None,Magic,도적,Original,,자연,,TRUE,,,
+101,사악한 일격,1,,,"적 영웅에게
+피해를 3 줍니다.",Sinister_Strike,None,Magic,도적,Original,,None,,TRUE,,,
+102,독칼,2,,,"피해를 1 줍니다.
+카드를 뽑습니다.",Shiv,None,Magic,도적,Original,,None,,TRUE,,,
+103,혼절시키기,2,,,"적 하수인을
+상대편의 손으로
+돌려보냅니다.",Sap,None,Magic,도적,Original,,None,,TRUE,,,
+104,칼날 부채,3,,,"모든 적 하수인에게
+피해를 1 줍니다.
+카드를 뽑습니다.",Fan_of_Knives,None,Magic,도적,Original,,None,,TRUE,,,
+105,암살자의 검,5,3,4,,Assassin's_Blade,None,Weapon,도적,Original,,,,TRUE,,,
+106,암살,5,,,"적 하수인을
+처치합니다.",Assassinate,None,Magic,도적,Original,,None,,TRUE,,,
+107,전력 질주,7,,,카드를 4장 뽑습니다.,Sprint,None,Magic,도적,Original,,None,,TRUE,,,
+108,선인의 치유력,0,,,"하수인의 생명력을
+모두 회복시키고
+<b>도발<b>을 부여합니다.",Ancestral_Healing,None,Magic,주술사,Original,,자연,,TRUE,,,
+109,토템의 힘,0,,,"내 토템들에게
+생명력을 +2
+부여합니다.",Totemic_Might,None,Magic,주술사,Original,,None,,TRUE,,,
+110,냉기 충격,1,,,"적 캐릭터에게
+피해를 1 주고
+<b>빙결<b> 상태로 만듭니다.",Frost_Shock,None,Magic,주술사,Original,,냉기,,TRUE,,,
+111,대지의 무기,1,,,"이번 턴에 아군
+캐릭터에게 공격력을
++3 부여합니다.",Rockbiter_Weapon,None,Magic,주술사,Original,,자연,,TRUE,,,
+112,불꽃의 토템,2,0,3,"양옆의 하수인들이
+공격력을 +2 얻습니다.",Flametongue_Totem,None,Minion,주술사,Original,토템,,,TRUE,,,
+113,질풍,2,,,"하수인에게
+<b>질풍<b>을 부여합니다.",Windfury,None,Magic,주술사,Original,,자연,,TRUE,,,
+114,사술,3,,,"하수인을 <b>도발<b> 능력이
+있는 0/1 개구리로
+변신시킵니다.",Hex,None,Magic,주술사,Original,,자연,115,TRUE,,,
+115,개구리,0,0,1,<b>도발<b>,Hex,None,Minion,주술사,Original,야수,,,FALSE,,,
+116,바람예언자,4,3,3,"<b>전투의 함성:
+아군 하수인에게
+<b>질풍<b>을 부여합니다.",Windspeaker,None,Minion,주술사,Original,None,,,TRUE,,,
+117,피의 욕망,5,,,"이번 턴에 내
+하수인들에게 공격력을
++3 부여합니다.",Bloodlust,None,Magic,주술사,Original,,None,,TRUE,,,
+118,불의 정령,6,6,5,"<b>전투의 함성:<b>
+피해를 3 줍니다.",Fire_Elemental,None,Minion,주술사,Original,정령,,,TRUE,,,
+119,희생의 서약,0,,,"아군 악마를 처치합니다.
+내 영웅이 생명력을
+5 회복합니다.",Sacrificial_Pact,None,Magic,흑마법사,Original,,암흑,,TRUE,,,
+120,영혼의 불꽃,1,,,"피해를 4 줍니다.
+무작위로 카드를 버립니다.",Soulfire,None,Magic,흑마법사,Original,,화염,,TRUE,,,
+121,부패,1,,,"적 하수인을
+선택합니다. 내 턴이
+시작될 때, 그 하수인을
+처치합니다.",Corruption,None,Magic,흑마법사,Original,,암흑,,TRUE,,,
+122,필멸의 고리,1,,,"하수인에게
+피해를 1 줍니다.
+그 하수인이 죽으면
+카드를 뽑습니다.",Mortal_Coil,None,Magic,흑마법사,Original,,암흑,,TRUE,,,
+123,공허방랑자,1,1,3,<b>도발<b>,Voidwalker,None,Minion,흑마법사,Original,악마,,,TRUE,,,
+124,지옥파수견,2,4,3,"<b>전투의 함성:<b>
+무작위로 카드를
+버립니다.",Felstalker,None,Minion,흑마법사,Original,악마,,,TRUE,,,
+125,생명력 흡수,3,,,"피해를 2 줍니다.
+내 영웅이 생명력을
+2 회복합니다.",Drain_Life,None,Magic,흑마법사,Original,,None,,TRUE,,,
+126,어둠의 화살,3,,,"하수인에게
+피해를 4 줍니다.",Shadow_Bolt,None,Magic,흑마법사,Original,,암흑,,TRUE,,,
+127,지옥의 불길,4,,,"<b>모든<b> 캐릭터에게
+피해를 3 줍니다.",Hellfire,None,Magic,흑마법사,Original,,화염,,TRUE,,,
+128,공포의 지옥불악마,6,6,6,"<b>전투의 함성:<b>
+다른 <b>모든<b> 캐릭터에게
+피해를 1 줍니다.",Dread_Infernal,None,Minion,흑마법사,Original,악마,,,TRUE,,,
+129,마무리 일격,1,,,"피해를 받은
+적 하수인을
+처치합니다.",Execute,None,Magic,전사,Original,,None,,TRUE,,,
+130,소용돌이,1,,,"<b>모든<b> 하수인에게
+피해를 1 줍니다.",Whirlwind,None,Magic,전사,Original,,None,,TRUE,,,
+131,회전베기,2,,,"무작위 적
+하수인 둘에게
+피해를 2 줍니다.",Cleave,None,Magic,전사,Original,,None,,TRUE,,,
+132,이글거리는 전쟁 도끼,2,3,2,,Fiery_War_Axe,None,Weapon,전사,Original,,,,TRUE,,,
+133,영웅의 일격,2,,,"이번 턴에 내
+영웅이 공격력을 +4
+얻습니다.",Heroic_Strike,None,Magic,전사,Original,,None,,TRUE,,,
+134,돌진,2,,,"아군 하수인
+하나에게 공격력 +2와
+<b>돌진<b>을 부여합니다.",Charge,None,Magic,전사,Original,,None,,TRUE,,,
+135,방패 올리기,3,,,"방어도를 +5 얻습니다.
+카드를 뽑습니다.",Shield_Block,None,Magic,전사,Original,,None,,TRUE,,,
+136,전쟁노래 사령관,3,2,3,"내가 공격력이 3 이하인
+하수인을 소환할 때마다
+그 하수인에게 <b>돌진<b>을
+부여합니다.",Warsong_Commander,None,Minion,전사,Original,None,,,TRUE,,,
+137,코르크론 정예병,4,4,3,<b>돌진<b>,Kor'kron_Elite,None,Minion,전사,Original,None,,,TRUE,,,
+138,아케이나이트 도끼,5,5,2,,Arcanite_Reaper,None,Weapon,전사,Original,,,,TRUE,,,
+139,위습,0,1,1,,Wisp,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+140,,1,2,1,,Abusive_Sergeant,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+141,,1,1,1,,Argent_Squire,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+142,,1,2,1,,Leper_Gnome,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+143,방패병,1,0,4,,Shieldbearer,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+144,,1,2,1,,Southsea_Deckhand,Gem_Common,Minion,중립,Original,해적,,,TRUE,,,
+145,,1,2,1,<b>은신<b>,Worgen_Infiltrator,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+146,,1,1,1,<b>질풍<b>,Young_Dragonhawk,Gem_Common,Minion,중립,Original,야수,,,TRUE,,,
+147,,2,2,3,,Amani_Berserker,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+148,,2,2,3,,Bloodsail_Raider,Gem_Common,Minion,중립,Original,해적,,,TRUE,,,
+149,,2,2,2,,Dire_Wolf_Alpha,Gem_Common,Minion,중립,Original,야수,,,TRUE,,,
+150,,2,3,2,,Faerie_Dragon,Gem_Common,Minion,중립,Original,용족,,,TRUE,,,
+151,,3,2,1,,Ironbeak_Owl,Gem_Common,Minion,중립,Original,야수,,,TRUE,,,
+152,,2,2,1,,Loot_Hoarder,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+153,,2,3,2,,Mad_Bomber,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+154,,2,3,2,,Youthful_Brewmaster,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+155,고통의 수행 사제,3,1,3,,Acolyte_of_Pain,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+156,,3,3,3,,Earthen_Ring_Farseer,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+157,,3,2,3,,Flesheating_Ghoul,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+158,,3,2,3,,Harvest_Golem,Gem_Common,Minion,중립,Original,기계,,,TRUE,,,
+159,,1,2,1,,Damaged_Golem,Gem_Common,Minion,중립,Original,기계,,,FALSE,,,
+160,,3,4,2,<b>은신<b>,Jungle_Panther,Gem_Common,Minion,중립,Original,야수,,,TRUE,,,
+161,,3,3,3,,Raging_Worgen,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+162,,3,3,1,,Scarlet_Crusader,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+163,,3,2,3,,Tauren_Warrior,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+164,,3,2,3,<b>질풍<b>,Thrallmar_Farseer,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+165,,4,5,4,,Ancient_Brewmaster,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+166,,4,4,2,,Cult_Master,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+167,,4,4,4,,Dark_Iron_Dwarf,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+168,,4,3,3,,Dread_Corsair,Gem_Common,Minion,중립,Original,해적,,,TRUE,,,
+169,,4,1,7,,Mogu'shan_Warden,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+170,,4,3,3,<b>천상의 보호막<b>,Silvermoon_Guardian,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+171,,4,4,3,,Spellbreaker,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+172,,5,3,6,,Fen_Creeper,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+173,,5,4,4,,Silver_Hand_Knight,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+174,,1,2,2,,Squire,Gem_Common,Minion,중립,Original,None,,,FALSE,,,
+175,,5,4,6,,Spiteful_Smith,Gem_Common,Minion,중립,Original,언데드,,,TRUE,,,
+176,,5,5,5,<b>은신<b>,Stranglethorn_Tiger,Gem_Common,Minion,중립,Original,야수,,,TRUE,,,
+177,,5,7,6,,Venture_Co._Mercenary,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+178,,6,5,5,,Frost_Elemental,Gem_Common,Minion,중립,Original,정령,,,TRUE,,,
+179,,6,5,4,,Priestess_of_Elune,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+180,,6,4,5,<b>질풍<b>,Windfury_Harpy,Gem_Common,Minion,중립,Original,None,,,TRUE,,,
+181,,1,1,1,,Angry_Chicken,Gem_Rare,Minion,중립,Original,야수,,,TRUE,,,
+182,,1,1,2,,Bloodsail_Corsair,Gem_Rare,Minion,중립,Original,해적,,,TRUE,,,
+183,,1,1,2,,Lightwarden,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+184,,1,1,2,,Murloc_Tidecaller,Gem_Rare,Minion,중립,Original,멀록,,,TRUE,,,
+185,비밀지기,1,1,2,,Secretkeeper,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+186,,1,2,1,,Young_Priestess,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+187,,2,4,5,,Ancient_Watcher,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+188,,2,2,2,,Crazed_Alchemist,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+189,,2,3,2,,Knife_Juggler,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+190,마나중독자,2,1,3,,Mana_Addict,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+191,,2,2,2,,Mana_Wraith,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+192,,2,1,3,,Master_Swordsmith,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+193,,2,2,2,,Pint-Sized_Summoner,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+194,,2,2,3,,Sunfury_Protector,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+195,,2,3,2,,Wild_Pyromancer,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+196,,3,0,3,,Alarm-o-Bot,Gem_Rare,Minion,중립,Original,기계,,,TRUE,,,
+197,,3,4,2,,Arcane_Golem,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+198,,3,2,2,,Coldlight_Oracle,Gem_Rare,Minion,중립,Original,멀록,,,TRUE,,,
+199,,3,2,3,,Coldlight_Seer,Gem_Rare,Minion,중립,Original,멀록,,,TRUE,,,
+200,,3,1,4,,Demolisher,Gem_Rare,Minion,중립,Original,기계,,,TRUE,,,
+201,,3,2,3,,Emperor_Cobra,Gem_Rare,Minion,중립,Original,야수,,,TRUE,,,
+202,,3,1,5,,Imp_Master,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+203,임프,1,1,1,,Imp_Master,Gem_Rare,Minion,중립,Original,악마,,,FALSE,,,
+204,,3,4,7,,Injured_Blademaster,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+205,,3,3,3,,Mind_Control_Tech,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+206,,3,2,2,,Questing_Adventurer,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+207,,4,2,5,,Ancient_Mage,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+208,,4,2,3,,Defender_of_Argus,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+209,,4,4,1,,Twilight_Drake,Gem_Rare,Minion,중립,Original,용족,,,TRUE,,,
+210,,4,3,5,,Violet_Teacher,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+211,,1,1,1,,Violet_Apprentice,Gem_Rare,Minion,중립,Original,None,,,FALSE,,,
+212,,5,4,4,,Abomination,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+213,,5,4,4,,Azure_Drake,Gem_Rare,Minion,중립,Original,용족,,,TRUE,,,
+214,,5,4,4,,Gadgetzan_Auctioneer,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+215,,5,3,5,,Stampeding_Kodo,Gem_Rare,Minion,중립,Original,야수,,,TRUE,,,
+216,,6,4,2,,Argent_Commander,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+217,,6,4,5,,Sunwalker,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+218,,7,7,5,,Ravenholdt_Assassin,Gem_Rare,Minion,중립,Original,None,,,TRUE,,,
+219,,1,1,2,,Hungry_Crab,Gem_Epic,Minion,중립,Original,야수,,,TRUE,,,
+220,,2,1,1,,Captain's_Parrot,Gem_Epic,Minion,중립,Original,야수,,,TRUE,,,
+221,,2,0,7,,Doomsayer,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+222,,3,4,2,,Big_Game_Hunter,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+223,,3,3,3,,Blood_Knight,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+224,,3,3,3,,Murloc_Warleader,Gem_Epic,Minion,중립,Original,멀록,,,TRUE,,,
+225,,3,3,3,,Southsea_Captain,Gem_Epic,Minion,중립,Original,해적,,,TRUE,,,
+226,,5,3,3,,Faceless_Manipulator,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+227,,10,8,8,,Sea_Giant,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+228,,12,8,8,,Mountain_Giant,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+229,,20,8,8,,Molten_Giant,Gem_Epic,Minion,중립,Original,None,,,TRUE,,,
+230,,2,1,1,,Bloodmage_Thalnos,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+231,,2,0,4,,Lorewalker_Cho,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+232,,2,4,4,,Millhouse_Manastorm,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+233,,2,0,4,,Nat_Pagle,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+234,,3,5,5,,King_Mukla,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+235,,1,,,,Crazy_Monkey,None,Magic,중립,Original,,None,,FALSE,,,
+236,,3,3,3,,Tinkmaster_Overspark,Gem_Legendary,Minion,중립,Original,야수,,,TRUE,,,
+237,다람쥐,1,1,1,,Squirrel_(Tinkmaster_Overspark),None,Minion,중립,Original,야수,,,FALSE,,,
+238,,5,5,5,,Venture_Co._Mercenary,None,Minion,중립,Original,야수,,,FALSE,,,
+239,,4,6,2,,Leeroy_Jenkins,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+240,,4,2,4,,Murloc_Raid,Gem_Legendary,Minion,중립,Original,멀록,,,TRUE,,,
+241,,5,5,4,,Captain_Greenskin,Gem_Legendary,Minion,중립,Original,해적,,,TRUE,,,
+242,,5,5,5,,Elite_Tauren_Chieftain,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+243,,0,1,1,,Murloc_Raid,None,Minion,중립,Original,멀록,,,FALSE,,,
+244,,4,,,,I_Am_Murloc,None,Magic,중립,Original,,None,,FALSE,,,
+245,,4,,,,Rogues_Do_It...,None,Magic,중립,Original,,None,,FALSE,,,
+246,,5,5,4,,Harrison_Jones,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+247,,6,4,5,,Cairne_Bloodhoof,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+248,,4,4,5,,Baine_Bloodhoof,Gem_Legendary,Minion,중립,Original,None,,,FALSE,,,
+249,,6,6,6,,Gelbin_Mekkatorque,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+250,닭,0,1,1,,Angry_Chicken,None,Minion,중립,Original,야수,,,FALSE,,,
+251,,1,0,4,,Emboldener_3000,None,Minion,중립,Original,기계,,,FALSE,,,
+252,,1,0,1,,Homing_Chicken,None,Minion,중립,Original,"기계,야수",,,FALSE,,,
+253,,1,0,3,,Poultryizer,None,Minion,중립,Original,기계,,,FALSE,,,
+254,,1,0,3,,Repair_Bot,None,Minion,중립,Original,기계,,,FALSE,,,
+255,,6,4,4,,Hogger,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+256,,6,7,5,,Xavius,Gem_Legendary,Minion,중립,Original,악마,,,TRUE,,,
+257,,1,2,1,,Xavian_Satyr,None,Minion,중립,Original,악마,,,FALSE,,,
+258,,6,5,5,,Sylvanas_Windrunner,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+259,,6,9,7,,The_Beast,Gem_Legendary,Minion,중립,Original,야수,,,TRUE,,,
+260,,3,3,3,,Pip_Quickwit,Gem_Legendary,Minion,중립,Original,None,,,FALSE,,,
+261,,6,4,5,,The_Black_Knight,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+262,,7,7,5,,Baron_Geddon,Gem_Legendary,Minion,중립,Original,정령,,,TRUE,,,
+263,,8,7,7,,Gruul,Gem_Legendary,Minion,중립,Original,None,,,TRUE,,,
+264,,8,8,8,,Ragnaros_the_Firelord,Gem_Legendary,Minion,중립,Original,정령,,,TRUE,,,
+265,,9,8,8,,Alexstrasza,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+266,,9,4,12,,Malygos,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+267,,9,8,8,,Nozdormu,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+268,,9,8,8,,Onyxia,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+269,새끼용,1,1,1,,Whelp,None,Minion,중립,Original,용족,,,FALSE,,,
+270,이세라,9,4,12,,Ysera,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+271,꿈,0,,,,Dream,None,Magic,중립,Original,,자연,,FALSE,,,
+272,악몽,0,,,,Nightmare,None,Magic,중립,Original,,암흑,,FALSE,,,
+273,,2,3,5,,Laughing_Sister,None,Minion,중립,Original,용족,,,FALSE,,,
+274,깨어난 이세라,2,,,,Ysera_Awakens,None,Magic,중립,Original,,자연,,FALSE,,,
+275,에메랄드 비룡,4,7,6,,Emerald_Drake,None,Minion,중립,Original,용족,,,FALSE,,,
+276,데스윙,10,12,12,,Deathwing,Gem_Legendary,Minion,중립,Original,용족,,,TRUE,,,
+277,자연화,1,,,,Naturalize,Gem_Common,Magic,드루이드,Original,,자연,,TRUE,,,
+278,야생의 힘,2,,,,Power_of_the_Wild,Gem_Common,Magic,드루이드,Original,,자연,,TRUE,,,
+279,천벌,2,,,,Wrath,Gem_Common,Magic,드루이드,Original,,자연,,TRUE,,,
+280,,2,,,데미지 1을 준다. 카드 뽑기,Nature's_Wrath,None,Magic,드루이드,Original,,None,,FALSE,,,
+281,,2,,,,Solar_Wrath,None,Magic,드루이드,Original,,None,,FALSE,,,
+282,,2,,,,Leader_of_the_Pack,None,Magic,드루이드,Original,,None,,FALSE,,,
+283,,2,,,,Summon_a_Panther,None,Magic,드루이드,Original,,None,,FALSE,,,
+284,,2,3,2,,Panther,None,Minion,드루이드,Original,야수,,,FALSE,,,
+285,,3,,,,Mark_of_Nature,Gem_Common,Magic,드루이드,Original,,자연,,TRUE,,,
+286,,3,,,,Thick_Hide,None,Magic,드루이드,Original,,None,,FALSE,,,
+287,,3,,,,Tiger's_Fury,None,Magic,드루이드,Original,,None,,FALSE,,,
+288,,4,,,,Soul_of_the_Forest,Gem_Common,Magic,드루이드,Original,,자연,,TRUE,,,
+289,,1,2,2,,Treant,None,Minion,드루이드,Original,None,,,FALSE,,,
+290,,5,4,4,,Druid_of_the_Claw,Gem_Common,Minion,드루이드,Original,None,,,TRUE,,,
+291,,0,,,,Bear_Form,Gem_Common,Magic,드루이드,Original,,None,,FALSE,,,
+292,,0,,,,Cat_Form,Gem_Common,Magic,드루이드,Original,,None,,FALSE,,,
+293,,5,4,4,<b>돌진<b>,Cat_Form,Gem_Common,Minion,드루이드,Original,야수,,,FALSE,,,
+294,,5,4,6,<b>도발<b>,Bear_Form,Gem_Common,Minion,드루이드,Original,야수,,,FALSE,,,
+295,,1,,,,Savagery,Gem_Rare,Magic,드루이드,Original,,None,,TRUE,,,
+296,,4,,,,Bite,Gem_Rare,Magic,드루이드,Original,,None,,TRUE,,,
+297,,4,2,4,,Keeper_of_the_Grove,Gem_Rare,Minion,드루이드,Original,None,,,TRUE,,,
+298,,4,,,,Dispel,None,Magic,드루이드,Original,,None,,FALSE,,,
+299,,4,,,,Moonfire_(Keeper_of_the_Grove),None,Magic,드루이드,Original,,None,,FALSE,,,
+300,육성,5,,,,Nourish,Gem_Rare,Magic,드루이드,Original,,None,,TRUE,,,
+301,,5,,,,Enrich,None,Magic,드루이드,Original,,None,,FALSE,,,
+302,,5,,,,Rampant_Growth,None,Magic,드루이드,Original,,None,,FALSE,,,
+303,별동별,5,,,,Starfall,Gem_Rare,Magic,드루이드,Original,,비전,,TRUE,,,
+304,,5,,,,Starlord,None,Magic,드루이드,Original,,None,,FALSE,,,
+305,,5,,,,Stellar_Drift,None,Magic,드루이드,Original,,None,,FALSE,,,
+306,,6,,,,Force_of_Nature,Gem_Epic,Magic,드루이드,Original,,자연,,TRUE,,,
+307,,1,2,2,<b>돌진<b>,Treant,None,Minion,드루이드,Original,None,,,FALSE,,,
+308,,7,5,5,,Ancient_of_Lore,Gem_Epic,Minion,드루이드,Original,None,,,TRUE,,,
+309,,7,,,,Ancient_Teachings,None,Magic,드루이드,Original,,None,,FALSE,,,
+310,,7,,,,Ancient_Secrets,None,Magic,드루이드,Original,,None,,FALSE,,,
+311,,7,5,5,,Ancient_of_War,Gem_Epic,Minion,드루이드,Original,None,,,TRUE,,,
+312,,7,,,,Rooted,None,Magic,드루이드,Original,,,,FALSE,,,
+313,,7,,,,Uproot,None,Magic,드루이드,Original,,,,FALSE,,,
+314,,9,5,8,,Cenarius,Gem_Legendary,Minion,드루이드,Original,None,,,TRUE,,,
+315,,9,,,,Demigod's_Favor,None,Magic,드루이드,Original,,,,FALSE,,,
+316,,9,,,,Treant,None,Magic,드루이드,Original,,,,FALSE,,,
+317,,2,,,,Explosive_Trap,Gem_Common,Magic,사냥꾼,Original,,화염,,TRUE,,,
+318,,2,,,,Freezing_Trap,Gem_Common,Magic,사냥꾼,Original,,냉기,,TRUE,,,
+319,,2,2,2,,Scavenging_Hyena,Gem_Common,Minion,사냥꾼,Original,야수,,,TRUE,,,
+320,,2,,,,Snipe,Gem_Common,Magic,사냥꾼,Original,,None,,TRUE,,,
+321,,3,,,,Deadly_Shot,Gem_Common,Magic,사냥꾼,Original,,None,,TRUE,,,
+322,,3,,,,Unleash_the_Hounds,Gem_Common,Magic,사냥꾼,Original,,None,,TRUE,,,
+323,,1,,,,Flare,Gem_Rare,Magic,사냥꾼,Original,,None,,TRUE,,,
+324,,2,,,,Misdirection,Gem_Rare,Magic,사냥꾼,Original,,None,,TRUE,,,
+325,,3,3,2,,Eaglehorn_Bow,Gem_Rare,Weapon,사냥꾼,Original,,,,TRUE,,,
+326,,5,,,,Explosive_Shot,Gem_Rare,Magic,사냥꾼,Original,,None,,TRUE,,,
+327,사바나 사자,6,6,5,,Savannah_Highmane,Gem_Rare,Minion,사냥꾼,Original,야수,,,TRUE,,,
+328,,1,,,,Bestial_Wrath,Gem_Epic,Magic,사냥꾼,Original,,None,,TRUE,,,
+329,,2,,,,Snake_Trap,Gem_Epic,Magic,사냥꾼,Original,,None,,TRUE,,,
+330,,7,5,2,,Gladiator's_Longbow,Gem_Epic,Weapon,사냥꾼,Original,,,,TRUE,,,
+331,왕 크루쉬,9,8,8,<b>돌진<b>,King_Krush,Gem_Legendary,Minion,사냥꾼,Original,야수,,,TRUE,,,
+332,뱀,0,1,1,,Snake,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+333,개,1,1,1,<b>돌진<b>,Unleash_the_Hounds,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+334,하이에나,2,2,2,,Hyena,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+335,킁킁이,3,4,2,<b>돌진<b>,Huffer,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+336,레오크,3,2,4,,Leokk,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+337,미샤,3,4,4,<b>도발<b>,Misha,None,Minion,사냥꾼,Original,야수,,,FALSE,,,
+338,,1,,,,Ice_Lance,Gem_Common,Magic,마법사,Original,,냉기,,TRUE,,,
+339,,1,1,3,,Mana_Wyrm,Gem_Common,Minion,마법사,Original,None,,,TRUE,,,
+340,,2,3,2,,Sorcerer's_Apprentice,Gem_Common,Minion,마법사,Original,None,,,TRUE,,,
+341,,3,,,,Ice_Barrier,Gem_Common,Magic,마법사,Original,,None,,TRUE,,,
+342,,3,,,,Mirror_Entity,Gem_Common,Magic,마법사,Original,,None,,TRUE,,,
+343,,4,,,,Cone_of_Cold,Gem_Common,Magic,마법사,Original,,None,,TRUE,,,
+344,,3,,,,Counterspell,Gem_Rare,Magic,마법사,Original,,None,,TRUE,,,
+345,,3,4,3,,Kirin_Tor_Mage,Gem_Rare,Minion,마법사,Original,None,,,TRUE,,,
+346,,3,,,,Vaporize,Gem_Rare,Magic,마법사,Original,,None,,TRUE,,,
+347,,4,3,3,,Ethereal_Arcanist,Gem_Rare,Minion,마법사,Original,None,,,TRUE,,,
+348,,6,,,,Blizzard,Gem_Rare,Magic,마법사,Original,,냉기,,TRUE,,,
+349,,3,,,,Ice_Block,Gem_Epic,Magic,마법사,Original,,None,,TRUE,,,
+350,,3,,,,Spellbender,Gem_Epic,Magic,마법사,Original,,None,,TRUE,,,
+351,,10,,,,Pyroblast,Gem_Epic,Magic,마법사,Original,,화염,,TRUE,,,
+352,,7,5,7,,Archmage_Antonidas,Gem_Legendary,Minion,마법사,Original,None,,,TRUE,,,
+353,,0,1,3,,Spellbender,None,Minion,마법사,Original,None,,,FALSE,,,
+354,,1,,,,Blessing_of_Wisdom,Gem_Common,Magic,성기사,Original,,None,,TRUE,,,
+355,,1,,,,Eye_for_an_Eye,Gem_Common,Magic,성기사,Original,,None,,TRUE,,,
+356,,1,,,,Noble_Sacrifice,Gem_Common,Magic,성기사,Original,,None,,TRUE,,,
+357,,1,,,,Redemption,Gem_Common,Magic,성기사,Original,,None,,TRUE,,,
+358,,1,,,,Repentance,Gem_Common,Magic,성기사,Original,,None,,TRUE,,,
+359,,2,2,2,,Argent_Protector,Gem_Common,Minion,성기사,Original,None,,,TRUE,,,
+360,,2,,,,Equality,Gem_Rare,Magic,성기사,Original,,None,,TRUE,,,
+361,,3,3,3,,Aldor_Peacekeeper,Gem_Rare,Minion,성기사,Original,None,,,TRUE,,,
+362,,3,,,,Divine_Favor,Gem_Rare,Magic,성기사,Original,,None,,TRUE,,,
+363,,5,,,,Blessed_Champion,Gem_Rare,Magic,성기사,Original,,None,,TRUE,,,
+364,,5,,,,Holy_Wrath,Gem_Rare,Magic,성기사,Original,,None,,TRUE,,,
+365,,3,1,5,,Sword_of_Justice,Gem_Epic,Weapon,성기사,Original,,,,TRUE,,,
+366,,6,,,,Avenging_Wrath,Gem_Epic,Magic,성기사,Original,,None,,TRUE,,,
+367,,8,,,,Lay_on_Hands,Gem_Epic,Magic,성기사,Original,,None,,TRUE,,,
+368,,8,6,6,,Tirion_Fordring,Gem_Legendary,Minion,성기사,Original,None,,,TRUE,,,
+369,,5,5,3,,Ashbringer,Gem_Legendary,Weapon,성기사,Original,,,,FALSE,,,
+370,,1,2,1,,Noble_Sacrifice,None,Minion,성기사,Original,None,,,FALSE,,,
+371,,0,,,,Circle_of_Healing,Gem_Common,Magic,사제,Original,,None,,TRUE,,,
+372,,0,,,,Silence,Gem_Common,Magic,사제,Original,,None,,TRUE,,,
+373,,1,,,,Inner_Fire,Gem_Common,Magic,사제,Original,,None,,TRUE,,,
+374,,1,1,3,,Northshire_Cleric,Gem_Common,Minion,사제,Original,None,,,TRUE,,,
+375,,2,,,,Divine_Spirit,Gem_Common,Magic,사제,Original,,None,,TRUE,,,
+376,,2,,,,Mind_Blast,Gem_Common,Magic,사제,Original,,암흑,,TRUE,,,
+377,,3,,,,Thoughtsteal,Gem_Common,Magic,사제,Original,,None,,TRUE,,,
+378,,4,0,5,,Lightspawn,Gem_Common,Minion,사제,Original,정령,,,TRUE,,,
+379,,6,6,6,,Temple_Enforcer,Gem_Common,Minion,사제,Original,None,,,TRUE,,,
+380,,2,0,5,,Lightwell,Gem_Rare,Minion,사제,Original,None,,,TRUE,,,
+381,,4,3,5,,Auchenai_Soulpriest,Gem_Rare,Minion,사제,Original,None,,,TRUE,,,
+382,,4,,,,Mass_Dispel,Gem_Rare,Magic,사제,Original,,None,,TRUE,,,
+383,,4,,,,Shadow_Madness,Gem_Rare,Magic,사제,Original,,None,,TRUE,,,
+384,,6,,,,Holy_Fire,Gem_Rare,Magic,사제,Original,,None,,TRUE,,,
+385,,3,,,,Shadowform,Gem_Epic,Magic,사제,Original,,None,,TRUE,,,
+386,,4,,,,Mindgames,Gem_Epic,Magic,사제,Original,,None,,TRUE,,,
+387,,6,4,5,,Cabal_Shadow_Priest,Gem_Epic,Minion,사제,Original,None,,,TRUE,,,
+388,,7,7,7,,Prophet_Velen,Gem_Legendary,Minion,사제,Original,None,,,TRUE,,,
+389,,0,0,1,,Shadow_of_Nothing,None,Minion,사제,Original,None,,,FALSE,,,
+390,,0,,,,Shadowstep,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+391,,1,,,,Cold_Blood,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+392,,1,,,,Conceal,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+393,,2,,,,Betrayal,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+394,,2,3,2,,Defias_Ringleader,Gem_Common,Minion,도적,Original,None,,,TRUE,,,
+395,,2,,,,Eviscerate,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+396,소멸,6,,,,Vanish,Gem_Common,Magic,도적,Original,,None,,TRUE,,,
+397,,2,,,,Blade_Flurry,Gem_Rare,Magic,도적,Original,,None,,TRUE,,,
+398,,3,,,,Headcrack,Gem_Rare,Magic,도적,Original,,None,,TRUE,,,
+399,,3,2,2,,Perdition's_Blade,Gem_Rare,Weapon,도적,Original,,,,TRUE,,,
+400,,3,3,3,,SI7_Agent,Gem_Rare,Minion,도적,Original,None,,,TRUE,,,
+401,,4,4,4,,Master_of_Disguise,Gem_Rare,Minion,도적,Original,None,,,TRUE,,,
+402,,0,,,,Preparation,Gem_Epic,Magic,도적,Original,,None,,TRUE,,,
+403,,2,1,1,,Patient_Assassin,Gem_Epic,Minion,도적,Original,None,,,TRUE,,,
+404,,6,5,3,,Kidnapper,Gem_Epic,Minion,도적,Original,언데드,,,TRUE,,,
+405,,3,2,2,,Edwin_VanCleef,Gem_Legendary,Minion,도적,Original,None,,,TRUE,,,
+406,,1,2,1,,Defias_Bandit,None,Minion,도적,Original,None,,,FALSE,,,
+407,,1,3,1,,Dust_Devil,Gem_Common,Minion,주술사,Original,None,,,TRUE,,,
+408,,1,,,,Earth_Shock,Gem_Common,Magic,주술사,Original,,None,,TRUE,,,
+409,,1,,,,Forked_Lightning,Gem_Common,Magic,주술사,Original,,None,,TRUE,,,
+410,,1,,,,Lightning_Bolt,Gem_Common,Magic,주술사,Original,,None,,TRUE,,,
+411,,2,2,3,,Stormforged_Axe,Gem_Common,Weapon,주술사,Original,,,,TRUE,,,
+412,,3,2,4,,Unbound_Elemental,Gem_Common,Minion,주술사,Original,None,,,TRUE,,,
+413,,2,,,,Unbound_Elemental,Gem_Rare,Magic,주술사,Original,,None,,TRUE,,,
+414,,3,,,,Feral_Spirit,Gem_Rare,Magic,주술사,Original,,None,,TRUE,,,
+415,,3,,,,Lava_Burst,Gem_Rare,Magic,주술사,Original,,화염,,TRUE,,,
+416,,3,,,,Lightning_Storm,Gem_Rare,Magic,주술사,Original,,None,,TRUE,,,
+417,,3,0,3,,Mana_Tide_Totem,Gem_Rare,Minion,주술사,Original,None,,,TRUE,,,
+418,,3,,,,Far_Sight,Gem_Epic,Magic,주술사,Original,,None,,TRUE,,,
+419,,5,2,8,,Doomhammer,Gem_Epic,Weapon,주술사,Original,,,,TRUE,,,
+420,,5,7,8,,Earth_Elemental,Gem_Epic,Minion,주술사,Original,정령,,,TRUE,,,
+421,,8,3,5,,Al'Akir_the_Windlord,Gem_Legendary,Minion,주술사,Original,정령,,,TRUE,,,
+422,,2,2,3,<b>도발<b>,Spirit_Wolf,None,Minion,주술사,Original,None,,,FALSE,,,
+423,,1,0,1,,Blood_Imp,Gem_Common,Minion,흑마법사,Original,악마,,,TRUE,,,
+424,,1,3,2,,Flame_Imp,Gem_Common,Minion,흑마법사,Original,악마,,,TRUE,,,
+425,,1,,,,Power_Overwhelming,Gem_Common,Magic,흑마법사,Original,,None,,TRUE,,,
+426,,2,,,,Demonfire,Gem_Common,Magic,흑마법사,Original,,None,,TRUE,,,
+427,,3,,,,Sense_Demons,Gem_Common,Magic,흑마법사,Original,,None,,TRUE,,,
+428,,4,0,4,,Summoning_Portal,Gem_Common,Minion,흑마법사,Original,None,,,TRUE,,,
+429,,3,3,5,,Felguard,Gem_Rare,Minion,흑마법사,Original,악마,,,TRUE,,,
+430,,3,3,3,,Void_Terror,Gem_Rare,Minion,흑마법사,Original,악마,,,TRUE,,,
+431,,4,,,,Shadowflame,Gem_Rare,Magic,흑마법사,Original,,None,,TRUE,,,
+432,,5,5,7,,Doomguard,Gem_Rare,Minion,흑마법사,Original,악마,,,TRUE,,,
+433,,6,,,,Siphon_Soul,Gem_Rare,Magic,흑마법사,Original,,None,,TRUE,,,
+434,,4,5,6,,Pit_Lord,Gem_Epic,Minion,흑마법사,Original,악마,,,TRUE,,,
+435,,5,,,,Bane_of_Doom,Gem_Epic,Magic,흑마법사,Original,,None,,TRUE,,,
+436,,8,,,,Twisting_Nether,Gem_Epic,Magic,흑마법사,Original,,None,,TRUE,,,
+437,,9,3,15,,Lord_Jaraxxus,Gem_Legendary,Minion,흑마법사,Original,악마,,,TRUE,,,
+438,,1,1,1,,Worthless_Imp,None,Minion,흑마법사,Original,악마,,,FALSE,,,
+439,,3,3,8,,Blood_Fury,Gem_Legendary,Weapon,흑마법사,Original,,,,FALSE,,,
+440,,6,6,6,,Infernal,None,Minion,흑마법사,Original,악마,,,FALSE,,,
+441,,0,,,,Inner_Rage,Gem_Common,Magic,전사,Original,,None,,TRUE,,,
+442,,2,,,,Battle_Rage,Gem_Common,Magic,전사,Original,,None,,TRUE,,,
+443,,2,2,2,,Cruel_Taskmaster,Gem_Common,Minion,전사,Original,None,,,TRUE,,,
+444,,2,,,,Rampage,Gem_Common,Magic,전사,Original,,None,,TRUE,,,
+445,,2,,,,Slam,Gem_Common,Magic,전사,Original,,None,,TRUE,,,
+446,,4,3,3,,Arathi_Weaponsmith,Gem_Common,Minion,전사,Original,None,,,TRUE,,,
+447,,1,,,,Upgrade!,Gem_Rare,Magic,전사,Original,,None,,TRUE,,,
+448,,2,1,4,,Armorsmith,Gem_Rare,Minion,전사,Original,None,,,TRUE,,,
+449,,2,,,,Commanding_Shout,Gem_Rare,Magic,전사,Original,,None,,TRUE,,,
+450,,3,2,4,,Frothing_Berserker,Gem_Rare,Minion,전사,Original,None,,,TRUE,,,
+451,,4,,,,Mortal_Strike,Gem_Rare,Magic,전사,Original,,None,,TRUE,,,
+452,,1,,,,Shield_Slam,Gem_Epic,Magic,전사,Original,,None,,TRUE,,,
+453,,5,,,,Brawl,Gem_Epic,Magic,전사,Original,,None,,TRUE,,,
+454,,7,7,1,,Gorehowl,Gem_Epic,Weapon,전사,Original,,,,TRUE,,,
+455,,8,4,9,,Grommash_Hellscream,Gem_Legendary,Minion,전사,Original,None,,,TRUE,,,
+456,,1,2,2,,Battle_Axe,None,Weapon,전사,Original,,,,FALSE,,,
+457,,1,1,3,,Heavy_Axe,None,Weapon,전사,Original,,,,FALSE,,,

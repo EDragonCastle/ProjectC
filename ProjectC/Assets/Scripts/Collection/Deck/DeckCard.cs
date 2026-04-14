@@ -2,7 +2,7 @@
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class DeckCard : MonoBehaviour,  IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DeckCard : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public GameObject origin;
     public RectTransform canvasParent;

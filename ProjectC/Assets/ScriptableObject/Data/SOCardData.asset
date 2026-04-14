@@ -1,0 +1,9224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9eee162c477f484f82b9609394cd4a6, type: 3}
+  m_Name: SOCardData
+  m_EditorClassIdentifier: 
+  cardDatas:
+  - cardId: 0
+    cardName: "\uC5D8\uD504 \uAD81\uC218"
+    cost: 1
+    attack: 1
+    health: 1
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uD53C\uD574\uB97C 1
+      \uC90D\uB2C8\uB2E4.\""
+    spriteName: Elven_Archer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 1
+    cardName: "\uD669\uAE08\uACE8 \uBCF4\uBCD1"
+    cost: 1
+    attack: 1
+    health: 2
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Goldshire_Footman
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 2
+    cardName: "\uC131\uB09C\uBE44\uB298 \uC218\uB828\uC0AC"
+    cost: 1
+    attack: 1
+    health: 1
+    description: "\"\uB0B4 \uB2E4\uB978 \uBA40\uB85D\uB4E4\uC774\n\uACF5\uACA9\uB825\uC744
+      +1 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Grimscale_Oracle
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 3
+    cardName: "\uBA40\uB85D \uC57D\uD0C8\uAFBC"
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Murloc_Raid
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 4
+    cardName: "\uB3CC\uC5C4\uB2C8\uBA67\uB3FC\uC9C0"
+    cost: 1
+    attack: 1
+    health: 1
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Stonetusk_Boar
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 5
+    cardName: "\uBD80\uB450\uAD50 \uC758\uC220\uC0AC"
+    cost: 1
+    attack: 2
+    health: 1
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uC0DD\uBA85\uB825\uC744
+      2 \uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Voodoo_Doctor
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 6
+    cardName: "\uC0B0\uC131 \uB2AA\uC218\uC561 \uAD34\uBB3C"
+    cost: 2
+    attack: 3
+    health: 2
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b> \uC0C1\uB300\uD3B8\uC758
+      \uBB34\uAE30\uB97C \uD30C\uAD34\uD569\uB2C8\uB2E4.\n\""
+    spriteName: Acidic_Swamp_Ooze
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 7
+    cardName: "\uBD89\uC740\uB2AA\uC9C0\uB7A9\uD130"
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Bloodfen_Raptor
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 8
+    cardName: "\uD478\uB978\uC544\uAC00\uBBF8 \uC804\uC0AC"
+    cost: 2
+    attack: 2
+    health: 1
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Bluegill_Warrior
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 9
+    cardName: "\uC11C\uB9AC\uB291\uB300 \uADF8\uB7F0\uD2B8"
+    cost: 2
+    attack: 2
+    health: 2
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Frostwolf_Grunt
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 10
+    cardName: "\uCF54\uBC1C\uD2B8 \uD759\uC810\uC7C1\uC774"
+    cost: 2
+    attack: 2
+    health: 2
+    description: "<b>\uC8FC\uBB38 \uACF5\uACA9\uB825 + 1<b>"
+    spriteName: Kobold_Geomancer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 11
+    cardName: "\uBA40\uB85D \uBC14\uB2E4\uC0AC\uB0E5\uAFBC"
+    cost: 2
+    attack: 2
+    health: 1
+    description: "<b>\uC804\uD22C\uC758 \uD568\uC131:<b> 1/1 \uBA40\uB85D \uC815\uCC30\uBCD1\uC744
+      \uC18C\uD658\uD569\uB2C8\uB2E4."
+    spriteName: Murloc_Tidehunter
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 2b000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 12
+    cardName: "\uD48B\uB0B4\uAE30 \uAE30\uC220\uC790"
+    cost: 2
+    attack: 1
+    health: 1
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Novice_Engineer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 13
+    cardName: "\uBBFC\uBB3C\uC545\uC5B4"
+    cost: 2
+    attack: 2
+    health: 3
+    description: 
+    spriteName: River_Crocolisk
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 14
+    cardName: "\uB2EC\uB77C\uB780 \uB9C8\uBC95\uC0AC"
+    cost: 3
+    attack: 1
+    health: 4
+    description: "<b>\uC8FC\uBB38 \uACF5\uACA9\uB825 + 1<b>"
+    spriteName: Dalaran_Mage
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 15
+    cardName: "\uC544\uC774\uC5B8\uD3EC\uC9C0 \uC18C\uCD1D\uBCD1"
+    cost: 3
+    attack: 2
+    health: 2
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uD53C\uD574\uB97C 1
+      \uC90D\uB2C8\uB2E4.\""
+    spriteName: Ironforge_Rifleman
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 16
+    cardName: "\uBB34\uC1E0\uAC00\uC8FD \uBD88\uACF0"
+    cost: 3
+    attack: 3
+    health: 3
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Ironfur_Grizzly
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 17
+    cardName: "\uC6A9\uC554 \uAD11\uC804\uC0AC"
+    cost: 3
+    attack: 5
+    health: 1
+    description: 
+    spriteName: Magma_Rager
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 18
+    cardName: "\uACF5\uACA9\uB300\uC7A5"
+    cost: 3
+    attack: 2
+    health: 2
+    description: "\uB0B4 \uB2E4\uB978 \uD558\uC218\uC778\uB4E4\uC774 \uACF5\uACA9\uB825\uC744
+      +1 \uC5BB\uC2B5\uB2C8\uB2E4."
+    spriteName: Raid_Leader
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 19
+    cardName: "\uAC00\uC2DC\uB369\uAD74 \uC0AC\uB0E5\uAFBC"
+    cost: 3
+    attack: 2
+    health: 3
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n1/1 \uBA67\uB3FC\uC9C0\uB97C\n\uC18C\uD658\uD569\uB2C8\uB2E4.\""
+    spriteName: Razorfen_Hunter
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 2c000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 20
+    cardName: "\uBB34\uB108\uC9C4 \uD0DC\uC591 \uC131\uC9C1\uC790"
+    cost: 3
+    attack: 3
+    health: 2
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uC544\uAD70 \uD558\uC218\uC778\uC5D0\uAC8C\n+1/+1\uC744
+      \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Shattered_Sun_Cleric
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 21
+    cardName: "\uC740\uBE5B\uD138\uACE0\uB9B4\uB77C \uC6B0\uB450\uBA38\uB9AC"
+    cost: 3
+    attack: 1
+    health: 4
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Silverback_Patriarch
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 22
+    cardName: "\uB291\uB300\uAE30\uC218"
+    cost: 3
+    attack: 3
+    health: 1
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Wolfrider
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 23
+    cardName: "\uC11C\uB9AC\uBC14\uB78C \uC124\uC778"
+    cost: 4
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Chillwind_Yeti
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 24
+    cardName: "\uAE30\uACC4\uC6A9 \uC815\uBE44\uC0AC"
+    cost: 4
+    attack: 2
+    health: 4
+    description: "<b>\uC804\uD22C\uC758 \uD568\uC131:<b> 2/1 \uC18C\uD615 \uAE30\uACC4\uC6A9\uC744
+      \uC18C\uD658\uD569\uB2C8\uB2E4."
+    spriteName: Dragonling_Mechanic
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 2d000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 25
+    cardName: "\uB178\uC6C0 \uBC1C\uBA85\uAC00"
+    cost: 4
+    attack: 2
+    health: 4
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Gnomish_Inventor
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 26
+    cardName: "\uC624\uC544\uC2DC\uC2A4 \uBB34\uC1E0\uD131\uAC70\uBD81"
+    cost: 4
+    attack: 2
+    health: 7
+    description: 
+    spriteName: Oasis_Snapjaw
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 27
+    cardName: "\uC624\uC6B0\uAC70 \uB9C8\uBC95\uC0AC"
+    cost: 4
+    attack: 4
+    health: 4
+    description: "<b>\uC8FC\uBB38 \uACF5\uACA9\uB825 + 1<b>"
+    spriteName: Ogre_Magi
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 28
+    cardName: "\uC13C\uC9C4 \uBC29\uD328\uB300\uAC00"
+    cost: 4
+    attack: 3
+    health: 5
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Sen'jin_Shieldmasta
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 29
+    cardName: "\uC2A4\uD1B0\uC708\uB4DC \uAE30\uC0AC"
+    cost: 4
+    attack: 2
+    health: 5
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Stormwind_Knight
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 30
+    cardName: "\uBB34\uBC95\uD56D \uACBD\uD638\uC6D0"
+    cost: 5
+    attack: 5
+    health: 4
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Booty_Bay_Bodyguard
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 31
+    cardName: "\uC5B4\uB460\uBE44\uB298 \uCE58\uC720\uC0AC"
+    cost: 5
+    attack: 4
+    health: 5
+    description: "<b>\uC804\uD22C\uC758 \uD568\uC131:<b> \uBAA8\uB4E0 \uC544\uAD70
+      \uCE90\uB9AD\uD130\uC758 \uC0DD\uBA85\uB825\uC744 2 \uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4."
+    spriteName: Darkscale_Healer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 32
+    cardName: "\uC11C\uB9AC\uB291\uB300 \uC804\uC7C1\uAD70\uC8FC"
+    cost: 5
+    attack: 4
+    health: 4
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b> \uC804\uC7A5\uC758 \uB2E4\uB978
+      \uC544\uAD70 \uD558\uC218\uC778 \uD558\uB098\uB2F9 \n+1/+1\uC744 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Frostwolf_Warlord
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 33
+    cardName: "\uAD6C\uB8E8\uBC14\uC2DC \uAD11\uC804\uC0AC"
+    cost: 5
+    attack: 2
+    health: 7
+    description: "\"\uC774 \uD558\uC218\uC778\uC740 \uD53C\uD574\uB97C \uBC1B\uC744
+      \uB54C\uB9C8\uB2E4 \uACF5\uACA9\uB825\uC744 \n+3 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Gurubashi_Berserker
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 34
+    cardName: "\uC554\uD751\uCE7C\uB0A0"
+    cost: 5
+    attack: 4
+    health: 4
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b> \uC801 \uC601\uC6C5\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      3 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Nightblade
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 35
+    cardName: "\uC2A4\uD1B0\uD30C\uC774\uD06C \uD2B9\uACF5\uB300"
+    cost: 5
+    attack: 4
+    health: 2
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uD53C\uD574\uB97C 2
+      \uC90D\uB2C8\uB2E4.\""
+    spriteName: Stormpike_Commando
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 36
+    cardName: "\uB300\uB9C8\uBC95\uC0AC"
+    cost: 6
+    attack: 4
+    health: 7
+    description: "<b>\uC8FC\uBB38 \uACF5\uACA9\uB825 + 1<b>"
+    spriteName: Archmage
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 37
+    cardName: "\uB3CC\uC8FC\uBA39 \uC624\uC6B0\uAC70"
+    cost: 6
+    attack: 6
+    health: 7
+    description: 
+    spriteName: Boulderfist_Ogre
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 38
+    cardName: "\uD22C\uAE30\uC7A5\uC758 \uC81C\uC655"
+    cost: 6
+    attack: 6
+    health: 5
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Lord_of_the_Arena
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 39
+    cardName: "\uBABB \uB9D0\uB9AC\uB294 \uB85C\uCF13\uBCD1"
+    cost: 6
+    attack: 5
+    health: 2
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Reckless_Rocketeer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 40
+    cardName: "\uC2EC\uC7A5\uBD80 \uC0AC\uB0E5\uAC1C"
+    cost: 7
+    attack: 9
+    health: 5
+    description: 
+    spriteName: Core_Hound
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 41
+    cardName: "\uC2A4\uD1B0\uC708\uB4DC \uC6A9\uC0AC"
+    cost: 7
+    attack: 6
+    health: 6
+    description: "\"\uB0B4 \uB2E4\uB978 \uD558\uC218\uC778\uB4E4\uC774 \n+1/+1\uC744
+      \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Stormwind_Champion
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 42
+    cardName: "\uC804\uC7C1\uACE8\uB818"
+    cost: 7
+    attack: 7
+    health: 7
+    description: 
+    spriteName: War_Golem
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 43
+    cardName: "\uBA40\uB85D \uC815\uCC30\uBCD1"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Murloc_Raid
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: Neutral
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 0
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 44
+    cardName: "\uBA67\uB3FC\uC9C0"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Razorfen_Hunter
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: Neutral
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 45
+    cardName: "\uC18C\uD615 \uAE30\uACC4\uC6A9"
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Mechanical_Dragonling
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: Neutral
+    packgeType: Original
+    cardType: "\"\uAE30\uACC4,\uC6A9\uC871\""
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 46
+    cardName: "\uC815\uC2E0 \uC790\uADF9"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uC774\uBC88 \uD134\uC5D0\uB9CC\n\uB9C8\uB098 \uC218\uC815\uC744
+      2\uAC1C\n\uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Innervate
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 47
+    cardName: "\uB2EC\uBE5B\uC12C\uAD11"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\uD53C\uD574\uB97C 1 \uC90D\uB2C8\uB2E4."
+    spriteName: Moonfire
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\"\uBE44\uC804,\uC790\uC5F0\""
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 48
+    cardName: "\uD560\uD034\uAE30"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uBC29\uC5B4\uB3C4\uB97C +2\uB97C \uC5BB\uACE0,\n\uC774\uBC88
+      \uD134\uC5D0 \uB0B4 \uC601\uC6C5\uC774\n\uACF5\uACA9\uB825\uC744 +2 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Claw
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 49
+    cardName: "\uC57C\uC0DD\uC758 \uC9D5\uD45C"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n<b>\uB3C4\uBC1C<b>\uACFC +2/+2\uC744\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Mark_of_the_Wild
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 50
+    cardName: "\uCE58\uC720\uC758 \uC190\uAE38"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uC0DD\uBA85\uB825\uC744 8\n\uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Healing_Touch
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 51
+    cardName: "\uC57C\uC0DD\uC758 \uD3EC\uD6A8"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uC774\uBC88 \uD134\uC5D0 \uB0B4\n\uCE90\uB9AD\uD130\uB4E4\uC5D0\uAC8C
+      \uACF5\uACA9\uB825\uC744\n+2 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Savage_Roar
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 52
+    cardName: "\uAE09\uC18D \uC131\uC7A5"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uBE48 \uB9C8\uB098 \uC218\uC815\uC744\n\uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Wild_Growth
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 38000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 53
+    cardName: "\uD718\uB458\uB7EC\uCE58\uAE30"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uC801\uC5D0\uAC8C \uD53C\uD574\uB97C 4 \uC8FC\uACE0\n\uB2E4\uB978
+      \uBAA8\uB4E0 \uC801\uC5D0\uAC8C\n\uD53C\uD574\uB97C 1 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Swipe
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 54
+    cardName: "\uBCC4\uBE5B\uC12C\uAD11"
+    cost: 6
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 5 \uC90D\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C
+      \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Starfire
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 55
+    cardName: "\uBB34\uC1E0\uAECD\uC9C8 \uC218\uD638\uC815\uB839"
+    cost: 8
+    attack: 8
+    health: 8
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Ironbark_Protector
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 56
+    cardName: "\uB118\uCE58\uB294 \uB9C8\uB098"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\n(\uB9C8\uB098 \uC218\uC815\uC740\n10\uAC1C\uAE4C\uC9C0\uB9CC
+      \uBCF4\uC720\uAC00\uB2A5)\""
+    spriteName: Excess_Mana
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 57
+    cardName: "\uC2E0\uBE44\uD55C \uC0AC\uACA9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\uD53C\uD574\uB97C 2 \uC90D\uB2C8\uB2E4."
+    spriteName: Arcane_Shot
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 58
+    cardName: "\uD68C\uAC08\uC0C9 \uB291\uB300"
+    cost: 1
+    attack: 1
+    health: 1
+    description: "\"\uB0B4 \uB2E4\uB978 \uC57C\uC218\uB4E4\uC774\n\uACF5\uACA9\uB825
+      +1\uC744 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Timber_Wolf
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 59
+    cardName: "\uCD94\uC801"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uB0B4 \uB371\uC5D0\uC11C\n\uCE74\uB4DC\uB97C <b>\uBC1C\uACAC<b>\uD569\uB2C8\uB2E4.\""
+    spriteName: Tracking
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 60
+    cardName: "\uC0AC\uB0E5\uAFBC\uC758 \uC9D5\uD45C"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC758\n\uC0DD\uBA85\uB825\uC744 1\uB85C\n\uBC14\uAFC9\uB2C8\uB2E4.\""
+    spriteName: Hunter's_Mark
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 61
+    cardName: "\uC57C\uC0DD\uC758 \uBC97"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uBB34\uC791\uC704\n\uB3D9\uB8CC \uC57C\uC218\uB97C\n\uC18C\uD658\uD569\uB2C8\uB2E4.\""
+    spriteName: Animal_Companion
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 430000004400000045000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 62
+    cardName: "\uC0B4\uC0C1 \uBA85\uB839"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 3 \uC90D\uB2C8\uB2E4.\n\uB0B4 \uC804\uC7A5\uC5D0
+      \uC57C\uC218\uAC00 \uC788\uC73C\uBA74,\n\uD53C\uD574\uB97C 5 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Kill_Command
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 63
+    cardName: "\uC0AC\uB0E5\uAC1C\uC870\uB828\uC0AC"
+    cost: 4
+    attack: 4
+    health: 3
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b> \uC544\uAD70\n\uC57C\uC218\uC5D0\uAC8C
+      +2/+2\uC640\n<b>\uB3C4\uBC1C<b>\uC744 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Houndmaster
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 64
+    cardName: "\uC77C\uC81C \uC0AC\uACA9"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uBB34\uC791\uC704 \uC801 \uD558\uC218\uC778\n\uB458\uC5D0\uAC8C
+      \uD53C\uD574\uB97C\n3 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Multi-Shot
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 65
+    cardName: "\uAD76\uC8FC\uB9B0 \uB300\uBA38\uB9AC\uC218\uB9AC"
+    cost: 2
+    attack: 2
+    health: 1
+    description: "\"\uB0B4\uAC00 \uC57C\uC218\uB97C \uC18C\uD658\uD560\n\uB54C\uB9C8\uB2E4
+      \uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Starving_Buzzard
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 66
+    cardName: "\uD230\uB4DC\uB77C \uCF54\uBFD4\uC18C"
+    cost: 5
+    attack: 2
+    health: 5
+    description: "\"\uB0B4 \uC57C\uC218\uB4E4\uC774 <b>\uB3CC\uC9C4<b>\uC744\n\uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Tundra_Rhino
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 67
+    cardName: "\uD081\uD081\uC774"
+    cost: 3
+    attack: 4
+    health: 2
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Huffer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 68
+    cardName: "\uB808\uC624\uD06C"
+    cost: 3
+    attack: 2
+    health: 4
+    description: "\"\uB0B4 \uB2E4\uB978 \uD558\uC218\uC778\uB4E4\uC774\n\uACF5\uACA9\uB825
+      +1\uC744 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Leokk
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 69
+    cardName: "\uBBF8\uC0E4"
+    cost: 3
+    attack: 4
+    health: 4
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Misha
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 70
+    cardName: "\uC2E0\uBE44\uD55C \uD654\uC0B4"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801\uC5D0\uAC8C 3\uC758\n\uD53C\uD574\uB97C \uBB34\uC791\uC704\uB85C\n\uB098\uB204\uC5B4
+      \uC785\uD799\uB2C8\uB2E4.\""
+    spriteName: Arcane_Missiles
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 71
+    cardName: "\uD658\uC601 \uBCF5\uC81C"
+    cost: 0
+    attack: 0
+    health: 2
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Mirror_Minion_Image
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 72
+    cardName: "\uD658\uC601 \uBCF5\uC81C"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"0/2 <b>\uB3C4\uBC1C<b> \uD558\uC218\uC778\uC744\n\uB458 \uC18C\uD658\uD569\uB2C8\uB2E4.\""
+    spriteName: Mirror_Image
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 47000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 73
+    cardName: "\uC2E0\uBE44\uD55C \uD3ED\uBC1C"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801 \uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      1 \uC90D\uB2C8\uB2E4. \""
+    spriteName: Arcane_Explosion
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 74
+    cardName: "\uC5BC\uC74C \uD654\uC0B4"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uCE90\uB9AD\uD130\uC5D0\uAC8C\n\uD53C\uD574\uB97C 3 \uC8FC\uACE0\n<b>\uBE59\uACB0<b>
+      \uC0C1\uD0DC\uB85C \uB9CC\uB4ED\uB2C8\uB2E4.\""
+    spriteName: Frostbolt
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 75
+    cardName: "\uC2E0\uBE44\uD55C \uC9C0\uB2A5"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\uCE74\uB4DC\uB97C 2\uC7A5 \uBF51\uC2B5\uB2C8\uB2E4."
+    spriteName: Arcane_Intellect
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 76
+    cardName: "\uC5BC\uC74C \uD68C\uC624\uB9AC"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801 \uD558\uC218\uC778\uC744 <b>\uBE59\uACB0<b>\n\uC0C1\uD0DC\uB85C
+      \uB9CC\uB4ED\uB2C8\uB2E4.\""
+    spriteName: Frost_Nova
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 77
+    cardName: "\uD654\uC5FC\uAD6C"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\uD53C\uD574\uB97C 6 \uC90D\uB2C8\uB2E4."
+    spriteName: Fireball
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 78
+    cardName: "\uBCC0\uC774"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC744 1/1\n\uC591\uC73C\uB85C \uBCC0\uC2E0\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Polymorph
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 4f000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 79
+    cardName: "\uC591"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Polymorph
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 80
+    cardName: "\uBB3C\uC758 \uC815\uB839"
+    cost: 4
+    attack: 3
+    health: 6
+    description: "\"\uC774 \uD558\uC218\uC778\uC5D0\uAC8C \uD53C\uD574\uB97C\n\uBC1B\uC740
+      \uCE90\uB9AD\uD130\uB294 <b>\uBE59\uACB0<b>\n\uC0C1\uD0DC\uAC00 \uB429\uB2C8\uB2E4.\""
+    spriteName: Water_Elemental
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 81
+    cardName: "\uBD88\uAE30\uB465"
+    cost: 7
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801 \uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      4 \uC90D\uB2C8\uB2E4. \""
+    spriteName: Flamestrike
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 82
+    cardName: "\uD798\uC758 \uCD95\uBCF5"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n\uACF5\uACA9\uB825\uC744 +3\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Blessing_of_Might
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 83
+    cardName: "\uBCF4\uD638\uC758 \uC190\uAE38"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n<b>\uCC9C\uC0C1\uC758 \uBCF4\uD638\uB9C9<b>\uC744\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Hand_of_Protection
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 84
+    cardName: "\uACB8\uC190"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC758\n\uACF5\uACA9\uB825\uC744 1\uB85C\n\uB9CC\uB4ED\uB2C8\uB2E4.\""
+    spriteName: Humility
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 85
+    cardName: "\uBE5B\uC758 \uC815\uC758"
+    cost: 1
+    attack: 1
+    health: 4
+    description: 
+    spriteName: Light's_Justice
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 86
+    cardName: "\uC131\uC2A4\uB7EC\uC6B4 \uBE5B"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uB0B4 \uC601\uC6C5\uC758\n\uC0DD\uBA85\uB825\uC744 8\n\uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Holy_Light
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 87
+    cardName: "\uC655\uC758 \uCD95\uBCF5"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n+4/+4\uB97C\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Blessing_of_Kings
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 88
+    cardName: "\uC2E0\uC131\uD654"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801\uC5D0\uAC8C\n\uD53C\uD574\uB97C 2 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Consecration
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 89
+    cardName: "\uCC9C\uBC8C\uC758 \uB9DD\uCE58"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 3 \uC90D\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C
+      \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Hammer_of_Wrath
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 90
+    cardName: "\uC6A9\uC0AC\uC758 \uC9C4\uC740\uAC80"
+    cost: 4
+    attack: 4
+    health: 2
+    description: "\"\uB0B4 \uC601\uC6C5\uC774 \uACF5\uACA9\uD560\n\uB54C\uB9C8\uB2E4
+      \uC0DD\uBA85\uB825\uC744\n2 \uD68C\uBCF5\uD569\uB2C8\uB2E4.\""
+    spriteName: Truesilver_Champion
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 91
+    cardName: "\uC655\uC758 \uC218\uD638\uC790"
+    cost: 7
+    attack: 5
+    health: 6
+    description: "\"<b>\uB3C4\uBC1C<b>, <b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uB0B4
+      \uC601\uC6C5\uC758 \uC0DD\uBA85\uB825\uC744\n6 \uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Guardian_of_Kings
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 92
+    cardName: "\uC131\uC2A4\uB7EC\uC6B4 \uC77C\uACA9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C 3 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Holy_Smite
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 93
+    cardName: "\uB9C8\uC74C\uC758 \uB208"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uC0C1\uB300\uD3B8 \uC190\uC5D0 \uC788\uB294 \uCE74\uB4DC\uB97C\n\uBB34\uC791\uC704\uB85C
+      \uBCF5\uC0AC\uD558\uC5EC\n\uB0B4 \uC190\uC73C\uB85C \uAC00\uC838\uC635\uB2C8\uB2E4.\""
+    spriteName: Mind_Vision
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 94
+    cardName: "\uC2E0\uC758 \uAD8C\uB2A5: \uBCF4\uD638\uB9C9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C \uC0DD\uBA85\uB825\uC744\n+2 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C
+      \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Power_Word-_Shield
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 95
+    cardName: "\uC5B4\uB460\uC758 \uAD8C\uB2A5: \uACE0\uD1B5"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uACF5\uACA9\uB825\uC774\n3 \uC774\uD558\uC778 \uD558\uC218\uC778\uC744\n\uCC98\uCE58\uD569\uB2C8\uB2E4.\""
+    spriteName: Shadow_Word-_Pain
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 96
+    cardName: "\uC5B4\uB460\uC758 \uAD8C\uB2A5: \uC8FD\uC74C"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uACF5\uACA9\uB825\uC774 5\n\uC774\uC0C1\uC778 \uD558\uC218\uC778\uC744\n\uCC98\uCE58\uD569\uB2C8\uB2E4.\""
+    spriteName: Shadow_Word-_Death
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 97
+    cardName: "\uC2E0\uC131\uD55C \uD3ED\uBC1C"
+    cost: 5
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801\uC5D0\uAC8C\n\uD53C\uD574\uB97C 2 \uC90D\uB2C8\uB2E4.
+      \uBAA8\uB4E0\n\uC544\uAD70 \uCE90\uB9AD\uD130\uC758 \uC0DD\uBA85\uB825\uC744\n2
+      \uD68C\uBCF5\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Holy_Nova
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC2E0\uC131"
+    isCollector: 1
+    cardTypes:
+    - "\uC2E0\uC131"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 98
+    cardName: "\uC815\uC2E0 \uC9C0\uBC30"
+    cost: 10
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uD558\uC218\uC778\uC744\n\uAC00\uC838\uC635\uB2C8\uB2E4.\""
+    spriteName: Mind_Control
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 99
+    cardName: "\uAE30\uC2B5"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C \uBC1B\uC9C0\n\uC54A\uC740 \uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      2 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Backstab
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 100
+    cardName: "\uB9F9\uB3C5"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uB0B4 \uBB34\uAE30\uC5D0\n\uACF5\uACA9\uB825\uC744 +2\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Deadly_Poison
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 101
+    cardName: "\uC0AC\uC545\uD55C \uC77C\uACA9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uC601\uC6C5\uC5D0\uAC8C\n\uD53C\uD574\uB97C 3 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Sinister_Strike
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 102
+    cardName: "\uB3C5\uCE7C"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 1 \uC90D\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C
+      \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Shiv
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 103
+    cardName: "\uD63C\uC808\uC2DC\uD0A4\uAE30"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uD558\uC218\uC778\uC744\n\uC0C1\uB300\uD3B8\uC758 \uC190\uC73C\uB85C\n\uB3CC\uB824\uBCF4\uB0C5\uB2C8\uB2E4.\""
+    spriteName: Sap
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 104
+    cardName: "\uCE7C\uB0A0 \uBD80\uCC44"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uBAA8\uB4E0 \uC801 \uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      1 \uC90D\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Fan_of_Knives
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 105
+    cardName: "\uC554\uC0B4\uC790\uC758 \uAC80"
+    cost: 5
+    attack: 3
+    health: 4
+    description: 
+    spriteName: Assassin's_Blade
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 106
+    cardName: "\uC554\uC0B4"
+    cost: 5
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uD558\uC218\uC778\uC744\n\uCC98\uCE58\uD569\uB2C8\uB2E4.\""
+    spriteName: Assassinate
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 107
+    cardName: "\uC804\uB825 \uC9C8\uC8FC"
+    cost: 7
+    attack: 0
+    health: 0
+    description: "\uCE74\uB4DC\uB97C 4\uC7A5 \uBF51\uC2B5\uB2C8\uB2E4."
+    spriteName: Sprint
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 108
+    cardName: "\uC120\uC778\uC758 \uCE58\uC720\uB825"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC758 \uC0DD\uBA85\uB825\uC744\n\uBAA8\uB450
+      \uD68C\uBCF5\uC2DC\uD0A4\uACE0\n<b>\uB3C4\uBC1C<b>\uC744 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Ancestral_Healing
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 109
+    cardName: "\uD1A0\uD15C\uC758 \uD798"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uB0B4 \uD1A0\uD15C\uB4E4\uC5D0\uAC8C\n\uC0DD\uBA85\uB825\uC744
+      +2\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Totemic_Might
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 110
+    cardName: "\uB0C9\uAE30 \uCDA9\uACA9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uCE90\uB9AD\uD130\uC5D0\uAC8C\n\uD53C\uD574\uB97C 1 \uC8FC\uACE0\n<b>\uBE59\uACB0<b>
+      \uC0C1\uD0DC\uB85C \uB9CC\uB4ED\uB2C8\uB2E4.\""
+    spriteName: Frost_Shock
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 111
+    cardName: "\uB300\uC9C0\uC758 \uBB34\uAE30"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uC774\uBC88 \uD134\uC5D0 \uC544\uAD70\n\uCE90\uB9AD\uD130\uC5D0\uAC8C
+      \uACF5\uACA9\uB825\uC744\n+3 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Rockbiter_Weapon
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 112
+    cardName: "\uBD88\uAF43\uC758 \uD1A0\uD15C"
+    cost: 2
+    attack: 0
+    health: 3
+    description: "\"\uC591\uC606\uC758 \uD558\uC218\uC778\uB4E4\uC774\n\uACF5\uACA9\uB825\uC744
+      +2 \uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Flametongue_Totem
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uD1A0\uD15C"
+    isCollector: 1
+    cardTypes:
+    - "\uD1A0\uD15C"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 113
+    cardName: "\uC9C8\uD48D"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n<b>\uC9C8\uD48D<b>\uC744 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Windfury
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 114
+    cardName: "\uC0AC\uC220"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC744 <b>\uB3C4\uBC1C<b> \uB2A5\uB825\uC774\n\uC788\uB294
+      0/1 \uAC1C\uAD6C\uB9AC\uB85C\n\uBCC0\uC2E0\uC2DC\uD0B5\uB2C8\uB2E4.\""
+    spriteName: Hex
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 73000000
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 115
+    cardName: "\uAC1C\uAD6C\uB9AC"
+    cost: 0
+    attack: 0
+    health: 1
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Hex
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 116
+    cardName: "\uBC14\uB78C\uC608\uC5B8\uC790"
+    cost: 4
+    attack: 3
+    health: 3
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:\n\uC544\uAD70 \uD558\uC218\uC778\uC5D0\uAC8C\n<b>\uC9C8\uD48D<b>\uC744
+      \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Windspeaker
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 117
+    cardName: "\uD53C\uC758 \uC695\uB9DD"
+    cost: 5
+    attack: 0
+    health: 0
+    description: "\"\uC774\uBC88 \uD134\uC5D0 \uB0B4\n\uD558\uC218\uC778\uB4E4\uC5D0\uAC8C
+      \uACF5\uACA9\uB825\uC744\n+3 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Bloodlust
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 118
+    cardName: "\uBD88\uC758 \uC815\uB839"
+    cost: 6
+    attack: 6
+    health: 5
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uD53C\uD574\uB97C 3
+      \uC90D\uB2C8\uB2E4.\""
+    spriteName: Fire_Elemental
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 119
+    cardName: "\uD76C\uC0DD\uC758 \uC11C\uC57D"
+    cost: 0
+    attack: 0
+    health: 0
+    description: "\"\uC544\uAD70 \uC545\uB9C8\uB97C \uCC98\uCE58\uD569\uB2C8\uB2E4.\n\uB0B4
+      \uC601\uC6C5\uC774 \uC0DD\uBA85\uB825\uC744\n5 \uD68C\uBCF5\uD569\uB2C8\uB2E4.\""
+    spriteName: Sacrificial_Pact
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 120
+    cardName: "\uC601\uD63C\uC758 \uBD88\uAF43"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 4 \uC90D\uB2C8\uB2E4.\n\uBB34\uC791\uC704\uB85C
+      \uCE74\uB4DC\uB97C \uBC84\uB9BD\uB2C8\uB2E4.\""
+    spriteName: Soulfire
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 121
+    cardName: "\uBD80\uD328"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uC801 \uD558\uC218\uC778\uC744\n\uC120\uD0DD\uD569\uB2C8\uB2E4.
+      \uB0B4 \uD134\uC774\n\uC2DC\uC791\uB420 \uB54C, \uADF8 \uD558\uC218\uC778\uC744\n\uCC98\uCE58\uD569\uB2C8\uB2E4.\""
+    spriteName: Corruption
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 122
+    cardName: "\uD544\uBA78\uC758 \uACE0\uB9AC"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C 1 \uC90D\uB2C8\uB2E4.\n\uADF8
+      \uD558\uC218\uC778\uC774 \uC8FD\uC73C\uBA74\n\uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Mortal_Coil
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 123
+    cardName: "\uACF5\uD5C8\uBC29\uB791\uC790"
+    cost: 1
+    attack: 1
+    health: 3
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Voidwalker
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 124
+    cardName: "\uC9C0\uC625\uD30C\uC218\uACAC"
+    cost: 2
+    attack: 4
+    health: 3
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uBB34\uC791\uC704\uB85C
+      \uCE74\uB4DC\uB97C\n\uBC84\uB9BD\uB2C8\uB2E4.\""
+    spriteName: Felstalker
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 125
+    cardName: "\uC0DD\uBA85\uB825 \uD761\uC218"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C 2 \uC90D\uB2C8\uB2E4.\n\uB0B4 \uC601\uC6C5\uC774
+      \uC0DD\uBA85\uB825\uC744\n2 \uD68C\uBCF5\uD569\uB2C8\uB2E4.\""
+    spriteName: Drain_Life
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 126
+    cardName: "\uC5B4\uB460\uC758 \uD654\uC0B4"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C 4 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Shadow_Bolt
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 127
+    cardName: "\uC9C0\uC625\uC758 \uBD88\uAE38"
+    cost: 4
+    attack: 0
+    health: 0
+    description: "\"<b>\uBAA8\uB4E0<b> \uCE90\uB9AD\uD130\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      3 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Hellfire
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 128
+    cardName: "\uACF5\uD3EC\uC758 \uC9C0\uC625\uBD88\uC545\uB9C8"
+    cost: 6
+    attack: 6
+    health: 6
+    description: "\"<b>\uC804\uD22C\uC758 \uD568\uC131:<b>\n\uB2E4\uB978 <b>\uBAA8\uB4E0<b>
+      \uCE90\uB9AD\uD130\uC5D0\uAC8C\n\uD53C\uD574\uB97C 1 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Dread_Infernal
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 129
+    cardName: "\uB9C8\uBB34\uB9AC \uC77C\uACA9"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"\uD53C\uD574\uB97C \uBC1B\uC740\n\uC801 \uD558\uC218\uC778\uC744\n\uCC98\uCE58\uD569\uB2C8\uB2E4.\""
+    spriteName: Execute
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 130
+    cardName: "\uC18C\uC6A9\uB3CC\uC774"
+    cost: 1
+    attack: 0
+    health: 0
+    description: "\"<b>\uBAA8\uB4E0<b> \uD558\uC218\uC778\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      1 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Whirlwind
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 131
+    cardName: "\uD68C\uC804\uBCA0\uAE30"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uBB34\uC791\uC704 \uC801\n\uD558\uC218\uC778 \uB458\uC5D0\uAC8C\n\uD53C\uD574\uB97C
+      2 \uC90D\uB2C8\uB2E4.\""
+    spriteName: Cleave
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 132
+    cardName: "\uC774\uAE00\uAC70\uB9AC\uB294 \uC804\uC7C1 \uB3C4\uB07C"
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Fiery_War_Axe
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 133
+    cardName: "\uC601\uC6C5\uC758 \uC77C\uACA9"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uC774\uBC88 \uD134\uC5D0 \uB0B4\n\uC601\uC6C5\uC774 \uACF5\uACA9\uB825\uC744
+      +4\n\uC5BB\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Heroic_Strike
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 134
+    cardName: "\uB3CC\uC9C4"
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\"\uC544\uAD70 \uD558\uC218\uC778\n\uD558\uB098\uC5D0\uAC8C \uACF5\uACA9\uB825
+      +2\uC640\n<b>\uB3CC\uC9C4<b>\uC744 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Charge
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 135
+    cardName: "\uBC29\uD328 \uC62C\uB9AC\uAE30"
+    cost: 3
+    attack: 0
+    health: 0
+    description: "\"\uBC29\uC5B4\uB3C4\uB97C +5 \uC5BB\uC2B5\uB2C8\uB2E4.\n\uCE74\uB4DC\uB97C
+      \uBF51\uC2B5\uB2C8\uB2E4.\""
+    spriteName: Shield_Block
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 136
+    cardName: "\uC804\uC7C1\uB178\uB798 \uC0AC\uB839\uAD00"
+    cost: 3
+    attack: 2
+    health: 3
+    description: "\"\uB0B4\uAC00 \uACF5\uACA9\uB825\uC774 3 \uC774\uD558\uC778\n\uD558\uC218\uC778\uC744
+      \uC18C\uD658\uD560 \uB54C\uB9C8\uB2E4\n\uADF8 \uD558\uC218\uC778\uC5D0\uAC8C
+      <b>\uB3CC\uC9C4<b>\uC744\n\uBD80\uC5EC\uD569\uB2C8\uB2E4.\""
+    spriteName: Warsong_Commander
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 137
+    cardName: "\uCF54\uB974\uD06C\uB860 \uC815\uC608\uBCD1"
+    cost: 4
+    attack: 4
+    health: 3
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Kor'kron_Elite
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 138
+    cardName: "\uC544\uCF00\uC774\uB098\uC774\uD2B8 \uB3C4\uB07C"
+    cost: 5
+    attack: 5
+    health: 2
+    description: 
+    spriteName: Arcanite_Reaper
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 139
+    cardName: "\uC704\uC2B5"
+    cost: 0
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Wisp
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 140
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Abusive_Sergeant
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 141
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Argent_Squire
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 142
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Leper_Gnome
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 143
+    cardName: "\uBC29\uD328\uBCD1"
+    cost: 1
+    attack: 0
+    health: 4
+    description: 
+    spriteName: Shieldbearer
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 144
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Southsea_Deckhand
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 145
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: "<b>\uC740\uC2E0<b>"
+    spriteName: Worgen_Infiltrator
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 146
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 1
+    description: "<b>\uC9C8\uD48D<b>"
+    spriteName: Young_Dragonhawk
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 147
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Amani_Berserker
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 148
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Bloodsail_Raider
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 149
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Dire_Wolf_Alpha
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 150
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Faerie_Dragon
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 151
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Ironbeak_Owl
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 152
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Loot_Hoarder
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 153
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Mad_Bomber
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 154
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Youthful_Brewmaster
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 155
+    cardName: "\uACE0\uD1B5\uC758 \uC218\uD589 \uC0AC\uC81C"
+    cost: 3
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Acolyte_of_Pain
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 156
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Earthen_Ring_Farseer
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 157
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Flesheating_Ghoul
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 158
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Harvest_Golem
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 1
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 159
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Damaged_Golem
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 160
+    cardName: 
+    cost: 3
+    attack: 4
+    health: 2
+    description: "<b>\uC740\uC2E0<b>"
+    spriteName: Jungle_Panther
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 161
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Raging_Worgen
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 162
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 1
+    description: 
+    spriteName: Scarlet_Crusader
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 163
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Tauren_Warrior
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 164
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: "<b>\uC9C8\uD48D<b>"
+    spriteName: Thrallmar_Farseer
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 165
+    cardName: 
+    cost: 4
+    attack: 5
+    health: 4
+    description: 
+    spriteName: Ancient_Brewmaster
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 166
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 2
+    description: 
+    spriteName: Cult_Master
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 167
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Dark_Iron_Dwarf
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 168
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Dread_Corsair
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 169
+    cardName: 
+    cost: 4
+    attack: 1
+    health: 7
+    description: 
+    spriteName: Mogu'shan_Warden
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 170
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 3
+    description: "<b>\uCC9C\uC0C1\uC758 \uBCF4\uD638\uB9C9<b>"
+    spriteName: Silvermoon_Guardian
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 171
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 3
+    description: 
+    spriteName: Spellbreaker
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 172
+    cardName: 
+    cost: 5
+    attack: 3
+    health: 6
+    description: 
+    spriteName: Fen_Creeper
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 173
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Silver_Hand_Knight
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 174
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Squire
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 175
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 6
+    description: 
+    spriteName: Spiteful_Smith
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC5B8\uB370\uB4DC"
+    isCollector: 1
+    cardTypes:
+    - "\uC5B8\uB370\uB4DC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 176
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 5
+    description: "<b>\uC740\uC2E0<b>"
+    spriteName: Stranglethorn_Tiger
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 177
+    cardName: 
+    cost: 5
+    attack: 7
+    health: 6
+    description: 
+    spriteName: Venture_Co._Mercenary
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 178
+    cardName: 
+    cost: 6
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Frost_Elemental
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 179
+    cardName: 
+    cost: 6
+    attack: 5
+    health: 4
+    description: 
+    spriteName: Priestess_of_Elune
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 180
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 5
+    description: "<b>\uC9C8\uD48D<b>"
+    spriteName: Windfury_Harpy
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 181
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Angry_Chicken
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 182
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 2
+    description: 
+    spriteName: Bloodsail_Corsair
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 183
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 2
+    description: 
+    spriteName: Lightwarden
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 184
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 2
+    description: 
+    spriteName: Murloc_Tidecaller
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 185
+    cardName: "\uBE44\uBC00\uC9C0\uAE30"
+    cost: 1
+    attack: 1
+    health: 2
+    description: 
+    spriteName: Secretkeeper
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 186
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Young_Priestess
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 187
+    cardName: 
+    cost: 2
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Ancient_Watcher
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 188
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Crazed_Alchemist
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 189
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Knife_Juggler
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 190
+    cardName: "\uB9C8\uB098\uC911\uB3C5\uC790"
+    cost: 2
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Mana_Addict
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 191
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Mana_Wraith
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 192
+    cardName: 
+    cost: 2
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Master_Swordsmith
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 193
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Pint-Sized_Summoner
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 194
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Sunfury_Protector
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 195
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Wild_Pyromancer
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 196
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 3
+    description: 
+    spriteName: Alarm-o-Bot
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 1
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 197
+    cardName: 
+    cost: 3
+    attack: 4
+    health: 2
+    description: 
+    spriteName: Arcane_Golem
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 198
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Coldlight_Oracle
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 199
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Coldlight_Seer
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 200
+    cardName: 
+    cost: 3
+    attack: 1
+    health: 4
+    description: 
+    spriteName: Demolisher
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 1
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 201
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Emperor_Cobra
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 202
+    cardName: 
+    cost: 3
+    attack: 1
+    health: 5
+    description: 
+    spriteName: Imp_Master
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 203
+    cardName: "\uC784\uD504"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Imp_Master
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 0
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 204
+    cardName: 
+    cost: 3
+    attack: 4
+    health: 7
+    description: 
+    spriteName: Injured_Blademaster
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 205
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Mind_Control_Tech
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 206
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Questing_Adventurer
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 207
+    cardName: 
+    cost: 4
+    attack: 2
+    health: 5
+    description: 
+    spriteName: Ancient_Mage
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 208
+    cardName: 
+    cost: 4
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Defender_of_Argus
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 209
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 1
+    description: 
+    spriteName: Twilight_Drake
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 210
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Violet_Teacher
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 211
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Violet_Apprentice
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 212
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Abomination
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 213
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Azure_Drake
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 214
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Gadgetzan_Auctioneer
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 215
+    cardName: 
+    cost: 5
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Stampeding_Kodo
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 216
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 2
+    description: 
+    spriteName: Argent_Commander
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 217
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Sunwalker
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 218
+    cardName: 
+    cost: 7
+    attack: 7
+    health: 5
+    description: 
+    spriteName: Ravenholdt_Assassin
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 219
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 2
+    description: 
+    spriteName: Hungry_Crab
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 220
+    cardName: 
+    cost: 2
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Captain's_Parrot
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 221
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 7
+    description: 
+    spriteName: Doomsayer
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 222
+    cardName: 
+    cost: 3
+    attack: 4
+    health: 2
+    description: 
+    spriteName: Big_Game_Hunter
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 223
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Blood_Knight
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 224
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Murloc_Warleader
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 225
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Southsea_Captain
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 226
+    cardName: 
+    cost: 5
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Faceless_Manipulator
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 227
+    cardName: 
+    cost: 10
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Sea_Giant
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 228
+    cardName: 
+    cost: 12
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Mountain_Giant
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 229
+    cardName: 
+    cost: 20
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Molten_Giant
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 230
+    cardName: 
+    cost: 2
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Bloodmage_Thalnos
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 231
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 4
+    description: 
+    spriteName: Lorewalker_Cho
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 232
+    cardName: 
+    cost: 2
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Millhouse_Manastorm
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 233
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 4
+    description: 
+    spriteName: Nat_Pagle
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 234
+    cardName: 
+    cost: 3
+    attack: 5
+    health: 5
+    description: 
+    spriteName: King_Mukla
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 235
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Crazy_Monkey
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 236
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Tinkmaster_Overspark
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 237
+    cardName: "\uB2E4\uB78C\uC950"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Squirrel_(Tinkmaster_Overspark)
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 238
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Venture_Co._Mercenary
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 239
+    cardName: 
+    cost: 4
+    attack: 6
+    health: 2
+    description: 
+    spriteName: Leeroy_Jenkins
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 240
+    cardName: 
+    cost: 4
+    attack: 2
+    health: 4
+    description: 
+    spriteName: Murloc_Raid
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 1
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 241
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 4
+    description: 
+    spriteName: Captain_Greenskin
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uD574\uC801"
+    isCollector: 1
+    cardTypes:
+    - "\uD574\uC801"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 242
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Elite_Tauren_Chieftain
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 243
+    cardName: 
+    cost: 0
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Murloc_Raid
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uBA40\uB85D"
+    isCollector: 0
+    cardTypes:
+    - "\uBA40\uB85D"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 244
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: I_Am_Murloc
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 245
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Rogues_Do_It...
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 246
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 4
+    description: 
+    spriteName: Harrison_Jones
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 247
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Cairne_Bloodhoof
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 248
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Baine_Bloodhoof
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 249
+    cardName: 
+    cost: 6
+    attack: 6
+    health: 6
+    description: 
+    spriteName: Gelbin_Mekkatorque
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 250
+    cardName: "\uB2ED"
+    cost: 0
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Angry_Chicken
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 251
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 4
+    description: 
+    spriteName: Emboldener_3000
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 252
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 1
+    description: 
+    spriteName: Homing_Chicken
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\"\uAE30\uACC4,\uC57C\uC218\""
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 253
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 3
+    description: 
+    spriteName: Poultryizer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 254
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 3
+    description: 
+    spriteName: Repair_Bot
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uAE30\uACC4"
+    isCollector: 0
+    cardTypes:
+    - "\uAE30\uACC4"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 255
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Hogger
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 256
+    cardName: 
+    cost: 6
+    attack: 7
+    health: 5
+    description: 
+    spriteName: Xavius
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 257
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Xavian_Satyr
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 0
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 258
+    cardName: 
+    cost: 6
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Sylvanas_Windrunner
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 259
+    cardName: 
+    cost: 6
+    attack: 9
+    health: 7
+    description: 
+    spriteName: The_Beast
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 260
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Pip_Quickwit
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 261
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 5
+    description: 
+    spriteName: The_Black_Knight
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 262
+    cardName: 
+    cost: 7
+    attack: 7
+    health: 5
+    description: 
+    spriteName: Baron_Geddon
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 263
+    cardName: 
+    cost: 8
+    attack: 7
+    health: 7
+    description: 
+    spriteName: Gruul
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 264
+    cardName: 
+    cost: 8
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Ragnaros_the_Firelord
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 265
+    cardName: 
+    cost: 9
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Alexstrasza
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 266
+    cardName: 
+    cost: 9
+    attack: 4
+    health: 12
+    description: 
+    spriteName: Malygos
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 267
+    cardName: 
+    cost: 9
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Nozdormu
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 268
+    cardName: 
+    cost: 9
+    attack: 8
+    health: 8
+    description: 
+    spriteName: Onyxia
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 269
+    cardName: "\uC0C8\uB07C\uC6A9"
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Whelp
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 0
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 270
+    cardName: "\uC774\uC138\uB77C"
+    cost: 9
+    attack: 4
+    health: 12
+    description: 
+    spriteName: Ysera
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 271
+    cardName: "\uAFC8"
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Dream
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 0
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 272
+    cardName: "\uC545\uBABD"
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Nightmare
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 0
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 273
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Laughing_Sister
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 0
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 274
+    cardName: "\uAE68\uC5B4\uB09C \uC774\uC138\uB77C"
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ysera_Awakens
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 0
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 275
+    cardName: "\uC5D0\uBA54\uB784\uB4DC \uBE44\uB8E1"
+    cost: 4
+    attack: 7
+    health: 6
+    description: 
+    spriteName: Emerald_Drake
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 0
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 276
+    cardName: "\uB370\uC2A4\uC719"
+    cost: 10
+    attack: 12
+    health: 12
+    description: 
+    spriteName: Deathwing
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC911\uB9BD"
+    packgeType: Original
+    cardType: "\uC6A9\uC871"
+    isCollector: 1
+    cardTypes:
+    - "\uC6A9\uC871"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 277
+    cardName: "\uC790\uC5F0\uD654"
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Naturalize
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 278
+    cardName: "\uC57C\uC0DD\uC758 \uD798"
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Power_of_the_Wild
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 279
+    cardName: "\uCC9C\uBC8C"
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Wrath
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 280
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: "\uB370\uBBF8\uC9C0 1\uC744 \uC900\uB2E4. \uCE74\uB4DC \uBF51\uAE30"
+    spriteName: Nature's_Wrath
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 281
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Solar_Wrath
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 282
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Leader_of_the_Pack
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 283
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Summon_a_Panther
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 284
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Panther
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 285
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mark_of_Nature
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 286
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Thick_Hide
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 287
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Tiger's_Fury
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 288
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Soul_of_the_Forest
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 289
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Treant
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 290
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Druid_of_the_Claw
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 291
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Bear_Form
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 292
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Cat_Form
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 293
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 4
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Cat_Form
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 294
+    cardName: 
+    cost: 5
+    attack: 4
+    health: 6
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Bear_Form
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 295
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Savagery
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 296
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Bite
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 297
+    cardName: 
+    cost: 4
+    attack: 2
+    health: 4
+    description: 
+    spriteName: Keeper_of_the_Grove
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 298
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Dispel
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 299
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Moonfire_(Keeper_of_the_Grove)
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 300
+    cardName: "\uC721\uC131"
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Nourish
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 301
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Enrich
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 302
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Rampant_Growth
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 303
+    cardName: "\uBCC4\uB3D9\uBCC4"
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Starfall
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uBE44\uC804"
+    isCollector: 1
+    cardTypes:
+    - "\uBE44\uC804"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 304
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Starlord
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 305
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Stellar_Drift
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 306
+    cardName: 
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Force_of_Nature
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: "\uC790\uC5F0"
+    isCollector: 1
+    cardTypes:
+    - "\uC790\uC5F0"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 307
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 2
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Treant
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 308
+    cardName: 
+    cost: 7
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Ancient_of_Lore
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 309
+    cardName: 
+    cost: 7
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ancient_Teachings
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 310
+    cardName: 
+    cost: 7
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ancient_Secrets
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 311
+    cardName: 
+    cost: 7
+    attack: 5
+    health: 5
+    description: 
+    spriteName: Ancient_of_War
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 312
+    cardName: 
+    cost: 7
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Rooted
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 313
+    cardName: 
+    cost: 7
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Uproot
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 314
+    cardName: 
+    cost: 9
+    attack: 5
+    health: 8
+    description: 
+    spriteName: Cenarius
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 315
+    cardName: 
+    cost: 9
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Demigod's_Favor
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 316
+    cardName: 
+    cost: 9
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Treant
+    gem: None
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB4DC\uB8E8\uC774\uB4DC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 317
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Explosive_Trap
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 318
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Freezing_Trap
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 319
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Scavenging_Hyena
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 320
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Snipe
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 321
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Deadly_Shot
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 322
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Unleash_the_Hounds
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 323
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Flare
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 324
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Misdirection
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 325
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Eaglehorn_Bow
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 326
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Explosive_Shot
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 327
+    cardName: "\uC0AC\uBC14\uB098 \uC0AC\uC790"
+    cost: 6
+    attack: 6
+    health: 5
+    description: 
+    spriteName: Savannah_Highmane
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 328
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Bestial_Wrath
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 329
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Snake_Trap
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 330
+    cardName: 
+    cost: 7
+    attack: 5
+    health: 2
+    description: 
+    spriteName: Gladiator's_Longbow
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 331
+    cardName: "\uC655 \uD06C\uB8E8\uC26C"
+    cost: 9
+    attack: 8
+    health: 8
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: King_Krush
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 1
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 332
+    cardName: "\uBC40"
+    cost: 0
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Snake
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 333
+    cardName: "\uAC1C"
+    cost: 1
+    attack: 1
+    health: 1
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Unleash_the_Hounds
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 334
+    cardName: "\uD558\uC774\uC5D0\uB098"
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Hyena
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 335
+    cardName: "\uD081\uD081\uC774"
+    cost: 3
+    attack: 4
+    health: 2
+    description: "<b>\uB3CC\uC9C4<b>"
+    spriteName: Huffer
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 336
+    cardName: "\uB808\uC624\uD06C"
+    cost: 3
+    attack: 2
+    health: 4
+    description: 
+    spriteName: Leokk
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 337
+    cardName: "\uBBF8\uC0E4"
+    cost: 3
+    attack: 4
+    health: 4
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Misha
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uB0E5\uAFBC"
+    packgeType: Original
+    cardType: "\uC57C\uC218"
+    isCollector: 0
+    cardTypes:
+    - "\uC57C\uC218"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 338
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ice_Lance
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 339
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Mana_Wyrm
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 340
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Sorcerer's_Apprentice
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 341
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ice_Barrier
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 342
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mirror_Entity
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 343
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Cone_of_Cold
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 344
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Counterspell
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 345
+    cardName: 
+    cost: 3
+    attack: 4
+    health: 3
+    description: 
+    spriteName: Kirin_Tor_Mage
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 346
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Vaporize
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 347
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Ethereal_Arcanist
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 348
+    cardName: 
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Blizzard
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uB0C9\uAE30"
+    isCollector: 1
+    cardTypes:
+    - "\uB0C9\uAE30"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 349
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Ice_Block
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 350
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Spellbender
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 351
+    cardName: 
+    cost: 10
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Pyroblast
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 352
+    cardName: 
+    cost: 7
+    attack: 5
+    health: 7
+    description: 
+    spriteName: Archmage_Antonidas
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 353
+    cardName: 
+    cost: 0
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Spellbender
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 354
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Blessing_of_Wisdom
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 355
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Eye_for_an_Eye
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 356
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Noble_Sacrifice
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 357
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Redemption
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 358
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Repentance
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 359
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Argent_Protector
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 360
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Equality
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 361
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Aldor_Peacekeeper
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 362
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Divine_Favor
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 363
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Blessed_Champion
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 364
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Holy_Wrath
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 365
+    cardName: 
+    cost: 3
+    attack: 1
+    health: 5
+    description: 
+    spriteName: Sword_of_Justice
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 366
+    cardName: 
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Avenging_Wrath
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 367
+    cardName: 
+    cost: 8
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Lay_on_Hands
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 368
+    cardName: 
+    cost: 8
+    attack: 6
+    health: 6
+    description: 
+    spriteName: Tirion_Fordring
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 369
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 3
+    description: 
+    spriteName: Ashbringer
+    gem: Gem_Legendary
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 370
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Noble_Sacrifice
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC131\uAE30\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 371
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Circle_of_Healing
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 372
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Silence
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 373
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Inner_Fire
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 374
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Northshire_Cleric
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 375
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Divine_Spirit
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 376
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mind_Blast
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC554\uD751"
+    isCollector: 1
+    cardTypes:
+    - "\uC554\uD751"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 377
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Thoughtsteal
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 378
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 5
+    description: 
+    spriteName: Lightspawn
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 379
+    cardName: 
+    cost: 6
+    attack: 6
+    health: 6
+    description: 
+    spriteName: Temple_Enforcer
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 380
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 5
+    description: 
+    spriteName: Lightwell
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 381
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Auchenai_Soulpriest
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 382
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mass_Dispel
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 383
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Shadow_Madness
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 384
+    cardName: 
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Holy_Fire
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 385
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Shadowform
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 386
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mindgames
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 387
+    cardName: 
+    cost: 6
+    attack: 4
+    health: 5
+    description: 
+    spriteName: Cabal_Shadow_Priest
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 388
+    cardName: 
+    cost: 7
+    attack: 7
+    health: 7
+    description: 
+    spriteName: Prophet_Velen
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 389
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 1
+    description: 
+    spriteName: Shadow_of_Nothing
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC0AC\uC81C"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 390
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Shadowstep
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 391
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Cold_Blood
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 392
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Conceal
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 393
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Betrayal
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 394
+    cardName: 
+    cost: 2
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Defias_Ringleader
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 395
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Eviscerate
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 396
+    cardName: "\uC18C\uBA78"
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Vanish
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 397
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Blade_Flurry
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 398
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Headcrack
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 399
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Perdition's_Blade
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 400
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: SI7_Agent
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 401
+    cardName: 
+    cost: 4
+    attack: 4
+    health: 4
+    description: 
+    spriteName: Master_of_Disguise
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 402
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Preparation
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 403
+    cardName: 
+    cost: 2
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Patient_Assassin
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 404
+    cardName: 
+    cost: 6
+    attack: 5
+    health: 3
+    description: 
+    spriteName: Kidnapper
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: "\uC5B8\uB370\uB4DC"
+    isCollector: 1
+    cardTypes:
+    - "\uC5B8\uB370\uB4DC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 405
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Edwin_VanCleef
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 406
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 1
+    description: 
+    spriteName: Defias_Bandit
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uB3C4\uC801"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 407
+    cardName: 
+    cost: 1
+    attack: 3
+    health: 1
+    description: 
+    spriteName: Dust_Devil
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 408
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Earth_Shock
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 409
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Forked_Lightning
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 410
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Lightning_Bolt
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 411
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 3
+    description: 
+    spriteName: Stormforged_Axe
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 412
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 4
+    description: 
+    spriteName: Unbound_Elemental
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 413
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Unbound_Elemental
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 414
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Feral_Spirit
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 415
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Lava_Burst
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uD654\uC5FC"
+    isCollector: 1
+    cardTypes:
+    - "\uD654\uC5FC"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 416
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Lightning_Storm
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 417
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 3
+    description: 
+    spriteName: Mana_Tide_Totem
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 418
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Far_Sight
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 419
+    cardName: 
+    cost: 5
+    attack: 2
+    health: 8
+    description: 
+    spriteName: Doomhammer
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 420
+    cardName: 
+    cost: 5
+    attack: 7
+    health: 8
+    description: 
+    spriteName: Earth_Elemental
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 421
+    cardName: 
+    cost: 8
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Al'Akir_the_Windlord
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: "\uC815\uB839"
+    isCollector: 1
+    cardTypes:
+    - "\uC815\uB839"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 422
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 3
+    description: "<b>\uB3C4\uBC1C<b>"
+    spriteName: Spirit_Wolf
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC8FC\uC220\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 0
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 423
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 1
+    description: 
+    spriteName: Blood_Imp
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 424
+    cardName: 
+    cost: 1
+    attack: 3
+    health: 2
+    description: 
+    spriteName: Flame_Imp
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 425
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Power_Overwhelming
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 426
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Demonfire
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 427
+    cardName: 
+    cost: 3
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Sense_Demons
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 428
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 4
+    description: 
+    spriteName: Summoning_Portal
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 429
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 5
+    description: 
+    spriteName: Felguard
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 430
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Void_Terror
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 431
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Shadowflame
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 432
+    cardName: 
+    cost: 5
+    attack: 5
+    health: 7
+    description: 
+    spriteName: Doomguard
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 433
+    cardName: 
+    cost: 6
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Siphon_Soul
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 434
+    cardName: 
+    cost: 4
+    attack: 5
+    health: 6
+    description: 
+    spriteName: Pit_Lord
+    gem: Gem_Epic
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 435
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Bane_of_Doom
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 436
+    cardName: 
+    cost: 8
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Twisting_Nether
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 437
+    cardName: 
+    cost: 9
+    attack: 3
+    health: 15
+    description: 
+    spriteName: Lord_Jaraxxus
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 1
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 438
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 1
+    description: 
+    spriteName: Worthless_Imp
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 0
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 439
+    cardName: 
+    cost: 3
+    attack: 3
+    health: 8
+    description: 
+    spriteName: Blood_Fury
+    gem: Gem_Legendary
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 440
+    cardName: 
+    cost: 6
+    attack: 6
+    health: 6
+    description: 
+    spriteName: Infernal
+    gem: None
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uD751\uB9C8\uBC95\uC0AC"
+    packgeType: Original
+    cardType: "\uC545\uB9C8"
+    isCollector: 0
+    cardTypes:
+    - "\uC545\uB9C8"
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 441
+    cardName: 
+    cost: 0
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Inner_Rage
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 442
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Battle_Rage
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 443
+    cardName: 
+    cost: 2
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Cruel_Taskmaster
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 444
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Rampage
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 445
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Slam
+    gem: Gem_Common
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 446
+    cardName: 
+    cost: 4
+    attack: 3
+    health: 3
+    description: 
+    spriteName: Arathi_Weaponsmith
+    gem: Gem_Common
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 447
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Upgrade!
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 448
+    cardName: 
+    cost: 2
+    attack: 1
+    health: 4
+    description: 
+    spriteName: Armorsmith
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 449
+    cardName: 
+    cost: 2
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Commanding_Shout
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 450
+    cardName: 
+    cost: 3
+    attack: 2
+    health: 4
+    description: 
+    spriteName: Frothing_Berserker
+    gem: Gem_Rare
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 451
+    cardName: 
+    cost: 4
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Mortal_Strike
+    gem: Gem_Rare
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 452
+    cardName: 
+    cost: 1
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Shield_Slam
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 453
+    cardName: 
+    cost: 5
+    attack: 0
+    health: 0
+    description: 
+    spriteName: Brawl
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Magic
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 454
+    cardName: 
+    cost: 7
+    attack: 7
+    health: 1
+    description: 
+    spriteName: Gorehowl
+    gem: Gem_Epic
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 1
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 455
+    cardName: 
+    cost: 8
+    attack: 4
+    health: 9
+    description: 
+    spriteName: Grommash_Hellscream
+    gem: Gem_Legendary
+    isMinion: 1
+    cardCategory: Minion
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: None
+    isCollector: 1
+    cardTypes:
+    - None
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 456
+    cardName: 
+    cost: 1
+    attack: 2
+    health: 2
+    description: 
+    spriteName: Battle_Axe
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0
+  - cardId: 457
+    cardName: 
+    cost: 1
+    attack: 1
+    health: 3
+    description: 
+    spriteName: Heavy_Axe
+    gem: None
+    isMinion: 0
+    cardCategory: Weapon
+    jobType: "\uC804\uC0AC"
+    packgeType: Original
+    cardType: 
+    isCollector: 0
+    cardTypes: []
+    spawn: 
+    posX: 0
+    posY: 0
+    rotation: 0

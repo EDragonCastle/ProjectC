@@ -11,7 +11,7 @@ public class SlotPanel : MonoBehaviour, IPointerDownHandler
 
     public List<FilterJobButton> filterHeros;
 
-    private async void Start()
+    private void Start()
     {
         slotPosition = new List<Vector2>();
         SetSlotPosition();
@@ -85,6 +85,3 @@ public class SlotPanel : MonoBehaviour, IPointerDownHandler
 
 
 }
-
-// 어떻게 해야할 지 생각해야 해보자.
-// 

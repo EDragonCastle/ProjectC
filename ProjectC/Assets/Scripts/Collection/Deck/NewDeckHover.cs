@@ -43,8 +43,17 @@ public class NewDeckHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void SelectName()
     {
         var inputComponent = nameField.GetComponent<TMP_InputField>();
-        deckName.text = inputComponent.text;
-        inputComponent.text = "";
+
+        if (string.IsNullOrWhiteSpace(inputComponent.text))
+        {
+            inputComponent.text = "";
+        }
+        else
+        {
+            deckName.text = inputComponent.text;
+            inputComponent.text = "";
+        }
+
         nameField.SetActive(false);
         deckName.gameObject.SetActive(true);
     }

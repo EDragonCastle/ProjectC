@@ -79,7 +79,7 @@ public class DataManager
         pages.Clear();
         heroStartPages.Clear();
 
-        var filterQuery = cardTable.Values.AsEnumerable();
+        var filterQuery = cardTable.Values.Where(card => card.isCollector).AsEnumerable();
 
         if(filterInfo.job != null && filterInfo.job.Length > 0)
         {
@@ -94,9 +94,29 @@ public class DataManager
         }
 
         if (!string.IsNullOrWhiteSpace(filterInfo.keyword))
-            filterQuery = filterQuery.Where(card => card.cardName.Contains(filterInfo.keyword));
+        {
+            string searchKeyword = filterInfo.keyword.Trim();           
+            filterQuery = filterQuery.Where(card => {
+                bool matchName = card.cardName.Contains(searchKeyword);
+                bool matchDescription = !string.IsNullOrWhiteSpace(card.description) && card.description.Contains(searchKeyword);
 
-        var sortedCard = filterQuery.OrderBy(card => card.jobType).ThenBy(card => card.cost).ThenBy(card => card.cardName);
+                bool matchTypes = false;
+                if(card.cardTypes != null) {
+                    foreach(var type in card.cardTypes) {
+                        if (type.Contains(searchKeyword)) {
+                            matchTypes = true;
+                            break;
+                        }
+                    }
+                }
+                return matchName || matchDescription || matchTypes;
+            });
+        }
+
+        var sortedCard = filterQuery.OrderBy(card => card.jobType == "중립" ? 1 : 0)
+            .ThenBy(card => card.jobType)
+            .ThenBy(card => card.cost)
+            .ThenBy(card => card.cardName);
 
         var groupCards = sortedCard.GroupBy(card => card.jobType);
 

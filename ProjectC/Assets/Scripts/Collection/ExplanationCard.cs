@@ -9,34 +9,31 @@ public class ExplanationCard : MonoBehaviour, IPointerDownHandler
     public GameObject origin;
     public GameObject card;
 
-    public GameObject minion;
-    public GameObject magic;
-
-    [Header("Minion Card Data")]
+    [Header("Main Card Data")]
+    public Image cardMask;
     public Image cardImage;
     public Image cardBackGround;
-    public TextMeshProUGUI cardExplanation;
-    public Image gem;
+
     public GameObject legandPortrait;
+
+    public TextMeshProUGUI specialCardExplanation;
+    public Image cardExplanationImage;
+    public TextMeshProUGUI cardExplanation;
+
+    public Image gem;
     public TextMeshProUGUI cost;
+
+    public Image cardNameImage;
     public TextMeshProUGUI cardName;
-    public TextMeshProUGUI attack;
-    public TextMeshProUGUI health;
-    public GameObject type;
+
+    public Image type;
     public TextMeshProUGUI typeName;
 
+    public Image attack;
+    public TextMeshProUGUI attackName;
 
-    [Header("Magic Card Data")]
-    public Image magicCardImage;
-    public Image magicCardBackGround;
-    public TextMeshProUGUI magicCardExplanation;
-    public Image magicGem;
-    public GameObject magicLegandPortrait;
-    public TextMeshProUGUI magicCost;
-    public TextMeshProUGUI magicCardName;
-    public GameObject magicType;
-    public TextMeshProUGUI magicTypeName;
-
+    public Image health;
+    public TextMeshProUGUI healthName;
 
     private CollectionCardData cardData;
 
@@ -49,6 +46,7 @@ public class ExplanationCard : MonoBehaviour, IPointerDownHandler
         startPosition = startPoint;
         cardData = _cardData;
         CollectionCardDataSetting();
+        CardPositionSetting(cardData.cardTransformSetting, cardData.isSpecial);
         Opening();
     }
 
@@ -76,13 +74,31 @@ public class ExplanationCard : MonoBehaviour, IPointerDownHandler
         sequence.OnComplete(() => { isTweening = false; });
     }
 
-/* 
     private void CollectionCardDataSetting()
     {
+        // mask Image
+        cardMask.sprite = cardData.maskImage.sprite;
         cardImage.sprite = cardData.cardImage.sprite;
-        cardExplanation.text = cardData.cardExplanation.text;
+        cardBackGround.sprite = cardData.cardBackGround.sprite;
+        
+        // Name
+        cardNameImage.sprite = cardData.cardNameImage.sprite;
+        cardName.text = cardData.cardName.text;
 
-        if(cardData.gem.gameObject.activeSelf) {
+        // explanation Text
+        if (cardData.isSpecial) {
+            specialCardExplanation.text = cardData.cardExplanation.text;
+        }
+        else {
+            cardExplanationImage.sprite = cardData.cardExplanationImage.sprite;
+            cardExplanation.text = cardData.cardExplanation.text;
+        }
+
+        // Mana
+        cost.text = cardData.cost.text;
+
+        // Gem
+        if(cardData.isActiveGem) {
             gem.gameObject.SetActive(true);
             gem.sprite = cardData.gem.sprite;
         }
@@ -90,32 +106,34 @@ public class ExplanationCard : MonoBehaviour, IPointerDownHandler
             gem.gameObject.SetActive(false);
         }
 
-        if (cardData.legandPortrait.activeSelf)
-            legandPortrait.SetActive(true);
-        else
-            legandPortrait.SetActive(false);
-
-        cost.text = cardData.cost.text;
-        cardName.text = cardData.cardName.text;
-        attack.text = cardData.attack.text;
-        health.text = cardData.health.text;
-    }
- */
-
-    private void CollectionCardDataSetting()
-    {
-        // minion or magic
-        if (cardData.isMinion)
-        {
-            minion.gameObject.SetActive(true);
-            magic.gameObject.SetActive(false);
-            MinionSetting();
+        // Types
+        if(cardData.isActiveType){
+            type.gameObject.SetActive(true);
+            type.sprite = cardData.typeImage.sprite;
+            typeName.text = cardData.cardTypeText.text;
         }
-        else
-        {
-            minion.gameObject.SetActive(false);
-            magic.gameObject.SetActive(true);
-            MagicSetting();
+        else {
+            type.gameObject.SetActive(false);
+        }
+
+        // Attack
+        if(cardData.isAttack) {
+            attack.gameObject.SetActive(true);
+            attack.sprite = cardData.attackImage.sprite;
+            attackName.text = cardData.attack.text;
+        }
+        else {
+            attack.gameObject.SetActive(false);
+        }
+
+        // health
+        if(cardData.isHealth) {
+            health.gameObject.SetActive(true);
+            health.sprite = cardData.healthImage.sprite;
+            healthName.text = cardData.health.text;
+        }
+        else {
+            health.gameObject.SetActive(false);
         }
     }
 
@@ -134,67 +152,120 @@ public class ExplanationCard : MonoBehaviour, IPointerDownHandler
             origin.SetActive(false); isTweening = false; });
     }
 
-    private void MinionSetting()
+
+    private void CardPositionSetting(CardTransformSetting setting, bool isSpecial)
     {
-        cardImage.sprite = cardData.cardImage.sprite;
-        cardBackGround.sprite = cardData.cardBackGround.sprite;
-        cardExplanation.text = cardData.cardExplanation.text;
-        if (cardData.isActiveGem)
+        if (!setting.isVoidValue(setting.mask))
         {
-            gem.gameObject.SetActive(true);
-            gem = cardData.gem;
+            var maskRect = cardMask.GetComponent<RectTransform>();
+            maskRect.anchoredPosition = setting.mask.position;
+            maskRect.sizeDelta = setting.mask.ratio;
+            maskRect.localScale = setting.mask.scale;
         }
-        else
-            gem.gameObject.SetActive(false);
 
-        if (cardData.legandPortrait.activeSelf)
-            legandPortrait.SetActive(true);
-        else
-            legandPortrait.SetActive(false);
-        cost.text = cardData.cost.text;
-        cardName.text = cardData.cardName.text;
-        attack.text = cardData.attack.text;
-        health.text = cardData.health.text;
-        if (cardData.isActiveType)
+        if (!setting.isVoidValue(setting.cardMainImage))
         {
-            type.SetActive(true);
-            typeName.text = cardData.cardTypeText.text;
+            var mainImageRect = cardImage.GetComponent<RectTransform>();
+            mainImageRect.anchoredPosition = setting.cardMainImage.position;
+            mainImageRect.sizeDelta = setting.cardMainImage.ratio;
+            mainImageRect.localScale = setting.cardMainImage.scale;
         }
-        else
+
+        if (!setting.isVoidValue(setting.legandPortrait))
         {
-            type.SetActive(false);
+            var legandRect = legandPortrait.GetComponent<RectTransform>();
+            legandRect.anchoredPosition = setting.legandPortrait.position;
+            legandRect.sizeDelta = setting.legandPortrait.ratio;
+            legandRect.localScale = setting.legandPortrait.scale;
         }
-    }
 
-    private void MagicSetting()
-    {
-        magicCardImage.sprite = cardData.cardImage.sprite;
-        magicCardBackGround.sprite = cardData.cardBackGround.sprite;
-        magicCardExplanation.text = cardData.cardExplanation.text;
-
-        if (cardData.isActiveGem)
+        if (!setting.isVoidValue(setting.cardExplanation))
         {
-            magicGem.gameObject.SetActive(true);
-            magicGem = cardData.gem;
+            if (isSpecial)
+            {
+                var explanationRect = specialCardExplanation.GetComponent<RectTransform>();
+                explanationRect.anchoredPosition = setting.cardExplanation.position;
+                explanationRect.sizeDelta = setting.cardExplanation.ratio;
+                explanationRect.localScale = setting.cardExplanation.scale;
+            }
+            else
+            {
+                var explanationRect = cardExplanationImage.GetComponent<RectTransform>();
+                explanationRect.anchoredPosition = setting.cardExplanation.position;
+                explanationRect.sizeDelta = setting.cardExplanation.ratio;
+                explanationRect.localScale = setting.cardExplanation.scale;
+            }
         }
-        else
-            magicGem.gameObject.SetActive(false);
 
-        if (cardData.legandPortrait.activeSelf)
-            magicLegandPortrait.SetActive(true);
-        else
-            magicLegandPortrait.SetActive(false);
-
-        magicCost.text = cardData.cost.text;
-        magicCardName.text = cardData.cardName.text;
-        if (cardData.isActiveType)
+        if (!setting.isVoidValue(setting.gem))
         {
-            magicType.SetActive(true);
-            magicTypeName.text = cardData.cardTypeText.text;
+            var gemRect = gem.GetComponent<RectTransform>();
+            gemRect.anchoredPosition = setting.gem.position;
+            gemRect.sizeDelta = setting.gem.ratio;
+            gemRect.localScale = setting.gem.scale;
         }
-        else
+
+        if (!setting.isVoidValue(setting.cardName))
         {
-            magicType.SetActive(false);
+            var cardNameRect = cardNameImage.GetComponent<RectTransform>();
+            cardNameRect.anchoredPosition = setting.cardName.position;
+            cardNameRect.sizeDelta = setting.cardName.ratio;
+            cardNameRect.localScale = setting.cardName.scale;
+        }
+
+        if (!setting.isVoidValue(setting.cardNameText))
+        {
+            var cardNameTextRect = cardName.GetComponent<RectTransform>();
+            cardNameTextRect.anchoredPosition = setting.cardNameText.position;
+            cardNameTextRect.sizeDelta = setting.cardNameText.ratio;
+            cardNameTextRect.localScale = setting.cardNameText.scale;
+        }
+
+        if (!setting.isVoidValue(setting.cardType))
+        {
+            var cardTypeRect = type.GetComponent<RectTransform>();
+            cardTypeRect.anchoredPosition = setting.cardType.position;
+            cardTypeRect.sizeDelta = setting.cardType.ratio;
+            cardTypeRect.localScale = setting.cardType.scale;
+
+            var cardTypeTextRect = typeName.GetComponent<RectTransform>();
+            cardTypeTextRect.anchoredPosition = setting.cardTypeText.position;
+            cardTypeTextRect.sizeDelta = setting.cardTypeText.ratio;
+            cardTypeTextRect.localScale = setting.cardTypeText.scale;
+
+            //string typeName = cardData.cardTypeText.text;
+        }
+
+        if (!setting.isVoidValue(setting.attack))
+        {
+            var attackRect = attack.GetComponent<RectTransform>();
+            attackRect.anchoredPosition = setting.attack.position;
+            attackRect.sizeDelta = setting.attack.ratio;
+            attackRect.localScale = setting.attack.scale;
+        }
+
+        if(!setting.isVoidValue(setting.attackText))
+        {
+            var attackRect = attackName.GetComponent<RectTransform>();
+            attackRect.anchoredPosition = setting.attackText.position;
+            attackRect.sizeDelta = setting.attackText.ratio;
+            attackRect.localScale = setting.attackText.scale;
+        }
+
+        if (!setting.isVoidValue(setting.health))
+        {
+            var healthRect = health.GetComponent<RectTransform>();
+            healthRect.anchoredPosition = setting.health.position;
+            healthRect.sizeDelta = setting.health.ratio;
+            healthRect.localScale = setting.health.scale;
+        }
+
+        if (!setting.isVoidValue(setting.healthText))
+        {
+            var healthRect = healthName.GetComponent<RectTransform>();
+            healthRect.anchoredPosition = setting.healthText.position;
+            healthRect.sizeDelta = setting.healthText.ratio;
+            healthRect.localScale = setting.healthText.scale;
         }
     }
 }
