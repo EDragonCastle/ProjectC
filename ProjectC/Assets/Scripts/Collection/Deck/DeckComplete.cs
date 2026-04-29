@@ -27,7 +27,7 @@ public class DeckComplete : MonoBehaviour
     public float duration = 0.2f;
     public float offset = 0.4f;
 
-
+    // 여기가 Deck 생성 시작
     public async void Complete()
     {
         if(!isResetting)
@@ -46,6 +46,7 @@ public class DeckComplete : MonoBehaviour
             ResettingNewDeck();
         }
 
+        // 아래는 필터
         var eventManager = Locator<EventManager>.Get();
         string[] none = { "All" };
         FilterParameter parameter = new FilterParameter(FilterType.Search, _job: none);
@@ -95,6 +96,9 @@ public class DeckComplete : MonoBehaviour
             var eventManager = Locator<EventManager>.Get();
             eventManager.Notify(ChannelInfo.InputDeckList);
             eventManager.Notify(ChannelInfo.SelectingDeck, false);
+
+            // 여기서 data추가
+            //
         });
     }
 

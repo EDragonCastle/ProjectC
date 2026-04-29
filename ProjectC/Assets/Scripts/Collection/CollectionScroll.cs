@@ -12,6 +12,7 @@ public class CollectionScroll : MonoBehaviour, IChannel
     public GameObject newDeckListObject;
 
     public int maxDeckCount;
+    public GameObject deckListParent;
 
     // dummy object
     public List<GameObject> contents = new List<GameObject>();
@@ -83,6 +84,28 @@ public class CollectionScroll : MonoBehaviour, IChannel
         lobby.SetActive(true);
         var provideComponent = collectionCanvas.GetComponent<ProvideCollection>();
         provideComponent.ExitCollection();
+
+        // DeckList에 넣으면 되겠다.
+        // deckListParent를 돌면서 확인해야 한다.
+        // 자식을 확인해서 Deck이 있다면 Queue로 넣으면 된다.
+        var datas = deckListParent.GetComponentsInChildren<Deck>();
+        Queue<DeckInformation> deckQueue = new Queue<DeckInformation>();
+        List<DeckInformation> battelDeckList = new List<DeckInformation>();
+
+        // Queue -> Array로
+        for(int i = 0; i < datas.Length; i++)
+        {
+            deckQueue.Enqueue(datas[i].GetDeckInfo());
+        }
+
+        // queue를 반납하면서 다시 List로 넣는 작업을 해준다.
+        while(deckQueue.Count != 0)
+        {
+            var deckInformation = deckQueue.Dequeue();
+            battelDeckList.Add(deckInformation);
+        }
+        var dataManager = Locator<DataManager>.Get();
+        dataManager.SetBattleDeckList(battelDeckList);
     }
 
     // New Deck List 추가하는 버튼

@@ -6,7 +6,11 @@ public class UIManager
     private GameObject uiDeckListScroll;
     private GameObject collectionCanvas;
     private GameObject lobbyObject;
+    private GameObject battle;
     private bool isInitCreateDeck = false;
+
+    public void SetBattle(GameObject _input) => battle = _input;
+    public GameObject GetBattle() => battle;
 
     public void SetDeckScroll(GameObject _input) => uiDeckListScroll = _input;
     public GameObject GetDeckScroll() => uiDeckListScroll;

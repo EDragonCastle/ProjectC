@@ -30,6 +30,7 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private DeckInformation deckInformation;
 
     private readonly string lackName = "\n<color=yellow>모자란 카드</color>";
+    public DeckInformation GetDeckInfo() => deckInformation;
 
     public void SettingDeck(DeckInformation deckInfo)
     {
@@ -80,7 +81,9 @@ public class Deck : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
         sequence.Append(origin.transform.DOShakeRotation(0.5f, strength: new Vector3(0, 0, rotationValue), vibrato));
-        sequence.OnComplete(() => { Destroy(origin); });
+        sequence.OnComplete(() => { 
+            Destroy(origin);
+        });
     }
 
     // Deck을 다시 Click 했을 때 볼 수 있도록 해야 해.

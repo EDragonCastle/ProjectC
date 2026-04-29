@@ -37,19 +37,19 @@ public class ParserManager
         var CardDataHandle = Addressables.LoadAssetAsync<ScritableCardData>("SOCardData").ToUniTask();
     
         try {
-            var result = await UniTask.WhenAll(HeroDataHandle, CardDataTestHandle);
-            //var result = await UniTask.WhenAll(HeroDataHandle, CardDataHandle);
+            //var result = await UniTask.WhenAll(HeroDataHandle, CardDataTestHandle);
+            var result = await UniTask.WhenAll(HeroDataHandle, CardDataHandle);
 
             TextAsset heroCSV = result.Item1;
             
-            TextAsset cardCSV = result.Item2;
-            //ScritableCardData soCardData = result.Item2;
+            //TextAsset cardCSV = result.Item2;
+            ScritableCardData soCardData = result.Item2;
 
             if (heroCSV != null)
                 HeroParserCSV(heroCSV.text);
 
-            //if (soCardData != null) ReadScritableCardData(soCardData);
-             if (cardCSV != null) ParseCardCSV(cardCSV.text);
+            if (soCardData != null) ReadScritableCardData(soCardData);
+             //if (cardCSV != null) ParseCardCSV(cardCSV.text);
         }
         catch (System.Exception e)
         {

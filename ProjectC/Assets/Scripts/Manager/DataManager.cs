@@ -16,6 +16,12 @@ public class DataManager
     private uint heroIndex = 0;
 
     private int collectionMaxCard = 8;
+
+    private List<DeckInformation> battleDeckList;
+
+    public List<DeckInformation> GetBattleDeckList() => battleDeckList;
+    public void SetBattleDeckList(List<DeckInformation> input) => battleDeckList = input;
+
  
     public Dictionary<uint, CardData> GetCardData() => cardTable;
     public Dictionary<uint, HeroData> GetHeroData() => heroTable;
@@ -67,6 +73,7 @@ public class DataManager
         pages = new List<List<CardData>>();
         heroStartPages = new Dictionary<string, int>();
         sortedHeroPages = new List<KeyValuePair<string, int>>();
+        battleDeckList = new List<DeckInformation>();
         cardTable = cardDataTable;
         heroTable = heroDataTable;
         filterInfo = new FilterInformation();

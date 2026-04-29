@@ -18,14 +18,18 @@ public class ProvideCollection : MonoBehaviour
     }
     private void OnEnable()
     {
-        var backGroundTransform = backGround.GetComponent<RectTransform>();
-        backGroundTransform.DOScale(1.0f, duration);
+        if(backGround != null) {
+            var backGroundTransform = backGround.GetComponent<RectTransform>();
+            backGroundTransform.DOScale(1.0f, duration);
+        }
     }
 
     private void OnDisable()
     {
-        var backGroundTransform = backGround.GetComponent<RectTransform>();
-        backGroundTransform.localScale = new Vector3(originScale, originScale, originScale);
+        if(backGround != null) {
+            var backGroundTransform = backGround.GetComponent<RectTransform>();
+            backGroundTransform.localScale = new Vector3(originScale, originScale, originScale);
+        }
     }
 
     public void ExitCollection()

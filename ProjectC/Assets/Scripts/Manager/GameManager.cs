@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
         Factory factory = new Factory();
         Locator<Factory>.Provide(factory);
 
+        BattleManager battleManager = new BattleManager();
+        Locator<BattleManager>.Provide(battleManager);
+
         isReadyGameManager = true;
     }
 }

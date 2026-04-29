@@ -9,6 +9,10 @@ public enum ChannelInfo
     OutputDeckList,
     SelectingDeck,
     Filter,
+    SelectBattleHero,
+    
+    BattleDeckListPosition,
+    UsingBattleCard,
     End,
 }
 
