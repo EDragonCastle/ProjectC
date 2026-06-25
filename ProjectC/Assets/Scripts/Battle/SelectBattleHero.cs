@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using System.Collections.Generic;
 
 public class SelectBattleHero : MonoBehaviour, IChannel
 {
@@ -17,6 +18,8 @@ public class SelectBattleHero : MonoBehaviour, IChannel
     public TextMeshProUGUI powerExplanation;
     public TextMeshProUGUI deckName;
     public GameObject explanation;
+
+    private List<DeckData> deckData;
 
     public float duration = 0.2f;
     private float x = 0;
@@ -48,10 +51,11 @@ public class SelectBattleHero : MonoBehaviour, IChannel
 
     public void FindBattle()
     {
-        // battle Deck을 Click 했다.
-        // 게임이 시작된다.
         Debug.Log("Game Start");
         findBattle.SetActive(true);
+
+        var battleManager = Locator<BattleManager>.Get();
+        battleManager.SetDeckData(deckData);
     }
 
     public void CloseBattleDeck()
@@ -72,8 +76,6 @@ public class SelectBattleHero : MonoBehaviour, IChannel
         heroRect.DOKill();
         heroRect.DOAnchorPosX(x - heroRect.sizeDelta.x, duration).OnComplete(()=> {
         });
-
-       
     }
 
     public void HandleEvent(ChannelInfo channel, object information = null)
@@ -90,6 +92,7 @@ public class SelectBattleHero : MonoBehaviour, IChannel
                     powerName.text = battleInfo.heroPowerName;
                     powerExplanation.text = battleInfo.heroPowerExplanation;
                     deckName.text = battleInfo.deckName;
+                    deckData = battleInfo.deckData;
                 }
 
                 break;

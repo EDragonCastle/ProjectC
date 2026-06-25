@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class FindBattle : MonoBehaviour
@@ -42,5 +43,6 @@ public class FindBattle : MonoBehaviour
     {
         // Next Scene으로 간다.
         Debug.Log("Find Battle Enmey. Welcome Battle Scene");
+        SceneManager.LoadScene("Battle");
     }
 }

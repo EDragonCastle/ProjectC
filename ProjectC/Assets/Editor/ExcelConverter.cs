@@ -9,9 +9,11 @@ using System.ComponentModel;
 public class ExcelConverter : EditorWindow
 {
     private static string excelPath = "Assets/Excel/CardData.xlsx";
-    private static string csvPath = "Assets/Excel/CardData.csv";
+    private static string csvCardPath = "Assets/Excel/CardData.csv";
+    private static string csvAbilityPath = "Assets/Excel/AbilityData.csv";
     private static string saveSOPath = "Assets/ScriptableObject/Data";
     private static string cardDataAsset = "Assets/ScriptableObject/Data/SOCardData.asset";
+    private static string abilityDataAsset = "Assets/ScriptableObject/Data/SOAbilityData.asset";
 
     /// <summary>
     /// Excel을 csv로 변환해주는 Menu
@@ -20,15 +22,17 @@ public class ExcelConverter : EditorWindow
     public static void ExcelToCSV()
     {
         string fullExcelPath = Path.GetFullPath(excelPath);
-        string fullCSVPath = Path.GetFullPath(csvPath);
+        string fullCardCSV = Path.GetFullPath(csvCardPath);
+        string fullAbilityCSV = Path.GetFullPath(csvAbilityPath);
 
-        if(!File.Exists(fullExcelPath))
+        if (!File.Exists(fullExcelPath))
         {
-            UnityEngine.Debug.LogError($"액셀 파일을 찾을 수 없습니다. 경로를 확인해주세요: {fullExcelPath}");
+            UnityEngine.Debug.LogError($"액셀 파일을 찾을 수 없습니다: {fullExcelPath}");
             return;
         }
 
-        if(ConverterExcelToCSV(fullExcelPath, fullCSVPath))
+        if (ConvertSheetToCSV(fullExcelPath, fullCardCSV, 1) &&
+            ConvertSheetToCSV(fullExcelPath, fullAbilityCSV, 2))
         {
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
@@ -41,10 +45,17 @@ public class ExcelConverter : EditorWindow
     [MenuItem("Tools/Card Data/2. CSV To ScritableObject")]
     public static void CSVToSO()
     {
-        TextAsset cardCSVFile = AssetDatabase.LoadAssetAtPath<TextAsset>(csvPath);
+        TextAsset cardCSVFile = AssetDatabase.LoadAssetAtPath<TextAsset>(csvCardPath);
         if(cardCSVFile == null)
         {
             UnityEngine.Debug.LogError("Card CSV 파일을 찾을 수 없다. csv 파일 변환을 먼저 눌러주세요.");
+            return;
+        }
+
+        TextAsset abilityCSV = AssetDatabase.LoadAssetAtPath<TextAsset>(csvAbilityPath);
+        if (abilityCSV == null)
+        {
+            UnityEngine.Debug.LogError("AbilityData CSV를 찾을 수 없습니다.");
             return;
         }
 
@@ -64,6 +75,16 @@ public class ExcelConverter : EditorWindow
 
         // 파싱과 SO 생성을 한다.
         ParseCardCSV(cardDataList, cardCSVFile.text);
+
+        ScriptableAbilityData abilityDataList = AssetDatabase.LoadAssetAtPath<ScriptableAbilityData>(abilityDataAsset);
+
+        if(abilityDataList == null)
+        {
+            abilityDataList = ScriptableObject.CreateInstance<ScriptableAbilityData>();
+            AssetDatabase.CreateAsset(abilityDataList, abilityDataAsset);
+        }
+        abilityDataList.abilityData.Clear();
+        ParserAbilityCSV(abilityDataList, abilityCSV.text);
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
@@ -161,26 +182,58 @@ public class ExcelConverter : EditorWindow
         AssetDatabase.SaveAssets();
     }
 
-    
-    private static bool ConverterExcelToCSV(string inputPath, string outputPath)
+    private static void ParserAbilityCSV(ScriptableAbilityData soAbilityData, string data)
     {
-        UnityEngine.Debug.Log("PowerShell을 이용해 Excel Converter start (UTF-8)");
+        string[] lines = Regex.Split(data, @"\r\n(?=(?:[^""]*""[^""]*"")*[^""]*$)");
 
-        // 스크립트 수정: CSV로 저장 후, 해당 파일을 읽어 UTF8로 다시 저장
-        // 근데 이거는 잘 모르겠다. 진짜 처음봐서 하나도 모른다.
+
+        for(int i = 1; i < lines.Length; i++)
+        {
+            if (string.IsNullOrWhiteSpace(lines[i])) continue;
+
+            string[] row = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+            if (string.IsNullOrEmpty(row[0])) continue;
+
+            AbilityData ability = new AbilityData();
+            ability.cardId = SafetyParser<uint>(row[0].Trim());
+            ability.actionTrigger = row[1].Trim();
+            ability.action = row[2].Trim();
+            ability.target = row[3].Trim();
+            ability.value = SafetyParser<int>(row[4].Trim());
+            ability.spawnID = SafetyParser<uint>(row[5].Trim());
+            ability.condition = row[6].Trim();
+            ability.conditionValue = SafetyParser<int>(row[7].Trim());
+            ability.conditionMinionType = row[8].Trim();
+            ability.isTargetting = row[9] == "TRUE" ? true : false;
+            ability.conditionStat = row[10].Trim();
+            ability.isTempory = row[11] == "TRUE" ? true : false;
+            soAbilityData.abilityData.Add(ability);
+        }
+
+        // Data 저장
+        EditorUtility.SetDirty(soAbilityData);
+        AssetDatabase.SaveAssets();
+    }
+
+    private static bool ConvertSheetToCSV(string inputPath, string outputPath, int sheetIndex)
+    {
+        UnityEngine.Debug.Log($"Sheet {sheetIndex} → CSV 변환 시작");
+
         string command = $@"
         $excel = New-Object -ComObject Excel.Application;
-        $excel.DisplayAlerts = $false; # 경고창 끄기
+        $excel.DisplayAlerts = $false;
         $wb = $excel.Workbooks.Open('{inputPath}');
         
-        # 일단 임시 CSV로 저장 (6 = xlCSV)
-        $wb.SaveAs('{outputPath}', 6); 
+        # 시트 인덱스로 선택 (1부터 시작)
+        $ws = $wb.Sheets.Item({sheetIndex});
+        $ws.Activate();
+
+        $wb.SaveAs('{outputPath}', 6);
         $wb.Close($false);
         $excel.Quit();
         [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null;
 
-        # 중요: 생성된 CSV 파일을 읽어서 UTF-8로 다시 인코딩하여 저장
-        # -Encoding utf8 은 BOM이 포함된 UTF-8을 만듭니다. (유니티에서 가장 잘 인식함)
         $content = Get-Content '{outputPath}';
         $content | Set-Content '{outputPath}' -Encoding utf8;
         ";
@@ -201,7 +254,7 @@ public class ExcelConverter : EditorWindow
 
             if (!string.IsNullOrEmpty(errors))
             {
-                UnityEngine.Debug.LogError("PowerShell Error: " + errors);
+                UnityEngine.Debug.LogError($"PowerShell Error (Sheet {sheetIndex}): " + errors);
                 return false;
             }
         }

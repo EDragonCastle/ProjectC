@@ -6,7 +6,7 @@ using System.Threading;
 
 public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    // origin을 키우면 안 된다. 버트도 같이 커지기 때문에 그래서 카드 정보만 커져야 한다.
+    public BattleCard battleCard;
     public RectTransform testCanvas;
     
     public GameObject cardOrigin;
@@ -18,13 +18,10 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
 
     private Vector3 visualCardPostion;
 
-    // 확대 Scale은 어느정도?
-    // 기본 값은 1.2로 하자.
     private readonly Vector3 originScale = new Vector3(1.2f, 1.2f, 1.2f);
     private readonly Vector3 highLightScale = new Vector3(2f, 2f, 2f);
 
     private Quaternion defaultRotation;
-
     private Vector3 defaultPosition;
 
     private bool isInHand = false;
@@ -36,11 +33,24 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
 
     // 외부에서 설정해줘야 하나?
     public int cardIndex;
+    private int battleIndex;
     public Vector3 GetCardOriginScale() => originScale;
     public void SetCardTouchEnable(bool input) => isReturnCard = input;
 
+    public GameObject dummyObject;
 
-    private void Awake()
+
+    private bool testBattleField;
+
+    // 여기서 잠시 대기
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            testBattleField = !testBattleField;
+    }
+
+
+    private void OnEnable()
     {
         CardOriginRect = cardOrigin.GetComponent<RectTransform>();
         cardInfoRect = cardInfo.GetComponent<RectTransform>();
@@ -70,7 +80,7 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         CardOriginRect.DORotateQuaternion(defaultRotation, duration).SetEase(Ease.Unset);
     }
 
-    public async UniTask CardSetUpAsync(Vector3 _defaultPosition, Quaternion _defaultRotation, int index)
+    public async UniTask CardPositionSetupAsync(Vector3 _defaultPosition, Quaternion _defaultRotation, int index)
     {
         // init setting 및 card 이동
         defaultPosition = _defaultPosition;
@@ -88,7 +98,7 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         );
     }
 
-    public async UniTask CardSetUpAsync(Vector3 _defaultPosition, Quaternion _defaultRotation, int index, CancellationToken token)
+    public async UniTask CardPositionSetupAsync(Vector3 _defaultPosition, Quaternion _defaultRotation, int index, CancellationToken token)
     {
         // init setting 및 card 이동
         defaultPosition = _defaultPosition;
@@ -116,6 +126,9 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         HandleParent(true);
         IsHighLightCard(true);
 
+        // 여기서 Dragging을 허용할 건지 안 할건지 판단해야 한다.
+        // cost가 있을 수도 있고 하수인이 가득차서 사용 못 할 수도 있다.
+        IsUsingCard();
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -126,7 +139,6 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         Debug.Log("Card Exit");
         HandleParent(false);
         IsHighLightCard(false);
-
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -152,6 +164,9 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
 
         CardOriginRect.localRotation = Quaternion.identity;
         isDragging = true;
+
+        // Dummy를 생성해야 할 것 같은데?
+        dummyObject.SetActive(true);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -172,7 +187,39 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         var handPanel = battleManager.GetHandPanel();
         RectTransform handRect = handPanel.GetComponent<RectTransform>();
 
-        if(RectTransformUtility.RectangleContainsScreenPoint(handRect, eventData.position, eventData.pressEventCamera))
+        // 마우스 위치가 하수인 위치에 어딨는지 알아야 한다.
+        // 그러면 내 카드가 하수인인지 아닌지 알아야 하는데?
+
+        // 아래 로직은 하수인이면 하수인이 어디 위치해야 할 지 보여주는 로직이다.
+        var playerField = battleManager.GetBattleField().GetComponent<BattleField>().playerField;
+        var playerFieldTransform = playerField.transform;
+
+        if (dummyObject.transform.parent != playerFieldTransform)
+            dummyObject.transform.SetParent(playerFieldTransform);
+
+        int targetIndex = playerFieldTransform.childCount;
+
+        int count = 0;
+        for(int i = targetIndex - 1; i >= 0; i--)
+        {
+            Transform child = playerFieldTransform.GetChild(i);
+
+            if (child == dummyObject.transform) continue;
+
+            RectTransform childRect = child.GetComponent<RectTransform>();
+
+            Vector2 childScreenPosition = RectTransformUtility.WorldToScreenPoint(eventData.pressEventCamera, childRect.position);
+
+            if(eventData.position.x < childScreenPosition.x)
+                break;
+
+            count++;
+        }
+
+        battleIndex = targetIndex-count-1;
+        dummyObject.transform.SetSiblingIndex(battleIndex);
+        // 여기는 핸드 영역에 들어오는지 안 들어오는지 확인하는 로직
+        if (RectTransformUtility.RectangleContainsScreenPoint(handRect, eventData.position, eventData.pressEventCamera))
         {
             Debug.Log("핸드 영역 진입");
             /// 여기에 손에 들어 올지 안 들어올 지 표시해줘야 한다.
@@ -182,8 +229,6 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         {
             Debug.Log("핸드 밖에 있다.");
             isInHand = false;
-
-            // 그럼 여기서 Notify로 카드를 썼다고 알려줘야 할까?
         }
 
         handPanel.SetActive(true);
@@ -213,21 +258,30 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
         else
         {
             Debug.Log("손패 밖에 있어서 실행해야 한다.");
-            // 해당 패널 문제가 아닌것 같다.
-            handPanel.SetActive(true);
-
-            Debug.Log("카드 실행");
-
             // 카드 삭제
             var eventManager = Locator<EventManager>.Get();
-            eventManager.Notify(ChannelInfo.UsingBattleCard, cardIndex);
 
-            Destroy(cardOrigin);
+            // 그렇다면 여기서 cardIndex도 중요하지만 하수인 위치도 중요하다.
+            // 근데 이 카드가 하수인인지 주문인지 무기인지 모른채로 넘어간다.
+            BattleFieldObjectInformation battleInfo = new BattleFieldObjectInformation();
+            battleInfo.card = cardOrigin;
+            battleInfo.cardType = battleCard.GetBattleCardType();
+            battleInfo.ability = battleCard.GetAbilityData();
+            battleInfo.usingIndex = cardIndex;
 
-            handPanel.SetActive(false);
+            //battleInfo.isPlayer = true;
             
+            battleInfo.isPlayer = testBattleField;
+            battleInfo.battleIndex = battleIndex;
+
+            //여기서는 위치 옮기는 것만 되는게 맞네.
+            eventManager.Notify(ChannelInfo.UsingBattleCard, battleInfo);
+
+            // Destory 하면 문제가 생기나? 여기때문에 문제가 생기는 듯?
+            cardOrigin.SetActive(false);
         }
 
+        dummyObject.SetActive(false);
         handPanel.SetActive(false);
     }
 
@@ -257,7 +311,6 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
             var uiManager = Locator<UIManager>.Get();
             var battleCanvas = uiManager.GetCollectionCanvas();
             CardOriginRect.SetParent(battleCanvas.transform);
-            //cardInfoRect.SetParent(battleCanvas.transform);
         }
         else
         {
@@ -265,13 +318,17 @@ public class BattleCardController : MonoBehaviour, IPointerEnterHandler, IPointe
             var handParent = battleManager.GetHandParent();
             CardOriginRect.SetParent(handParent.transform);
             CardOriginRect.SetSiblingIndex(cardIndex);
-            //cardInfoRect.SetParent(cardParent.transform);
-            //cardInfoRect.SetSiblingIndex(0);
         }
     }
+
+
+    private void IsUsingCard()
+    {
+        // Cost를 확인한다.
+
+        // 여기서 하수인이면 내 Field를 확인해야 한다.
+    }
 }
-
-
 
 
 // 어떤 문제를 가지고 있지?

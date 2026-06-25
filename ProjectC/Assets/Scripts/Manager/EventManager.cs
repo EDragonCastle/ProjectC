@@ -84,7 +84,9 @@ public class EventManager
         // Type에 관련된 함수를 순회하면서 값을 바꾼다.
         if(channels.ContainsKey(channelType))
         {
-            foreach(var channel in channels[channelType])
+            // Event 중간에 Unsubscription을 하면 터지는 문제가 있어서 복사본으로 가져와서 실행한다.
+            var channelList = new List<Action<ChannelInfo, object>>(channels[channelType]);
+            foreach (var channel in channelList)
             {
                 channel?.Invoke(channelType, eventInfo);
             }

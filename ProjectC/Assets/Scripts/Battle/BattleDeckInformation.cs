@@ -22,6 +22,3 @@ public class BattleDeckInformation : MonoBehaviour
     }
 }
 
-// 음.. Battle에 사용할 Deck은 어떻게 관리해야 할까?
-// Page의 Card 처럼 관리해야 하는게 편리할까?
-// 

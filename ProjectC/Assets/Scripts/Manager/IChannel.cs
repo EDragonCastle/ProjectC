@@ -13,6 +13,13 @@ public enum ChannelInfo
     
     BattleDeckListPosition,
     UsingBattleCard,
+    DrawBattleCard,
+
+    TargetSelected,
+    TargetCanceled,
+
+    OnTurnStart,
+    OnTurnEnd,
     End,
 }
 

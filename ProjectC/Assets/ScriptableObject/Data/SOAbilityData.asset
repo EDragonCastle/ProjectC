@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db354a4c4473ed344a95e1b2792560f2, type: 3}
+  m_Name: SOAbilityData
+  m_EditorClassIdentifier: 
+  abilityData:
+  - cardId: 0
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllTarget
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 1
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 2
+    actionTrigger: OnMinionSummon
+    action: Attack
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uBA40\uB85D"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 4
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 5
+    actionTrigger: Battlecry
+    action: Heal
+    target: AllTarget
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 6
+    actionTrigger: Battlecry
+    action: Remove
+    target: EnemyHero
+    value: 0
+    spawnID: 0
+    condition: HasWeapon
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 8
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 9
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 12
+    actionTrigger: 
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 15
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllTarget
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 16
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 18
+    actionTrigger: OnMinionSummon
+    action: Attack
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 20
+    actionTrigger: Battlecry
+    action: Attack
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 20
+    actionTrigger: Battlecry
+    action: Health
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 21
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 22
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 25
+    actionTrigger: Battlecry
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 28
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 29
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 30
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 31
+    actionTrigger: Battlecry
+    action: Heal
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 32
+    actionTrigger: Battlecry
+    action: Attack
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: Over
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 32
+    actionTrigger: Battlecry
+    action: Health
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 33
+    actionTrigger: OnAttacked
+    action: Attack
+    target: Self
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 34
+    actionTrigger: Battlecry
+    action: Damage
+    target: EnemyHero
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 35
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllTarget
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 140
+    actionTrigger: Battlecry
+    action: Attack
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 1
+  - cardId: 141
+    actionTrigger: 
+    action: Shield
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 142
+    actionTrigger: Deathrattle
+    action: Damage
+    target: EnemyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 143
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 144
+    actionTrigger: Battlecry
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: HasWeapon
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 145
+    actionTrigger: 
+    action: Stealth
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 146
+    actionTrigger: 
+    action: Windfury
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 99
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTargetMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 101
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0

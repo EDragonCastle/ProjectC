@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         ParserManager parserManager = new ParserManager();
         await parserManager.Initalize();
 
-        DataManager dataManager = new DataManager(parserManager.GetCardTable(), parserManager.GetHeroTable());
+        DataManager dataManager = new DataManager(parserManager.GetCardTable(), parserManager.GetHeroTable(), parserManager.GetAbilityTable());
         Locator<DataManager>.Provide(dataManager);
 
         UIManager uiManager = new UIManager();

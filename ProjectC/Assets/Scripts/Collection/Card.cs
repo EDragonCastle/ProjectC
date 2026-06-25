@@ -119,9 +119,10 @@ public class Card : MonoBehaviour, IObject
         CardData _cardData = pageData[cardIndex];
         cardData = _cardData;
 
-        await CardCategorySetting();
+        CardVisualHelper helper = new CardVisualHelper();
+        var result = await helper.CardCategorySetting(cardData);
 
-        SettingCollectionCardData();
+        CardVisualSetting(result);
     }
 
     public async UniTask CardSetting(int pageIndex)
@@ -140,13 +141,49 @@ public class Card : MonoBehaviour, IObject
         cardObject.SetActive(true);
         deckObject.SetActive(false);
 
-       
+
         CardData _cardData = pageData[cardIndex];
         cardData = _cardData;
 
-        await CardCategorySetting();
+        CardVisualHelper helper = new CardVisualHelper();
+        var result = await helper.CardCategorySetting(cardData);
 
-        SettingCollectionCardData();
+        CardVisualSetting(result);
+    }
+
+    private void CardVisualSetting(CardVisualData visualData)
+    {
+        InitActiveSetting(visualData.activeCard);
+
+        // Card Position Setting
+        CardPositionSetting(visualData.cardTransformSetting, visualData.activeCard.specialCardExplanation);
+        
+        // Sprite Setting
+        for(int i = 0; i < visualData.sprites.Length; i++)
+        {
+            Sprite sprite = visualData.sprites[i];
+            int index = visualData.indexList[i];
+            SpriteCardSetting(sprite, index);
+        }
+
+        cost.text = cardData.cost.ToString();
+
+        deckImage.sprite = cardImage.sprite;
+        deckManaCost.text = cost.text;
+        deckName.text = cardName.text;
+
+        SettingCollectionCardData(visualData.activeCard, visualData.cardTransformSetting);
+    }
+
+    private void InitActiveSetting(ActiveCard activeCard)
+    {
+        legandPortrait.SetActive(activeCard.legandPortrait);
+        specialCardExplanation.gameObject.SetActive(activeCard.specialCardExplanation);
+        cardExplanationObject.gameObject.SetActive(activeCard.cardExplanation);
+        gem.gameObject.SetActive(activeCard.gem);
+        typeImage.gameObject.SetActive(activeCard.type);
+        attackImage.gameObject.SetActive(activeCard.attack);
+        healthImage.gameObject.SetActive(activeCard.health);
     }
 
     public async UniTask CardSetting(CardData _cardData)
@@ -156,9 +193,10 @@ public class Card : MonoBehaviour, IObject
         cardObject.SetActive(false);
         deckObject.SetActive(true);
 
-        await CardCategorySetting();
+        CardVisualHelper helper = new CardVisualHelper();
+        var result = await helper.CardCategorySetting(cardData);
 
-        SettingCollectionCardData();
+        CardVisualSetting(result);
     }
 
     public void ReleaseCard(int page)
@@ -188,6 +226,283 @@ public class Card : MonoBehaviour, IObject
         deckObject.SetActive(deckActive);
     }
 
+    private void SpriteCardSetting(Sprite sprite, int index)
+    {
+        switch (index)
+        {
+            case 0:
+                cardMask.sprite = sprite;
+                break;
+            case 1:
+                cardImage.sprite = sprite;
+                break;
+            case 2:
+                cardBackGround.sprite = sprite;
+                break;
+            case 3:
+                cardExplanationObject.sprite = sprite;
+                break;
+            case 4:
+                gem.sprite = sprite;
+                break;
+            case 5:
+                cardNameImage.sprite = sprite;
+                break;
+            case 6:
+                typeImage.sprite = sprite;
+                break;
+            case 7:
+                attackImage.sprite = sprite;
+                break;
+            case 8:
+                healthImage.sprite = sprite;
+                break;
+        }
+    }
+
+    private void SettingCollectionCardData(ActiveCard activeCard, CardTransformSetting _cardTransformSetting)
+    {
+        if (collectionCardData == null)
+            collectionCardData = new CollectionCardData();
+
+        var uiManager = Locator<UIManager>.Get();
+        deckCardScript.canvasParent = uiManager.GetCollectionCanvas().GetComponent<RectTransform>();
+
+        collectionCardData.maskImage = cardMask;
+        collectionCardData.cardImage = cardImage;
+        collectionCardData.cardBackGround = cardBackGround;
+        collectionCardData.isSpecial = activeCard.specialCardExplanation;
+
+        if (collectionCardData.isSpecial)
+        {
+            collectionCardData.cardExplanation = specialCardExplanation;
+        }
+        else
+        {
+            collectionCardData.cardExplanationImage = cardExplanationObject;
+            collectionCardData.cardExplanation = cardExplanation;
+        }
+
+        collectionCardData.legandPortrait = legandPortrait;
+        collectionCardData.isActiveGem = activeCard.gem;
+        collectionCardData.gem = gem;
+
+        collectionCardData.cost = cost;
+        collectionCardData.cardNameImage = cardNameImage;
+        collectionCardData.cardName = cardName;
+
+        collectionCardData.isActiveType = activeCard.type;
+        collectionCardData.typeImage = typeImage;
+        collectionCardData.cardTypeText = typeImageName;
+
+        collectionCardData.spawnID = cardData.spawn;
+
+        collectionCardData.isAttack = activeCard.attack;
+        collectionCardData.attackImage = attackImage;
+        collectionCardData.attack = attack;
+
+        collectionCardData.isHealth = activeCard.health;
+        collectionCardData.healthImage = healthImage;
+        collectionCardData.health = health;
+
+        collectionCardData.cardTransformSetting = _cardTransformSetting;
+    }
+
+
+
+    private void CardPositionSetting(CardTransformSetting setting, bool isSpecial)
+    {
+        if (!setting.isVoidValue(setting.mask))
+        {
+            var maskRect = cardMask.GetComponent<RectTransform>();
+            maskRect.anchoredPosition = setting.mask.position;
+            maskRect.sizeDelta = setting.mask.ratio;
+            maskRect.localScale = setting.mask.scale;
+        }
+
+        if(!setting.isVoidValue(setting.cardMainImage))
+        {
+            var mainImageRect = cardImage.GetComponent<RectTransform>();
+            mainImageRect.anchoredPosition = setting.cardMainImage.position;
+            mainImageRect.sizeDelta = setting.cardMainImage.ratio;
+            mainImageRect.localScale = setting.cardMainImage.scale;
+        }
+
+        if (!setting.isVoidValue(setting.legandPortrait))
+        {
+            var legandRect = legandPortrait.GetComponent<RectTransform>();
+            legandRect.anchoredPosition = setting.legandPortrait.position;
+            legandRect.sizeDelta = setting.legandPortrait.ratio;
+            legandRect.localScale = setting.legandPortrait.scale;
+        }
+
+        if (!setting.isVoidValue(setting.cardExplanation))
+        {
+            if (isSpecial)
+            {
+                var explanationRect = specialCardExplanation.GetComponent<RectTransform>();
+                explanationRect.anchoredPosition = setting.cardExplanation.position;
+                explanationRect.sizeDelta = setting.cardExplanation.ratio;
+                explanationRect.localScale = setting.cardExplanation.scale;
+                specialCardExplanation.text = cardData.description;
+            }
+            else
+            {
+                var explanationRect = cardExplanationObject.GetComponent<RectTransform>();
+                explanationRect.anchoredPosition = setting.cardExplanation.position;
+                explanationRect.sizeDelta = setting.cardExplanation.ratio;
+                explanationRect.localScale = setting.cardExplanation.scale;
+                cardExplanation.text = cardData.description;
+            }
+        }
+
+        if (!setting.isVoidValue(setting.gem))
+        {
+            var gemRect = gem.GetComponent<RectTransform>();
+            gemRect.anchoredPosition = setting.gem.position;
+            gemRect.sizeDelta = setting.gem.ratio;
+            gemRect.localScale = setting.gem.scale;
+        }
+
+        if (!setting.isVoidValue(setting.cardName))
+        {
+            var cardNameRect = cardNameImage.GetComponent<RectTransform>();
+            cardNameRect.anchoredPosition = setting.cardName.position;
+            cardNameRect.sizeDelta = setting.cardName.ratio;
+            cardNameRect.localScale = setting.cardName.scale;
+            cardName.text = cardData.cardName;
+        }
+
+        if (!setting.isVoidValue(setting.cardNameText))
+        {
+            var cardNameTextRect = cardName.GetComponent<RectTransform>();
+            cardNameTextRect.anchoredPosition = setting.cardNameText.position;
+            cardNameTextRect.sizeDelta = setting.cardNameText.ratio;
+            cardNameTextRect.localScale = setting.cardNameText.scale;
+        }
+
+        if (!setting.isVoidValue(setting.cardType))
+        {
+            var cardTypeRect = typeImage.GetComponent<RectTransform>();
+            cardTypeRect.anchoredPosition = setting.cardType.position;
+            cardTypeRect.sizeDelta = setting.cardType.ratio;
+            cardTypeRect.localScale = setting.cardType.scale;
+
+            var cardTypeTextRect = typeImageName.GetComponent<RectTransform>();
+            cardTypeTextRect.anchoredPosition = setting.cardTypeText.position;
+            cardTypeTextRect.sizeDelta = setting.cardTypeText.ratio;
+            cardTypeTextRect.localScale = setting.cardTypeText.scale;
+
+            string typeName = cardData.cardTypes[0];
+            for (int i = 1; i < cardData.cardTypes.Length; i++)
+            {
+                typeName += $"\n{cardData.cardTypes[i]}";
+            }
+            typeImageName.text = typeName;
+        }
+
+        if (!setting.isVoidValue(setting.attack))
+        {
+            var attackRect = attackImage.GetComponent<RectTransform>();
+            attackRect.anchoredPosition = setting.attack.position;
+            attackRect.sizeDelta = setting.attack.ratio;
+            attackRect.localScale = setting.attack.scale;
+            attack.text = cardData.attack.ToString();
+        }
+
+        if (!setting.isVoidValue(setting.attackText))
+        {
+            var attackRect = attack.GetComponent<RectTransform>();
+            attackRect.anchoredPosition = setting.attackText.position;
+            attackRect.sizeDelta = setting.attackText.ratio;
+            attackRect.localScale = setting.attackText.scale;
+        }
+
+        if (!setting.isVoidValue(setting.health))
+        {
+            var healthRect = healthImage.GetComponent<RectTransform>();
+            healthRect.anchoredPosition = setting.health.position;
+            healthRect.sizeDelta = setting.health.ratio;
+            healthRect.localScale = setting.health.scale;
+            health.text = cardData.health.ToString();
+        }
+
+        if (!setting.isVoidValue(setting.healthText))
+        {
+            var healthRect = health.GetComponent<RectTransform>();
+            healthRect.anchoredPosition = setting.healthText.position;
+            healthRect.sizeDelta = setting.healthText.ratio;
+            healthRect.localScale = setting.healthText.scale;
+        }
+    }
+}
+
+public class CollectionCardData
+{
+    public CardTransformSetting cardTransformSetting;
+    public Image maskImage;
+    public Image cardImage;
+    public Image cardBackGround;
+
+    public bool isSpecial;
+    public Image cardExplanationImage;
+    public TextMeshProUGUI cardExplanation;
+    
+    public GameObject legandPortrait;
+
+    public bool isActiveGem;
+    public Image gem;
+
+    public TextMeshProUGUI cost;
+
+    public Image cardNameImage;
+    public TextMeshProUGUI cardName;
+
+    public bool isActiveType;
+    public Image typeImage;
+    public TextMeshProUGUI cardTypeText;
+
+    public uint[] spawnID;
+
+    public bool isAttack;
+    public Image attackImage;
+    public TextMeshProUGUI attack;
+
+    public bool isHealth;
+    public Image healthImage;
+    public TextMeshProUGUI health;
+}
+
+// 지금 여기서 바꾼거 
+// CollectionCardData에 어떤 Data를 넣어야 할지 다시 고민해야 한다.
+
+/*
+    
+   public async UniTask CardSetting(int pageIndex)
+    {
+        DataManager dataManager = Locator<DataManager>.Get();
+        var pageData = dataManager.GetPageData(pageIndex);
+
+        // outofIndex를 대비해야 한다.
+        if (pageData == null || cardIndex >= pageData.Count)
+        {
+            cardObject.SetActive(false);
+            deckObject.SetActive(false);
+            return;
+        }
+
+        cardObject.SetActive(true);
+        deckObject.SetActive(false);
+
+       
+        CardData _cardData = pageData[cardIndex];
+        cardData = _cardData;
+
+        await CardCategorySetting();
+
+        SettingCollectionCardData();
+    }
+ 
     private void SettingCollectionCardData()
     {
         if (collectionCardData == null)
@@ -232,7 +547,7 @@ public class Card : MonoBehaviour, IObject
 
         collectionCardData.cardTransformSetting = cardTransformSetting;
     }
-
+    
     // Card Setting은 이미 있어서 CardData에 담긴 내용을 가지고 하는 것인데 이름을 무엇으로 지어야 할까?
     private async UniTask CardCategorySetting()
     {
@@ -260,6 +575,8 @@ public class Card : MonoBehaviour, IObject
         Sprite[] spriteResult = await UniTask.WhenAll(taskList);
 
         cardTransformSetting = await cardSettingObject;
+
+
         bool isSepcial = IsSpecialText();
         CardPositionSetting(cardTransformSetting, isSepcial);
 
@@ -317,39 +634,7 @@ public class Card : MonoBehaviour, IObject
         return isSpeical;
     }
 
-    private void SpriteCardSetting(Sprite sprite, int index)
-    {
-        switch(index)
-        {
-            case 0:
-                cardMask.sprite = sprite;
-                break;
-            case 1:
-                cardImage.sprite = sprite;
-                break;
-            case 2:
-                cardBackGround.sprite = sprite;
-                break;
-            case 3:
-                cardExplanationObject.sprite = sprite;
-                break;
-            case 4:
-                gem.sprite = sprite;
-                break;
-            case 5:
-                cardNameImage.sprite = sprite;
-                break;
-            case 6:
-                typeImage.sprite = sprite;
-                break;
-            case 7:
-                attackImage.sprite = sprite;
-                break;
-            case 8:
-                healthImage.sprite = sprite;
-                break;
-        }
-    }
+   
 
     private List<string> CardCategoryToResourceNames(List<int> indexList)
     {
@@ -716,168 +1001,8 @@ public class Card : MonoBehaviour, IObject
         resourceNames[8] = "Shield_Health";
     }
 
-    private void CardPositionSetting(CardTransformSetting setting, bool isSpecial)
-    {
-        if (!setting.isVoidValue(setting.mask))
-        {
-            var maskRect = cardMask.GetComponent<RectTransform>();
-            maskRect.anchoredPosition = setting.mask.position;
-            maskRect.sizeDelta = setting.mask.ratio;
-            maskRect.localScale = setting.mask.scale;
-        }
 
-        if(!setting.isVoidValue(setting.cardMainImage))
-        {
-            var mainImageRect = cardImage.GetComponent<RectTransform>();
-            mainImageRect.anchoredPosition = setting.cardMainImage.position;
-            mainImageRect.sizeDelta = setting.cardMainImage.ratio;
-            mainImageRect.localScale = setting.cardMainImage.scale;
-        }
-
-        if (!setting.isVoidValue(setting.legandPortrait))
-        {
-            var legandRect = legandPortrait.GetComponent<RectTransform>();
-            legandRect.anchoredPosition = setting.legandPortrait.position;
-            legandRect.sizeDelta = setting.legandPortrait.ratio;
-            legandRect.localScale = setting.legandPortrait.scale;
-        }
-
-        if (!setting.isVoidValue(setting.cardExplanation))
-        {
-            if (isSpecial)
-            {
-                var explanationRect = specialCardExplanation.GetComponent<RectTransform>();
-                explanationRect.anchoredPosition = setting.cardExplanation.position;
-                explanationRect.sizeDelta = setting.cardExplanation.ratio;
-                explanationRect.localScale = setting.cardExplanation.scale;
-                specialCardExplanation.text = cardData.description;
-            }
-            else
-            {
-                var explanationRect = cardExplanationObject.GetComponent<RectTransform>();
-                explanationRect.anchoredPosition = setting.cardExplanation.position;
-                explanationRect.sizeDelta = setting.cardExplanation.ratio;
-                explanationRect.localScale = setting.cardExplanation.scale;
-                cardExplanation.text = cardData.description;
-            }
-        }
-
-        if (!setting.isVoidValue(setting.gem))
-        {
-            var gemRect = gem.GetComponent<RectTransform>();
-            gemRect.anchoredPosition = setting.gem.position;
-            gemRect.sizeDelta = setting.gem.ratio;
-            gemRect.localScale = setting.gem.scale;
-        }
-
-        if (!setting.isVoidValue(setting.cardName))
-        {
-            var cardNameRect = cardNameImage.GetComponent<RectTransform>();
-            cardNameRect.anchoredPosition = setting.cardName.position;
-            cardNameRect.sizeDelta = setting.cardName.ratio;
-            cardNameRect.localScale = setting.cardName.scale;
-            cardName.text = cardData.cardName;
-        }
-
-        if (!setting.isVoidValue(setting.cardNameText))
-        {
-            var cardNameTextRect = cardName.GetComponent<RectTransform>();
-            cardNameTextRect.anchoredPosition = setting.cardNameText.position;
-            cardNameTextRect.sizeDelta = setting.cardNameText.ratio;
-            cardNameTextRect.localScale = setting.cardNameText.scale;
-        }
-
-        if (!setting.isVoidValue(setting.cardType))
-        {
-            var cardTypeRect = typeImage.GetComponent<RectTransform>();
-            cardTypeRect.anchoredPosition = setting.cardType.position;
-            cardTypeRect.sizeDelta = setting.cardType.ratio;
-            cardTypeRect.localScale = setting.cardType.scale;
-
-            var cardTypeTextRect = typeImageName.GetComponent<RectTransform>();
-            cardTypeTextRect.anchoredPosition = setting.cardTypeText.position;
-            cardTypeTextRect.sizeDelta = setting.cardTypeText.ratio;
-            cardTypeTextRect.localScale = setting.cardTypeText.scale;
-
-            string typeName = cardData.cardTypes[0];
-            for (int i = 1; i < cardData.cardTypes.Length; i++)
-            {
-                typeName += $"\n{cardData.cardTypes[i]}";
-            }
-            typeImageName.text = typeName;
-        }
-
-        if (!setting.isVoidValue(setting.attack))
-        {
-            var attackRect = attackImage.GetComponent<RectTransform>();
-            attackRect.anchoredPosition = setting.attack.position;
-            attackRect.sizeDelta = setting.attack.ratio;
-            attackRect.localScale = setting.attack.scale;
-            attack.text = cardData.attack.ToString();
-        }
-
-        if (!setting.isVoidValue(setting.attackText))
-        {
-            var attackRect = attack.GetComponent<RectTransform>();
-            attackRect.anchoredPosition = setting.attackText.position;
-            attackRect.sizeDelta = setting.attackText.ratio;
-            attackRect.localScale = setting.attackText.scale;
-        }
-
-        if (!setting.isVoidValue(setting.health))
-        {
-            var healthRect = healthImage.GetComponent<RectTransform>();
-            healthRect.anchoredPosition = setting.health.position;
-            healthRect.sizeDelta = setting.health.ratio;
-            healthRect.localScale = setting.health.scale;
-            health.text = cardData.health.ToString();
-        }
-
-        if (!setting.isVoidValue(setting.healthText))
-        {
-            var healthRect = health.GetComponent<RectTransform>();
-            healthRect.anchoredPosition = setting.healthText.position;
-            healthRect.sizeDelta = setting.healthText.ratio;
-            healthRect.localScale = setting.healthText.scale;
-        }
-    }
-}
-
-public class CollectionCardData
-{
-    public CardTransformSetting cardTransformSetting;
-    public Image maskImage;
-    public Image cardImage;
-    public Image cardBackGround;
-
-    public bool isSpecial;
-    public Image cardExplanationImage;
-    public TextMeshProUGUI cardExplanation;
-    
-    public GameObject legandPortrait;
-
-    public bool isActiveGem;
-    public Image gem;
-
-    public TextMeshProUGUI cost;
-
-    public Image cardNameImage;
-    public TextMeshProUGUI cardName;
-
-    public bool isActiveType;
-    public Image typeImage;
-    public TextMeshProUGUI cardTypeText;
-
-    public uint[] spawnID;
-
-    public bool isAttack;
-    public Image attackImage;
-    public TextMeshProUGUI attack;
-
-    public bool isHealth;
-    public Image healthImage;
-    public TextMeshProUGUI health;
-}
-
-// 지금 여기서 바꾼거 
-// CollectionCardData에 어떤 Data를 넣어야 할지 다시 고민해야 한다.
+ 
+ 
+ 
+ */

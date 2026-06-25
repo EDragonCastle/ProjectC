@@ -27,7 +27,6 @@ public class CardData
     public float rotation;
 }
 
-
 [CreateAssetMenu(fileName = "New Hero", menuName = "HeroName")]
 public class HeroData : ScriptableObject
 {
@@ -41,6 +40,22 @@ public class HeroData : ScriptableObject
     public string heroDeckName;
 }
 
+[System.Serializable]
+public class AbilityData
+{
+    public uint cardId;
+    public string actionTrigger;
+    public string action;
+    public string target;
+    public int value;
+    public uint spawnID;
+    public string condition;
+    public string conditionStat;
+    public int conditionValue;
+    public string conditionMinionType;
+    public bool isTargetting;
+    public bool isTempory;
+}
 
 public class DeckData
 {

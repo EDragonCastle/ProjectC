@@ -39,6 +39,7 @@ public class BattleDeck : MonoBehaviour
         battleInfo.heroPowerImage = result;
         battleInfo.heroPowerExplanation = heroData.heroPowerExplanation;
         battleInfo.heroPowerName = heroData.heroPowerName;
+        battleInfo.deckData = deckInfo.deckData;
 
         var eventManager = Locator<EventManager>.Get();
         eventManager.Notify(ChannelInfo.SelectBattleHero, battleInfo);
@@ -71,11 +72,9 @@ public class BattleDeck : MonoBehaviour
             cardNumber.SetActive(false);
             isMaxCard = true;
         }
-
     }
 
 }
-
 
 public struct BattleInformation
 {
@@ -84,4 +83,5 @@ public struct BattleInformation
     public Sprite heroPowerImage;
     public string heroPowerName;
     public string heroPowerExplanation;
+    public List<DeckData> deckData;
 }

@@ -18,8 +18,8 @@ public class Hand : MonoBehaviour, IChannel
     private List<BattleCard> cards;
     private RectTransform handRect;
 
-    private BattleCardInformation startDrawCardInformation;
-    private BattleCardInformation endDrawCardInformation;
+    private BattleCardTransform startDrawCardInformation;
+    private BattleCardTransform endDrawCardInformation;
 
     private int maxHandCard = 10;
 
@@ -40,7 +40,7 @@ public class Hand : MonoBehaviour, IChannel
         battleManager.SetHandParent(this.gameObject);
 
         handRect = this.gameObject.GetComponent<RectTransform>();
-        endDrawCardInformation = new BattleCardInformation();
+        endDrawCardInformation = new BattleCardTransform();
         cards = new List<BattleCard>();
     }
 
@@ -69,21 +69,66 @@ public class Hand : MonoBehaviour, IChannel
         switch(channel)
         {
             case ChannelInfo.BattleDeckListPosition:
-                if(information is BattleCardInformation cardInfo)
+                if(information is BattleCardTransform cardInfo)
                 {
                     startDrawCardInformation = cardInfo;
                 }
                 break;
             case ChannelInfo.UsingBattleCard:
-                if(information is int cardIndex)
+                if(information is BattleFieldObjectInformation battleInfo)
                 {
                     // 다른 카드들을 잠시 잠궈야 하는데?
-                    cards.RemoveAt(cardIndex);
-                    CardLayout(this.GetCancellationTokenOnDestroy()).Forget();
+                    cards.RemoveAt(battleInfo.usingIndex);
+                    CardLayout(0, this.GetCancellationTokenOnDestroy()).Forget();
                     CardTouchEnable(false);
                 }
                 break;
         }
+    }
+
+    // 이 함수에서 필요한건? 들어갈 Card Index와 카드
+    public async UniTask InsertCard(BattleFieldObjectInformation battleInfo)
+    {
+        GameObject insertCard = battleInfo.card;
+        var insertCardRect = insertCard.GetComponent<RectTransform>();
+        int index = battleInfo.usingIndex;
+
+        isDrawing = true;
+        insertCard.SetActive(true);
+        var battleManager = Locator<BattleManager>.Get();
+        var handParent = battleManager.GetHandParent();
+
+        Vector3 worldPos = insertCardRect.position;
+
+        // 이미지는 이미 세팅이 됐었던 것이여서 생성만 하면된다.
+        var clone = GameObject.Instantiate(insertCard, handParent.transform);
+        clone.transform.SetSiblingIndex(index);
+
+        var cloneRect = clone.GetComponent<RectTransform>();
+        cloneRect.position = worldPos;
+
+        // 여기서 초기 위치를 알면 더 좋을 지도?
+        Destroy(insertCard);
+
+        // 한 프레임 대기
+        await UniTask.Yield();
+
+        // Ability Resetting
+        var cloneBattleComponent = clone.GetComponent<BattleCard>();
+        cloneBattleComponent.SetAbilityData(battleInfo.ability);
+        cloneBattleComponent.SetBattleCardType(battleInfo.cardType);
+
+        if(index >= cards.Count)
+            cards.Add(cloneBattleComponent);
+        else
+            cards.Insert(index, cloneBattleComponent);
+
+        // 여기서 카드를 먼저 이동시킨다.
+        // 근데 이 CardLayout은 Draw 자리를 미리 만들어놔서 맨 마지막이 걸리니까 
+        await CardLayout(index, this.GetCancellationTokenOnDestroy());
+
+        CardTouchEnable(false);
+        isDrawing = false;
     }
 
 
@@ -98,9 +143,17 @@ public class Hand : MonoBehaviour, IChannel
         var battleManager = Locator<BattleManager>.Get();
         var handParent = battleManager.GetHandParent();
 
-        // 여기가 GameObject를 생성이자 카드 드로우다.
+        // 여기가 GameObject를 생성이자 카드 드로우를 담당하는 곳이다.
+        // testPrefab이 battleCard Component를 가지고 있는 card다.
         var clone = GameObject.Instantiate(testPrefab, handParent.transform);
 
+
+        // 이미지 세팅은 됐는데 이
+        var eventManager = Locator<EventManager>.Get();
+        eventManager.Notify(ChannelInfo.DrawBattleCard, clone);
+
+        // 그러면 여기서 Card Setting을 해야할 것 같은데?
+        // Getcomponent를 하면 Battle Card가 나오네.
         List<UniTask> drawTasks = new List<UniTask>();
 
         // 먼저 카드가 이동한다.
@@ -128,14 +181,14 @@ public class Hand : MonoBehaviour, IChannel
 
         // 손에 있는 카드 개수에 따라 어떻게 동작할지 달라진다.
         var endSequence = DOTween.Sequence();
-        if(count < maxHandCard)
+        if(count <= maxHandCard)
         {
             var task = endSequence.Append(cloneRect.DOLocalMove(endDrawCardInformation.position, endDuration)).SetEase(ease)
                                    .Join(cloneRect.DORotateQuaternion(endDrawCardInformation.rotation, endDuration)).SetEase(ease)
                                    .Join(cloneRect.DOScale(cloneBattleComponent.GetCardOriginScale(), endDuration).SetEase(ease));
 
             drawTasks.Add(task.ToUniTask());
-            drawTasks.Add(cloneBattleComponent.CardSetUpAsync(endDrawCardInformation.position, endDrawCardInformation.rotation, count - 1));
+            drawTasks.Add(cloneBattleComponent.CardPositionSetupAsync(endDrawCardInformation.position, endDrawCardInformation.rotation, count - 1));
         }
         else
         {
@@ -155,10 +208,14 @@ public class Hand : MonoBehaviour, IChannel
         AfterDrawCheckMousePointer();
     }
 
+
     // card 이동까지 마치면 그 때 Enable을 하면 될 것 같은데
     private async UniTask CardLayout(CancellationToken token)
     {
         int count = cards.Count;
+
+        if (count >= maxHandCard)
+            return;
 
         count++;
 
@@ -188,10 +245,10 @@ public class Hand : MonoBehaviour, IChannel
                 endDrawCardInformation.rotation = targetRotation;
             }
 
-            if (i != count - 1)
+            if (i < cards.Count)
             {
                 cards[i].SetCardTouchEnable(true);
-                moveTasks.Add(cards[i].CardSetUpAsync(targetPosition, targetRotation, i, token));
+                moveTasks.Add(cards[i].CardPositionSetupAsync(targetPosition, targetRotation, i, token));
             }
         }
 
@@ -199,6 +256,50 @@ public class Hand : MonoBehaviour, IChannel
             await UniTask.WhenAll(moveTasks).AttachExternalCancellation(token);
     }
 
+    private async UniTask CardLayout(int type, CancellationToken token)
+    {
+        int count = cards.Count;
+
+        if (count >= maxHandCard)
+            return;
+
+        float midIndex = (count - 1) / 2f;
+        float maxWidth = handRect.sizeDelta.x;
+        float currentSpacing = cardSpacing;
+
+        if (count * cardSpacing > maxWidth)
+            currentSpacing = maxWidth / count;
+
+        List<UniTask> moveTasks = new List<UniTask>();
+
+        for (int i = 0; i < count; i++)
+        {
+            float index = i - midIndex;
+
+            float xPosition = index * currentSpacing;
+            float yPosition = -Mathf.Pow(index, 2) * arcIntensity;
+            float zRotation = index * -angleIntensity;
+
+            Vector3 targetPosition = new Vector3(xPosition, yPosition, 0);
+            Quaternion targetRotation = Quaternion.Euler(0, 0, zRotation);
+
+            // 매번 하는게 그렇긴해.
+            if (i == (count - 1))
+            {
+                endDrawCardInformation.position = targetPosition;
+                endDrawCardInformation.rotation = targetRotation;
+            }
+
+            if (i < cards.Count)
+            {
+                cards[i].SetCardTouchEnable(true);
+                moveTasks.Add(cards[i].CardPositionSetupAsync(targetPosition, targetRotation, i, token));
+            }
+        }
+
+        if (moveTasks.Count > 0)
+            await UniTask.WhenAll(moveTasks).AttachExternalCancellation(token);
+    }
 
     private void CardTouchEnable(bool enable)
     {
@@ -229,9 +330,7 @@ public class Hand : MonoBehaviour, IChannel
                 return;
             }
         }
-    }
-
-    // 카드 드래그 하고 있던 것들을 전부 원래대로 되돌린다?
+    }    
 }
 
 // 지금 있을 버그 혀낭은 Draw를 연속으로 하면 문제가 생긴다.

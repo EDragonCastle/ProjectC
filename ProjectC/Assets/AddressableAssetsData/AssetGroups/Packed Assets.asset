@@ -2133,6 +2133,26 @@ MonoBehaviour:
     m_Address: SOCardData
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e3a5acbbe3373ac4085e7d9e5c29f133
+    m_Address: Card Entity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f780b3721cc830a4cbdc6d59a44451e2
+    m_Address: AbilityData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82bd618c2c9cf4b42857e0422395de83
+    m_Address: SOAbilityData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e7016bd5da93e684b9ea771764fef013
+    m_Address: Battle_Axe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6a78b900cafc55a41bb5f845827f87cd
+    m_Address: Weapon Entity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 314092f8ff34e894c87401dd78c2ddb4, type: 2}
   m_SchemaSet:

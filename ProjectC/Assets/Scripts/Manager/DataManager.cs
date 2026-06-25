@@ -3,6 +3,9 @@ using System.Linq;
 
 public class DataManager
 {
+    // Ability Data들이 들어오는 공간
+    private readonly Dictionary<uint, List<AbilityData>> abilityTable;
+
     // 실제 card Data들이 들어오는 공간.
     private readonly Dictionary<uint, CardData> cardTable;
     private List<List<CardData>> pages;
@@ -22,9 +25,9 @@ public class DataManager
     public List<DeckInformation> GetBattleDeckList() => battleDeckList;
     public void SetBattleDeckList(List<DeckInformation> input) => battleDeckList = input;
 
- 
     public Dictionary<uint, CardData> GetCardData() => cardTable;
     public Dictionary<uint, HeroData> GetHeroData() => heroTable;
+    public Dictionary<uint, List<AbilityData>> GetAbilityData() => abilityTable;
 
     public int GetPageCount() => pages.Count;
 
@@ -68,7 +71,9 @@ public class DataManager
         return hero;
     }
 
-    public DataManager(Dictionary<uint, CardData> cardDataTable, Dictionary<uint, HeroData> heroDataTable)
+    // Data Manager에서 Ability setting을 해야할 것 같은데?
+
+    public DataManager(Dictionary<uint, CardData> cardDataTable, Dictionary<uint, HeroData> heroDataTable, Dictionary<uint, List<AbilityData>> abilityDataTable)
     {
         pages = new List<List<CardData>>();
         heroStartPages = new Dictionary<string, int>();
@@ -76,6 +81,7 @@ public class DataManager
         battleDeckList = new List<DeckInformation>();
         cardTable = cardDataTable;
         heroTable = heroDataTable;
+        abilityTable = abilityDataTable;
         filterInfo = new FilterInformation();
         filterInfo.Clear();
         RefreshPage();

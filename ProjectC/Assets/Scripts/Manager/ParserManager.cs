@@ -13,11 +13,13 @@ public class ParserManager
 {
     private Dictionary<uint, CardData> cardTable;
     private Dictionary<uint, HeroData> heroTable;
+    private Dictionary<uint, List<AbilityData>> abilityTable;
     
     public ParserManager()
     {
         cardTable = new Dictionary<uint, CardData>();
         heroTable = new Dictionary<uint, HeroData>();
+        abilityTable = new Dictionary<uint, List<AbilityData>>();
     }
 
     public async UniTask Initalize() 
@@ -28,6 +30,7 @@ public class ParserManager
 
     public Dictionary<uint, CardData> GetCardTable() => cardTable;
     public Dictionary<uint, HeroData> GetHeroTable() => heroTable;
+    public Dictionary<uint, List<AbilityData>> GetAbilityTable() => abilityTable;
 
     private async UniTask LoadAndParserCSVData()
     {
@@ -35,21 +38,27 @@ public class ParserManager
         var HeroDataHandle = Addressables.LoadAssetAsync<TextAsset>("HeroData").ToUniTask();
         var CardDataTestHandle = Addressables.LoadAssetAsync<TextAsset>("CardData").ToUniTask();
         var CardDataHandle = Addressables.LoadAssetAsync<ScritableCardData>("SOCardData").ToUniTask();
-    
+        var AbilityDataHandle = Addressables.LoadAssetAsync<ScriptableAbilityData>("SOAbilityData").ToUniTask();
+
         try {
             //var result = await UniTask.WhenAll(HeroDataHandle, CardDataTestHandle);
-            var result = await UniTask.WhenAll(HeroDataHandle, CardDataHandle);
+            var result = await UniTask.WhenAll(HeroDataHandle, CardDataHandle, AbilityDataHandle);
 
             TextAsset heroCSV = result.Item1;
             
             //TextAsset cardCSV = result.Item2;
             ScritableCardData soCardData = result.Item2;
 
+            ScriptableAbilityData soAbilityData = result.Item3;
+
             if (heroCSV != null)
                 HeroParserCSV(heroCSV.text);
 
             if (soCardData != null) ReadScritableCardData(soCardData);
-             //if (cardCSV != null) ParseCardCSV(cardCSV.text);
+            //if (cardCSV != null) ParseCardCSV(cardCSV.text);
+
+            if (soAbilityData != null) ReadScriptableAbilityData(soAbilityData);
+
         }
         catch (System.Exception e)
         {
@@ -63,6 +72,22 @@ public class ParserManager
         {
             CardData cardData = scritableObject.cardDatas[i];
             cardTable.Add(cardData.cardId, cardData);
+        }
+    }
+
+    private void ReadScriptableAbilityData(ScriptableAbilityData scirptableObject)
+    {
+        for(int i = 0; i < scirptableObject.abilityData.Count; i++)
+        {
+            AbilityData abilityData = scirptableObject.abilityData[i];
+
+            if(abilityTable.ContainsKey(abilityData.cardId))
+                abilityTable[abilityData.cardId].Add(abilityData);
+            else {
+                abilityTable.Add(abilityData.cardId, new List<AbilityData>());
+                abilityTable[abilityData.cardId].Add(abilityData);
+            }
+
         }
     }
 
