@@ -10,7 +10,7 @@
             attacker.TakeDamage(target.GetAttackPoint());
     }
 
-    // IAttacker로 공격할 수도 있지만 battlecry 같은 경우에도 바로 공격할 수도 있다. 
+    // IStat을 이용해서 공격할 수도 있지만 대상은 알 수 없지만 데미지 처리를 할 수 있는 경우에도 바로 공격할 수도 있다. 
     public void Execute(int attack, ICombatable target)
     {
         target.TakeDamage(attack);

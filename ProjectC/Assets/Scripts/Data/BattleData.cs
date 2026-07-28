@@ -37,6 +37,10 @@ public enum AbilityTarget
     TargetEnemyMinion,              // 적 하수인 타겟
     AllTargetMinion,                // 모든 하수인 타겟
     AllTarget,                      // 모든 하수인 + 영웅 타겟
+    AllEnemyTarget,                 // 모든 적 하수인 + 영웅 타겟
+    AllFrendlyTarget,               // 모든 아군 하수인 + 영웅 타겟
+    AllEnemyTargetExceptSelf,       
+    AllFrendlyTargetExceptSelf,
 
     AllFriendlyMinions,             // 아군 하수인들
     AllEnemyMinions,                // 적 하수인들

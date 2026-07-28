@@ -27,7 +27,8 @@ public interface IHealable
 public interface EntityController : IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     // Entity를 가져올 방법이 필요하다.
-    public UnityEngine.MonoBehaviour GetEntity();
+    //public UnityEngine.MonoBehaviour GetEntity();
+    public IEntity GetEntity();
 }
 
 public interface IStat
@@ -60,6 +61,12 @@ public interface ITrigger
     public void OnAttacked();
     public void OnMinionSummon();
     public void OnSpellCast();
+}
+
+// 이건 내 다른 하수인들이 +1을 얻거나 할 때 사용될 것?
+public interface IAura
+{
+    // 일단 만들어두자.
 }
 
 public enum KeywordType

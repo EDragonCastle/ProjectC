@@ -206,8 +206,8 @@ public class ExcelConverter : EditorWindow
             ability.conditionValue = SafetyParser<int>(row[7].Trim());
             ability.conditionMinionType = row[8].Trim();
             ability.isTargetting = row[9] == "TRUE" ? true : false;
-            ability.conditionStat = row[10].Trim();
-            ability.isTempory = row[11] == "TRUE" ? true : false;
+            ability.isTempory = row[10] == "TRUE" ? true : false;
+            ability.conditionStat = row[11].Trim();
             soAbilityData.abilityData.Add(ability);
         }
 

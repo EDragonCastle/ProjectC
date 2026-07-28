@@ -8,7 +8,8 @@ public class CardEntityController : MonoBehaviour, IChannel, EntityController
 
     private List<ITargetable> targets;
 
-    public MonoBehaviour GetEntity() => entity;
+    public MonoBehaviour GetEntity2() => entity;
+    public IEntity GetEntity() => entity;
 
 
     public void HandleEvent(ChannelInfo channel, object information = null)

@@ -52,32 +52,6 @@ public class CardEntity : MonoBehaviour, ITargetable, ICombatable, IEntity, IHea
     #region ITargetable Interface 
     public bool isTargetable { get; private set; }
 
-
-    private void LateUpdate()
-    {
-        if (abilityUI == null) return;
-
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position);
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            this.GetComponent<RectTransform>(),
-            screenPos,
-            parentCanvas.worldCamera,
-            out Vector2 localPoint
-        );
-
-
-        foreach (var ability in abilityUI) {
-            if (!ability.Value.ability.activeSelf) continue;
-
-            ability.Value.rectTransform.localPosition = new Vector3(
-                localPoint.x + ability.Value.abilityLocalPosition.x,
-                localPoint.y + ability.Value.abilityLocalPosition.y,
-                0
-            );
-        }
-    }
-
     public void OnTargeted()
     {
         Vector4 color = new Vector4(1, 1, 1, 1);
@@ -241,6 +215,32 @@ public class CardEntity : MonoBehaviour, ITargetable, ICombatable, IEntity, IHea
     #endregion
 
     #endregion
+
+    private void LateUpdate()
+    {
+        if (abilityUI == null) return;
+
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            this.GetComponent<RectTransform>(),
+            screenPos,
+            parentCanvas.worldCamera,
+            out Vector2 localPoint
+        );
+
+
+        foreach (var ability in abilityUI)
+        {
+            if (!ability.Value.ability.activeSelf) continue;
+
+            ability.Value.rectTransform.localPosition = new Vector3(
+                localPoint.x + ability.Value.abilityLocalPosition.x,
+                localPoint.y + ability.Value.abilityLocalPosition.y,
+                0
+            );
+        }
+    }
 
     public void CardResourceSetting(MinionResourceData resourceData)
     {

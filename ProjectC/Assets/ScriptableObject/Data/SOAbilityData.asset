@@ -76,7 +76,7 @@ MonoBehaviour:
   - cardId: 6
     actionTrigger: Battlecry
     action: Remove
-    target: EnemyHero
+    target: EnemyWeapon
     value: 0
     spawnID: 0
     condition: HasWeapon
@@ -109,10 +109,46 @@ MonoBehaviour:
     conditionMinionType: 
     isTargetting: 0
     isTempory: 0
-  - cardId: 12
+  - cardId: 10
     actionTrigger: 
+    action: SpellAttack
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 11
+    actionTrigger: Battlecry
+    action: Token
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 12
+    actionTrigger: Battlecry
     action: DrawCard
     target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 14
+    actionTrigger: 
+    action: SpellAttack
+    target: Self
     value: 1
     spawnID: 0
     condition: 
@@ -205,10 +241,34 @@ MonoBehaviour:
     conditionMinionType: 
     isTargetting: 0
     isTempory: 0
+  - cardId: 24
+    actionTrigger: Battlecry
+    action: Token
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
   - cardId: 25
     actionTrigger: Battlecry
     action: DrawCard
     target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 27
+    actionTrigger: 
+    action: SpellAttack
+    target: Self
     value: 1
     spawnID: 0
     condition: 
@@ -271,7 +331,7 @@ MonoBehaviour:
     target: Self
     value: 1
     spawnID: 0
-    condition: Over
+    condition: FrendlyMinions
     conditionStat: 
     conditionValue: 0
     conditionMinionType: 
@@ -283,7 +343,7 @@ MonoBehaviour:
     target: Self
     value: 1
     spawnID: 0
-    condition: 
+    condition: FrendlyMinions
     conditionStat: 
     conditionValue: 0
     conditionMinionType: 
@@ -318,6 +378,1434 @@ MonoBehaviour:
     action: Damage
     target: AllTarget
     value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 36
+    actionTrigger: 
+    action: SpellAttack
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 38
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 39
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 41
+    actionTrigger: OnMinionSummon
+    action: Attack
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 41
+    actionTrigger: OnMinionSummon
+    action: Health
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 46
+    actionTrigger: OnSpellCast
+    action: Mana
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 47
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 48
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 48
+    actionTrigger: OnSpellCast
+    action: Armor
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 49
+    actionTrigger: OnSpellCast
+    action: Taunt
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 49
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllTargetMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 49
+    actionTrigger: OnSpellCast
+    action: Health
+    target: AllTargetMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 50
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: AllTarget
+    value: 8
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 51
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 51
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 52
+    actionTrigger: OnSpellCast
+    action: ManaCase
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 53
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyTarget
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 53
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyTargetExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 54
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 5
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 54
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 55
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 56
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 57
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 58
+    actionTrigger: OnMinionSummon
+    action: Attack
+    target: AllFriendlyMinionsExceptTarget
+    value: 1
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 59
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 60
+    actionTrigger: OnSpellCast
+    action: 
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 61
+    actionTrigger: OnSpellCast
+    action: Token
+    target: Self
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 62
+    actionTrigger: 
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 62
+    actionTrigger: 
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 63
+    actionTrigger: Battlecry
+    action: Taunt
+    target: AllFriendlyMinions
+    value: 0
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 63
+    actionTrigger: Battlecry
+    action: Attack
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 63
+    actionTrigger: Battlecry
+    action: Health
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 64
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: RandomEnemyMinion
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 65
+    actionTrigger: OnMinionSummon
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 66
+    actionTrigger: OnMinionSummon
+    action: Charge
+    target: AllFriendlyMinions
+    value: 0
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC57C\uC218"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 67
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 68
+    actionTrigger: OnMinionSummon
+    action: Attack
+    target: AllFriendlyMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 69
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 70
+    actionTrigger: 
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 71
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 72
+    actionTrigger: OnSpellCast
+    action: Token
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 73
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllFriendlyMinions
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 74
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 74
+    actionTrigger: OnSpellCast
+    action: Freeze
+    target: AllTarget
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 75
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 76
+    actionTrigger: OnSpellCast
+    action: Freeze
+    target: AllEnemyMinions
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 77
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 6
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 78
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 80
+    actionTrigger: OnAttacking
+    action: Freeze
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 80
+    actionTrigger: OnAttacked
+    action: Freeze
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 81
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyMinions
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 82
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllMinions
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 83
+    actionTrigger: OnSpellCast
+    action: Shield
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 84
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 86
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: FriendlyHero
+    value: 8
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 87
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllTargetMinion
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 87
+    actionTrigger: OnSpellCast
+    action: Health
+    target: AllTargetMinion
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 88
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 88
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: EnemyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 89
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 89
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 90
+    actionTrigger: OnAttacking
+    action: Heal
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 91
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 91
+    actionTrigger: Battlecry
+    action: Heal
+    target: FriendlyHero
+    value: 6
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 92
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTargetMinion
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 93
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 94
+    actionTrigger: OnSpellCast
+    action: Health
+    target: AllTargetMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 94
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 95
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: Under
+    conditionStat: Attack
+    conditionValue: 3
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 96
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: Over
+    conditionStat: Attack
+    conditionValue: 5
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 97
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 97
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 98
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 99
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTargetMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 100
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: FriendlyWeapon
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 101
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: EnemyHero
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 102
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 102
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 103
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 104
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllEnemyMinions
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 104
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 106
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllTarget
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 107
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 108
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 108
+    actionTrigger: OnSpellCast
+    action: Taunt
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 109
+    actionTrigger: OnSpellCast
+    action: Health
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uD1A0\uD15C"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 110
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 110
+    actionTrigger: OnSpellCast
+    action: Freeze
+    target: AllTarget
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 111
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: FriendlyHero
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 1
+  - cardId: 112
+    actionTrigger: 
+    action: Attack
+    target: AdjacentMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 113
+    actionTrigger: OnSpellCast
+    action: Windfury
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 114
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 115
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 116
+    actionTrigger: Battlecry
+    action: Windfury
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 117
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllFriendlyMinions
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 118
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllTarget
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 119
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllFriendlyMinions
+    value: 0
+    spawnID: 0
+    condition: MinionType
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: "\uC545\uB9C8"
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 119
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: FriendlyHero
+    value: 8
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 120
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 120
+    actionTrigger: OnSpellCast
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 121
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 122
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTargetMinion
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 122
+    actionTrigger: OnSpellCast
+    action: DrawCard
+    target: FriendlyHero
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 123
+    actionTrigger: 
+    action: Taunt
+    target: Self
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 124
+    actionTrigger: Battlecry
+    action: 
+    target: 
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 125
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 125
+    actionTrigger: OnSpellCast
+    action: Heal
+    target: FriendlyHero
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 126
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTargetMinion
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 1
+    isTempory: 0
+  - cardId: 127
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllTarget
+    value: 3
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 128
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllMinionsExceptSelf
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 128
+    actionTrigger: Battlecry
+    action: Damage
+    target: AllHeroes
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 129
+    actionTrigger: OnSpellCast
+    action: Remove
+    target: AllTargetMinion
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 130
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: AllMinions
+    value: 1
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 131
+    actionTrigger: OnSpellCast
+    action: Damage
+    target: RandomEnemyMinion
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 133
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: FriendlyHero
+    value: 4
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 134
+    actionTrigger: OnSpellCast
+    action: Charge
+    target: AllFriendlyMinions
+    value: 0
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 135
+    actionTrigger: OnSpellCast
+    action: Attack
+    target: AllFriendlyMinions
+    value: 2
+    spawnID: 0
+    condition: 
+    conditionStat: 
+    conditionValue: 0
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 136
+    actionTrigger: OnMinionSummon
+    action: Charge
+    target: AllFriendlyMinions
+    value: 0
+    spawnID: 0
+    condition: Under
+    conditionStat: Attack
+    conditionValue: 3
+    conditionMinionType: 
+    isTargetting: 0
+    isTempory: 0
+  - cardId: 137
+    actionTrigger: 
+    action: Charge
+    target: Self
+    value: 0
     spawnID: 0
     condition: 
     conditionStat: 
@@ -408,28 +1896,4 @@ MonoBehaviour:
     conditionValue: 0
     conditionMinionType: 
     isTargetting: 0
-    isTempory: 0
-  - cardId: 99
-    actionTrigger: OnSpellCast
-    action: Damage
-    target: AllTargetMinion
-    value: 2
-    spawnID: 0
-    condition: 
-    conditionStat: 
-    conditionValue: 0
-    conditionMinionType: 
-    isTargetting: 1
-    isTempory: 0
-  - cardId: 101
-    actionTrigger: OnSpellCast
-    action: Damage
-    target: AllTarget
-    value: 3
-    spawnID: 0
-    condition: 
-    conditionStat: 
-    conditionValue: 0
-    conditionMinionType: 
-    isTargetting: 1
     isTempory: 0

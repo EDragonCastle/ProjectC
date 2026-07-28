@@ -269,6 +269,3 @@ public class CardAbilityHelper
         return stat;
     }
 }
-
-// 근데 매번 이렇게 하면 귀찮아지는데
-// 근데 switch를 사용하려면 const를 사용해야해서 할 수 없다.
